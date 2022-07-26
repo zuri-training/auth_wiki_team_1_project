@@ -14,7 +14,13 @@ class RegisterUserForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ("username", "email")
+        fields = ("username", "email", "first_name", "last_name")
+
+    def clean_email(self):
+        email = self.cleaned_data['email']
+        if User.objects.filter(email=email).exists():
+            raise ValidationError("Email already exists")
+        return email
 
     def clean_password2(self):
         password1 = self.cleaned_data.get("password1")
