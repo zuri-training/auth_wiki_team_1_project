@@ -38,9 +38,9 @@
 # Contributors Guide
 
  1. Fork the repository.
- 2. Clone the repository in your local machine.
+ 2. Clone the repository forked in your local machine.
  3. Create an upstream on your local machine to pull the latest code from the
- 4. Sevelop branch of this repository
+ 4. Develop branch of this repository
  5. Create a new branch on your local machine.
  6. Switch to the branch and make all changes on that branch.
  7. Commit changes to the branch and push to your forked repo.
