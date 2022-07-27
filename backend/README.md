@@ -38,12 +38,4 @@
 
 # Contributors Guide
 
- 1. Clone this repository to your machine.
- 2. Create a new branch.
- 3. Switch to the branch and make all changes on that branch.
- 4. Commit changes to the branch and push to the repository.
- 5. Come back to to the repository and open a pull request on the main branch.
- 6. Link the pull request with your issue.
- 7. Do not merge your pull request yourself. Wait for review and merging.
-
-**Notes**:  [Check here for further guides on how to contribute](https://docs.github.com/en/get-started/quickstart/contributing-to-projects)
+> Follow the contribution guide [here](https://github.com/zuri-training/auth_wiki_team_1_project/edit/main/README.md)
