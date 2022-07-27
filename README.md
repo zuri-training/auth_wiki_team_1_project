@@ -56,6 +56,6 @@ steps
   
 
 **Notes:**
->Repeat above step for any new task. 
+>Repeat above steps from 2 to 7 for any new task. 
 
 >For update on a specific task, repeat from step 3 to 7
