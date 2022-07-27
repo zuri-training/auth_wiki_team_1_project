@@ -1,4 +1,5 @@
 
+
 #  Auth Wiki Team 1 Backend Project
 
   
@@ -37,15 +38,12 @@
 
 # Contributors Guide
 
- 1. Fork the repository.
- 2. Clone the repository forked in your local machine.
- 3. Create an upstream on your local machine to pull the latest code from the
- 4. Develop branch of this repository
- 5. Create a new branch on your local machine.
- 6. Switch to the branch and make all changes on that branch.
- 7. Commit changes to the branch and push to your forked repo.
- 8. Come back to to the repository and open a pull request on the develop branch.
- 9. Link the pull request with your issue.
- 10. Do not merge your pull request yourself. Wait for review and merging.
+ 1. Clone this repository to your machine.
+ 2. Create a new branch.
+ 3. Switch to the branch and make all changes on that branch.
+ 4. Commit changes to the branch and push to the repository.
+ 5. Come back to to the repository and open a pull request on the main branch.
+ 6. Link the pull request with your issue.
+ 7. Do not merge your pull request yourself. Wait for review and merging.
 
 **Notes**:  [Check here for further guides on how to contribute](https://docs.github.com/en/get-started/quickstart/contributing-to-projects)
