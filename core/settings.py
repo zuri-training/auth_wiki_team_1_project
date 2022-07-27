@@ -176,5 +176,6 @@ SIMPLE_JWT = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "http://loalhost:3000",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000"
 ]
