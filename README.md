@@ -5,9 +5,9 @@
 
  **This project has 3 subdirectories for each group**
 
- 1. Backend [Read Here](https://github.com/zuri-training/auth_wiki_team_1/blob/main/backend)
- 2. Frontend [Read Here](https://github.com/zuri-training/auth_wiki_team_1/blob/main/frontend)
- 3. Design [Read Here](https://github.com/zuri-training/auth_wiki_team_1/blob/main/design)
+ 1. Backend [Read Here](https://github.com/zuri-training/auth_wiki_team_1_project/blob/main/backend)
+ 2. Frontend [Read Here](https://github.com/zuri-training/auth_wiki_team_1_project/blob/main/frontend)
+ 3. Design [Read Here](https://github.com/zuri-training/auth_wiki_team_1_project/blob/main/design)
 # Contributors Guide
 
  1. Clone this repository to your machine.
