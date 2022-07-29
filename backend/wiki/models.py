@@ -13,5 +13,8 @@ class CodeSample(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     update_date = models.DateTimeField(auto_now=True)
     categories = models.ManyToManyField("CodeTitle", related_name="CodeSample")
-    # package =
+    package = models.ForeignKey(Package, on_delete=models.CASCADE)
     user = models.ForeignKey(CodeTitle, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
