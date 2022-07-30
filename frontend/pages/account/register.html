@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="register.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="A">
+        <div class="top">
+          <img src="./images/Shapes.png" alt="top-line" />
+        </div>
+
+        <div class="logo-text">
+          <img src="./images/Group.png" alt="logo" />
+          <h2>Welcome</h2>
+          <p>
+            Get access to various Authentication codes, download codes and enjoy
+            all benefits as a user.
+          </p>
+        </div>
+
+        <div class="bottom">
+          <img src="./images/Shapes (1).png" alt="bottom-line" />
+        </div>
+      </div>
+
+      <div class="B">
+        <header class="links">
+          <div class="sign-link signin">
+            <h3><a href="">Sign In</a></h3>
+            <div class="underline"></div>
+          </div>
+
+          <div class="sign-link signup">
+            <h3><a href="">Sign Up</a></h3>
+            <div class="underline"></div>
+          </div>
+        </header>
+
+        <form class="form" action="#">
+          <label for="fullname"><p>Full Name</p></label>
+          <input
+            type="text"
+            name="fullname"
+            id="fullname"
+            placeholder="Please enter your full name"
+          />
+          <small id="error"></small><br />
+
+          <label for="email"><p>Email</p></label>
+          <input type="email" placeholder="Please enter your email" />
+          <small id="error"></small><br />
+
+          <label for="password"><p>Password</p></label>
+          <input type="password" placeholder="Please enter your password" />
+          <small id="error"></small><br />
+
+          <div class="signup-btn">
+            <button id="signup-btn"><h6>Sign Up</h6></button><br />
+          </div>
+
+          <h5>OR</h5>
+
+          <div class="btn">
+            <button class="google-accnt">
+              <img src="./images/Frame.png" alt="google-logo" />
+              <h6>Continue with Google</h6>
+            </button>
+            <button class="github-accnt">
+              <img src="./images/Vector.png" alt="github-logo" />
+              <h6>Continue with Google</h6>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
