@@ -13,18 +13,21 @@ class RegisterUserView(APIView):
 
     def post(self, request):
         try:
-            form = RegisterUserForm(request.POST)
+            form = RegisterUserForm(request.data)
             if form.is_valid():
                 form.save()
-                user = UserSerializer(form.instance, many=False)
                 return Response({
-                        'user': user.data,
-                        'message': 'User created successfully'
+                        'success': 'User created successfully'
                     },
                     status = status.HTTP_201_CREATED
                 )
             else:
-                return Response(form.errors)
+                return Response({
+                        'error': "Could not create a user with the provided data",
+                        'errors': form.errors
+                    },
+                    status = status.HTTP_400_BAD_REQUEST
+                )
         except:
             return Response(
                 {'error': 'Something went wrong when trying to register account'},
@@ -35,6 +38,7 @@ class LoadUserView(APIView):
     def get(self, request):
         try:
             user = UserSerializer(request.user, many=False)
+            
             return Response(
                 {'user': user.data},
                 status=status.HTTP_200_OK
