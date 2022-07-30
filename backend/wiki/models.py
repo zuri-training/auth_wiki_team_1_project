@@ -19,11 +19,9 @@ class File(models.Model):
     updated_date = models.DateTimeField()
     
 class Reaction(models.Model): 
-    # Without the Post model, I had to use a # as placeholder for now.
-    post_id = "#"
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
-    post_date = models.DateField(auto_now_add=True)
-    likes = models.ManyToManyField(User, related_name='posts')
+    content = models.TextField()
+    post_id = models.ForeignKey(Post, on_delete=models.CASCADE)
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
 
 
     def __str__(self):
