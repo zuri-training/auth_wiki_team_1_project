@@ -23,3 +23,10 @@ ul li {
   max-width: 90%;
   margin: 0 auto;
 }
+
+.btn {
+  background-color: blue;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border: none;
+}
