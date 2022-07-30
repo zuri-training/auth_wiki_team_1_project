@@ -1,28 +1,38 @@
-import { useContext, useState } from "react";
+import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { ThreeDots } from "react-loader-spinner";
-// import Link from "next/link";
-import AuthContext from "../../context/AuthContext";
+import { login, reset_register_success } from "../../actions/account";
+import { useRouter } from "next/router";
+import { useSelector, useDispatch } from "react-redux";
+
+
 
 const Login = () => {
+  // load states from redux
+  const dispatch = useDispatch();
+  const loading = useSelector((state) => state.account.loading);
+  const isLoggedIn = useSelector((state) => state.account.isLoggedIn);
+  const router = useRouter();
+
   // create login form state
-  const [formData, setFormData] = useState({
+  const [ formData, setFormData ] = useState({
     username: "",
     password: "",
   });
 
-  // extract login function from context
-  const { login, loading } = useContext(AuthContext);
-
   // destructure login data from state
   const { username, password } = formData;
+
+  useEffect(() => {
+    dispatch(reset_register_success());
+  }, []);
 
   // create function to handle input onChange
   const onChange = (e) => {
     setFormData((prevState) => {
       return {
         ...prevState,
-        [e.target.name]: e.target.value,
+        [ e.target.name ]: e.target.value,
       };
     });
   };
@@ -34,13 +44,19 @@ const Login = () => {
       toast.error("Please provide all fields");
       return;
     } else {
-      login(formData);
+      dispatch(login(formData));
       setFormData({
         username: "",
         password: "",
       });
     }
   };
+
+  // redirect to dashboard page if user is logged in
+  if (isLoggedIn) {
+    router.push("/dashboard");
+  }
+
   return (
     <div>
       <h2>Welcome to the login page</h2>
@@ -58,7 +74,7 @@ const Login = () => {
         <div className="form_group">
           <label htmlFor="password">Password</label>
           <input
-            type="text"
+            type="password"
             value={password}
             name="password"
             onChange={onChange}
