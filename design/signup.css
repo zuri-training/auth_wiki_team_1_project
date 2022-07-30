@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.A {
+    text-align: center;
+    padding: 180px;
+    padding-top: 330px;
+    width: 50%;
+    height: 850px;
+    background: #5600E2;
+    color: #fff;
+}
+
+.top {
+    position: absolute;
+    top: 7px;
+    left: 465px;
+}
+
+.A>.logo-text>img {
+    margin-bottom: 25px;
+}
+
+.A>.logo-text>h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45.36px;
+}
+
+.A>.logo-text>p {
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 16px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: -200px;
+    left: 2px;
+}
+
+.B {
+    width: 50%;
+    height: 850px;
+    padding: 0 50px;
+    padding-top: 90px;
+}
+
+.B>.links {
+    display: flex;
+    padding: 0 40px;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.B>.links>.sign-link>h3 {
+    text-align: center;
+}
+
+.B>.links>.sign-link>h3>a {
+    text-decoration: none;
+    color: #5600E2;
+}
+
+.links>.sign-link>.underline {
+    margin-top: 10px;
+    background-color: #5600E2;
+    border-radius: 4px;
+    width: 200px;
+    height: 4px;
+}
+
+.B>.links>.signin>h3>a {
+    color: #CBCBCB;
+}
+
+.B>.links>.signin>.underline {
+    background-color: #CBCBCB;
+}
+
+.form {
+    margin-top: 40px;
+}
+
+.form>label {
+    font-weight: 600;
+    font-size: 16px;
+    color: #575757;
+    line-height: 20.16px;
+}
+
+.form>label>p {
+    margin-bottom: 10px;
+}
+
+.form>input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 2px solid rgba(29, 30, 32, 0.3);
+    border-radius: 8px;
+}
+
+#signup-btn {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #5600E2;
+    border: 0;
+    border-radius: 8px;
+}
+
+#signup-btn>h6 {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+}
+
+h5 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #575757;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.google-accnt,
+.github-accnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 2px solid #5600E2;
+    border-radius: 8px;
+}
+
+.google-accnt>h6,
+.github-accnt>h6 {
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 10px;
+    color: #5600E2;
+}
