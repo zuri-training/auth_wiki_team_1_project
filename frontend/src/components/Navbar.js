@@ -1,7 +1,45 @@
 import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
+import { useSelector, useDispatch } from "react-redux";
+import { logout } from "../actions/account";
 
 const Navbar = () => {
+  const dispatch = useDispatch();
+
+  const isLoggedIn = useSelector((state) => state.account.isLoggedIn);
+
+  const handleLogout = () => {
+    dispatch(logout());
+  }
+
+  const authLinks = (
+    <>
+      <li>
+          <Link href="/dashboard">
+            <a>Dashboard</a>
+          </Link>
+        </li>
+      <li>
+          <a onClick={handleLogout}>Logout</a>
+      </li>
+    </>
+  );
+
+  const guestLinks = (
+    <>
+      <li>
+        <Link href="/account/register">
+          <a>Register</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/account/login">
+          <a>Login</a>
+        </Link>
+      </li>
+    </>
+  );
+
   return (
     <nav className={styles.nav}>
       <h2>
@@ -31,17 +69,8 @@ const Navbar = () => {
             </Link>
           </li>
 
-          {/* authentication */}
-          <li>
-            <Link href="/account/login">
-              <a>Login</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/account/register">
-              <a>Register</a>
-            </Link>
-          </li>
+          {isLoggedIn ? authLinks : guestLinks }
+
         </ul>
       </div>
     </nav>
