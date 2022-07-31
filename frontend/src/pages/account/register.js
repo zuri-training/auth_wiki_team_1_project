@@ -1,13 +1,14 @@
 import React from "react";
-import { useState, useContext } from "react";
+import { useState } from "react";
 import { ThreeDots } from "react-loader-spinner";
 import { toast } from "react-toastify";
-import { useSelector, useDispatch } from 'react-redux'
-import { register } from '../../actions/account'
 import { useRouter } from "next/router";
+import { useSelector, useDispatch } from "react-redux";
+import { register } from "../../actions/account";
+import { PrimaryButton } from "../../components/utils/Buttons";
 
 const Register = () => {
-  const [ formData, setFormData ] = useState({
+  const [formData, setFormData] = useState({
     username: "",
     first_name: "",
     last_name: "",
@@ -18,27 +19,23 @@ const Register = () => {
 
   // load states from redux
   const dispatch = useDispatch();
-  const loading = useSelector(state => state.account.loading)
-  const register_success = useSelector(state => state.account.register_success)
-  const isLoggedIn = useSelector(state => state.account.isLoggedIn)
-  const router = useRouter()
+  const loading = useSelector((state) => state.account.loading);
+  const register_success = useSelector(
+    (state) => state.account.register_success
+  );
+  const isLoggedIn = useSelector((state) => state.account.isLoggedIn);
+  const router = useRouter();
 
   // destructure register data from state
-  const {
-    username,
-    password1,
-    password2,
-    email,
-    first_name,
-    last_name
-  } = formData;
+  const { username, password1, password2, email, first_name, last_name } =
+    formData;
 
   // create function to handle input onChange
   const onChange = (event) => {
     setFormData((prevState) => {
       return {
         ...prevState,
-        [ event.target.name ]: event.target.value,
+        [event.target.name]: event.target.value,
       };
     });
   };
@@ -65,7 +62,7 @@ const Register = () => {
   };
 
   // redirect to dashboard page if user is logged in
-  if(isLoggedIn) {
+  if (isLoggedIn) {
     router.push("/dashboard");
   }
 
@@ -129,13 +126,13 @@ const Register = () => {
           />
         </div>
 
-        <button type="submit" className="btn">
+        <PrimaryButton type="submit">
           {loading ? (
             <ThreeDots color="#FFF" height={40} width={40} />
           ) : (
             "Register"
           )}
-        </button>
+        </PrimaryButton>
       </form>
     </div>
   );

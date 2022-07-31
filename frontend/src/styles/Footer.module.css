@@ -1,6 +1,26 @@
 .footer {
+  padding: 50px 100px;
+  background-color: var(--primary-100);
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  gap: 1rem;
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_top_info {
+  display: flex;
+  gap: 20px;
+}
+
+.footer_bottom_text {
+  font-weight: 400;
 }
