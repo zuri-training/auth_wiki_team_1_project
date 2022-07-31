@@ -41,6 +41,11 @@ class File(models.Model):
     download_counts = models.PositiveIntegerField(default=0)
     created_date = models.DateTimeField()
     updated_date = models.DateTimeField()
+    
+class Reaction(models.Model): 
+    content = models.TextField()
+    post_id = models.ForeignKey(Post, on_delete=models.CASCADE)
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
 
     # relationships
     user = models.ForeignKey(User, on_delete=models.CASCADE)
