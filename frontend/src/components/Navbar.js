@@ -1,26 +1,31 @@
 import Link from "next/link";
-import styles from "../styles/Navbar.module.css";
+import Image from "next/image";
+import { useRouter } from "next/router";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../actions/account";
+import { PrimaryButton, SecondaryButton } from "./utils/Buttons";
+import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
   const dispatch = useDispatch();
-
   const isLoggedIn = useSelector((state) => state.account.isLoggedIn);
+  const router = useRouter();
 
   const handleLogout = () => {
     dispatch(logout());
-  }
+  };
 
   const authLinks = (
     <>
       <li>
-          <Link href="/dashboard">
-            <a>Dashboard</a>
-          </Link>
-        </li>
+        <Link href="/dashboard">
+          <a className={`${router.pathname == "/dashboard" && styles.active}`}>
+            Dashboard
+          </a>
+        </Link>
+      </li>
       <li>
-          <a onClick={handleLogout}>Logout</a>
+        <a onClick={handleLogout}>Logout</a>
       </li>
     </>
   );
@@ -28,14 +33,18 @@ const Navbar = () => {
   const guestLinks = (
     <>
       <li>
-        <Link href="/account/register">
-          <a>Register</a>
-        </Link>
+        <SecondaryButton>
+          <Link href="/account/login">
+            <a>Log In</a>
+          </Link>
+        </SecondaryButton>
       </li>
       <li>
-        <Link href="/account/login">
-          <a>Login</a>
-        </Link>
+        <PrimaryButton>
+          <Link href="/account/register">
+            <a>Sign Up</a>
+          </Link>
+        </PrimaryButton>
       </li>
     </>
   );
@@ -43,34 +52,54 @@ const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <h2>
-        <Link href="/">Logo</Link>
+        <Link href="/">
+          <Image
+            src="/assets/logo.svg"
+            alt="auth wiki logo"
+            width={100}
+            height={30}
+          />
+        </Link>
       </h2>
 
       <div>
         <ul className={styles.navList}>
           <li>
             <Link href="/about">
-              <a>About</a>
+              <a className={`${router.pathname == "/about" && styles.active}`}>
+                About
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/faq">
-              <a>FAQ</a>
+              <a className={`${router.pathname == "/faq" && styles.active}`}>
+                FAQ
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/documentation">
-              <a>Documentation</a>
+              <a
+                className={`${
+                  router.pathname == "/documentation" && styles.active
+                }`}
+              >
+                Documentation
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/library">
-              <a>Library</a>
+              <a
+                className={`${router.pathname == "/library" && styles.active}`}
+              >
+                Library
+              </a>
             </Link>
           </li>
 
-          {isLoggedIn ? authLinks : guestLinks }
-
+          {isLoggedIn ? authLinks : guestLinks}
         </ul>
       </div>
     </nav>
