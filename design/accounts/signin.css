@@ -156,44 +156,18 @@ body {
     background: #5600E2;
     border: 0;
     border-radius: 8px;
+    cursor: pointer;
+}
+#signin-btn:hover{
+    background: #8E54EC;
+}
+#signin-btn:active{
+    background: #3D00A0;
 }
 /* signup button text */
 #signin-btn>h6 {
     font-weight: 700;
     font-size: 16px;
     color: #fff;
-}
-/* OR text */
-h5 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 20px;
-    color: #575757;
-    margin-bottom: 20px;
-}
-/* container for other signup options */
-.btn {
-    display: flex;
-    flex-direction: column;
-}
-/* google & github button */
-.google-accnt,
-.github-accnt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 20px;
-    background: #fff;
-    border: 2px solid #5600E2;
-    border-radius: 8px;
-}
-/* google & github button text */
-.google-accnt>h6,
-.github-accnt>h6 {
-    font-weight: 400;
-    font-size: 16px;
-    padding-left: 10px;
-    color: #5600E2;
 }
 /* end of sidde B */
