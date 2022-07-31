@@ -155,6 +155,12 @@ body {
     font-weight: 400;
     font-size: 14px;
 }
+.forgot-link>p>a:hover{
+    color: #8E54EC;
+}
+.forgot-link>p>a:active{
+    color: #3D00A0;
+}
 /* signin button */
 #signin-btn {
     width: 100%;
