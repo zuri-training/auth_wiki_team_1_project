@@ -22,7 +22,7 @@ body {
 .A {
     text-align: center;
     padding: 180px;
-    padding-top: 300px;
+    padding-top: 260px;
     width: 50%;
     height: 850px;
     background: #5600E2;
@@ -83,6 +83,12 @@ body {
 .B>.links>.sign-link>h3>a {
     text-decoration: none;
     color: #5600E2;
+}
+.B>.links>.sign-link>h3>a:hover {
+    color: #8E54EC;
+}
+.B>.links>.sign-link>h3>a:active {
+    color: #3D00A0;
 }
 /* underline under link */
 .links>.sign-link>.underline {
