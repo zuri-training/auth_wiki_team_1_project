@@ -1,0 +1,15 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.active {
+  color: #5600e2;
+}

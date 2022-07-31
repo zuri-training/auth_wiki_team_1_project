@@ -1,0 +1,199 @@
+/* universal styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+/* body */
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+/* container holding both sides(A & B) */
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* side A */
+.A {
+    text-align: center;
+    padding: 180px;
+    padding-top: 300px;
+    width: 50%;
+    height: 850px;
+    background: #5600E2;
+    color: #fff;
+}
+/* top curved line */
+.top {
+    position: absolute;
+    top: -5px;
+    left: 355px;
+}
+/* logo-text container */
+.A>.logo-text>img {
+    margin-bottom: 25px;
+}
+/* welcome back text */
+.A>.logo-text>h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45.36px;
+}
+/* paragraph text */
+.A>.logo-text>p {
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 16px;
+}
+/* bottom curve line */
+.bottom {
+    position: absolute;
+    bottom: -200px;
+    left: 2px;
+}
+/* end of side A */
+
+
+/* side B */
+.B {
+    width: 50%;
+    height: 850px;
+    padding: 0 50px;
+    padding-top: 110px;
+}
+/* container for signup & signin page links */
+.B>.links {
+    display: flex;
+    padding: 0 40px;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 28px;
+}
+/* links heading */
+.B>.links>.sign-link>h3 {
+    text-align: center;
+}
+/* heading link styling */
+.B>.links>.sign-link>h3>a {
+    text-decoration: none;
+    color: #5600E2;
+}
+/* underline under link */
+.links>.sign-link>.underline {
+    margin-top: 10px;
+    background-color: #5600E2;
+    border-radius: 4px;
+    width: 200px;
+    height: 4px;
+}
+/* signup heading fade */
+.B>.links>.signup>h3>a {
+    color: #CBCBCB;
+}
+/* underline under link fade */
+.B>.links>.signup>.underline {
+    background-color: #CBCBCB;
+}
+
+/* form */
+.form {
+    margin-top: 50px;
+}
+/* labels in form */
+.form>label {
+    font-weight: 600;
+    font-size: 16px;
+    color: #575757;
+    line-height: 20.16px;
+}
+/* label text */
+.form>label>p {
+    margin-bottom: 10px;
+}
+/* input in form */
+.form>input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 2px solid rgba(29, 30, 32, 0.3);
+    border-radius: 8px;
+}
+/* checkbox & forgot password link container */
+.checkbox-link {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+/* remember-me checkbox */
+.checkbox-link>.checkbox {
+    display: flex;
+}
+/* remember-me checkbox text */
+.checkbox-link>.checkbox>label>p {
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #575757;
+}
+/* forgot password link */
+.forgot-link>p>a {
+    text-decoration: none;
+    color: #5600E2;
+    font-weight: 400;
+    font-size: 14px;
+}
+/* signin button */
+#signin-btn {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #5600E2;
+    border: 0;
+    border-radius: 8px;
+}
+/* signup button text */
+#signin-btn>h6 {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+}
+/* OR text */
+h5 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #575757;
+    margin-bottom: 20px;
+}
+/* container for other signup options */
+.btn {
+    display: flex;
+    flex-direction: column;
+}
+/* google & github button */
+.google-accnt,
+.github-accnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 2px solid #5600E2;
+    border-radius: 8px;
+}
+/* google & github button text */
+.google-accnt>h6,
+.github-accnt>h6 {
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 10px;
+    color: #5600E2;
+}
+/* end of sidde B */

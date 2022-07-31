@@ -7,6 +7,6 @@ from .views import (
 app_name = 'auth'
 
 urlpatterns = [
-    path('register', RegisterUserView.as_view()),
-    path('user', LoadUserView.as_view())
+    path('register/', RegisterUserView.as_view()),
+    path('user/', LoadUserView.as_view())
 ]
