@@ -14,8 +14,23 @@ const Footer = () => {
             src="/assets/auth_wiki.svg"
             alt="auth wiki logo"
             width={40}
-            height={50}
+            height={54}
           />
+          <div className={styles.footer_company}>
+            <p>Company</p>
+            <ul>
+              <li>
+                <Link href="#">
+                  <a>Privacy Policy</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="#">
+                  <a>Legal</a>
+                </Link>
+              </li>
+            </ul>
+          </div>
           <div>
             <p>Information</p>
             <ul>
@@ -72,9 +87,9 @@ const Footer = () => {
           </ul>
         </div>
         {/* newsletter */}
-        <div className="footer_top_subscribe">
+        <div className={styles.footer_top_subscribe}>
           <p>Never miss a story!</p>
-          <p className="subscribe">Subscribe to our newsletter.</p>
+          <span>Subscribe to our newsletter.</span>
           <div>
             <form>
               <input type="email" placeholder="Email Address" />
@@ -86,7 +101,9 @@ const Footer = () => {
 
       {/* footer bottom */}
       <div>
-        <div className="line"></div>
+        <div className="line">
+          <hr></hr>
+        </div>
         <span className="foooter_bottom_text">
           &copy; Copyright {getDate}, All Rights Reserved - Zuri Team
         </span>
