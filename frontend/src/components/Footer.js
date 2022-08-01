@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
         {/* contact */}
         <div className={styles.footer_top_contact}>
-          <p>Contact</p>
+          <p>Contact Us</p>
           <ul className="flex">
             <li>
               <Link href="#">
@@ -72,12 +72,12 @@ const Footer = () => {
           </ul>
         </div>
         {/* newsletter */}
-        <div>
+        <div className="footer_top_subscribe">
           <p>Never miss a story!</p>
-          <p>Subscribe to our newsletter</p>
+          <p className="subscribe">Subscribe to our newsletter.</p>
           <div>
             <form>
-              <input type="text" placeholder="email address" />
+              <input type="email" placeholder="Email Address" />
               <button type="submit">Submit</button>
             </form>
           </div>
