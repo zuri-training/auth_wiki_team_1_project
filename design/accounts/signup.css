@@ -130,7 +130,6 @@ body {
 /* input in form */
 .form>.form-control>input {
     width: 100%;
-    margin-bottom: 20px;
     padding: 12px;
     border: 2px solid rgba(29, 30, 32, 0.3);
     border-radius: 8px;
