@@ -112,24 +112,33 @@ body {
 .form {
     margin-top: 40px;
 }
+/* container for each label and input */
+.form>.form-control {
+    margin-bottom: 20px;
+}
 /* labels in form */
-.form>label {
+.form>.form-control>label {
     font-weight: 600;
     font-size: 16px;
     color: #575757;
     line-height: 20.16px;
 }
 /* label text */
-.form>label>p {
+.form>.form-control>label>p {
     margin-bottom: 10px;
 }
 /* input in form */
-.form>input {
+.form>.form-control>input {
     width: 100%;
     margin-bottom: 20px;
     padding: 12px;
     border: 2px solid rgba(29, 30, 32, 0.3);
     border-radius: 8px;
+}
+/* error message */
+.form>.form-control>.error {
+    color: red;
+    visibility: hidden;
 }
 /* signup button */
 #signup-btn {
