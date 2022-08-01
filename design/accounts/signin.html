@@ -61,14 +61,26 @@
         <!-- form -->
         <form class="form" action="#">
           <!-- email -->
-          <label for="email"><p>Email</p></label>
-          <input type="email" placeholder="Please enter your email" />
-          <small id="error"></small><br />
+          <div class="form-control">
+            <label for="email"><p>Email</p></label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Please enter your email"
+            />
+            <small class="error"></small><br />
+          </div>
 
           <!-- password -->
-          <label for="password"><p>Password</p></label>
-          <input type="password" placeholder="Please enter your password" />
-          <small id="error"></small><br />
+          <div class="form-control">
+            <label for="password"><p>Password</p></label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Please enter your password"
+            />
+            <small class="error"></small><br />
+          </div>
 
           <!-- checkbox & link to forgot password -->
           <div class="checkbox-link">
@@ -94,5 +106,8 @@
       <!-- end of right side of the page(B) -->
     </div>
     <!-- end of container for both sides of the page(A & B) -->
+
+    <!-- link .js file -->
+    <script src="signin.js"></script>
   </body>
 </html>
