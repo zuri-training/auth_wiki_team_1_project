@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap');
+
 .footer {
   padding: 50px 100px;
   background-color: var(--primary-100);
@@ -21,6 +23,47 @@
   gap: 20px;
 }
 
+.footer_top_contact p, .footer_top_subscribe > p{
+  font-family: 'Sora', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer .subscribe{
+  font-weight: 400;
+  font-family: 'Sora', sans-serif;
+  font-size: 16px;
+}
+
+.footer_top_contact ul{
+  display: flex;
+  gap: 24px;
+}
+
 .footer_bottom_text {
   font-weight: 400;
+}
+
+.footer button{
+  background-color: #FBB130;
+  border: none;
+  width: 117px;
+  height: 42px;
+  color: #fff;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-left: -50px;
+}
+
+.footer input{
+  height: 42px;
+  width: 277px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: none;
+}
+
+.footer input::placeholder{
+  color: #1D1E2030;
+  padding-left: 12px;
 }
