@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap');
 
 .footer {
   padding: 50px 100px;
@@ -23,22 +23,33 @@
   gap: 20px;
 }
 
-.footer_top_contact p, .footer_top_subscribe > p{
+.footer_top_contact{
+  margin-left: 64px;
+  margin-right: 50px;
+  /* margin-right: 113.5px; */
+}
+
+.footer_top_contact p, .footer_top_subscribe p, .footer_top_info p{
   font-family: 'Sora', sans-serif;
   font-size: 20px;
   font-weight: 600;
 }
 
-.footer .subscribe{
-  font-weight: 400;
+.footer_top_subscribe span, .footer_top_info li{
+  font-weight: 300;
   font-family: 'Sora', sans-serif;
   font-size: 16px;
 }
 
-.footer_top_contact ul{
-  display: flex;
-  gap: 24px;
+.footer_top_subscribe form{
+  margin-top: 19.5px;
 }
+.footer_company{
+  margin-right: 64px;
+  margin-left: 42px;
+}
+
+
 
 .footer_bottom_text {
   font-weight: 400;
