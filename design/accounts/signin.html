@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="signin.css" />
+    <title>Sign In</title>
+  </head>
+
+  <body>
+    <!-- container for both sides of the page(A & B) -->
+    <div class="container">
+      <!-- left side of the page(A) -->
+      <div class="A">
+        <!-- image for curved line at the top right-->
+        <div class="top">
+          <img src="./images/Frame (1).png" alt="top-line" />
+        </div>
+
+        <!-- logo and welcome text -->
+        <div class="logo-text">
+          <img src="./images/Group.png" alt="logo" />
+          <h2>Welcome back</h2>
+          <p>
+            Sign in to get access to all pages, download codes and contribute.
+          </p>
+        </div>
+
+        <!-- image for curved line bottom left -->
+        <div class="bottom">
+          <img src="./images/Frame (3).png" alt="bottom-line" />
+        </div>
+      </div>
+      <!-- end of left side of the page(A) -->
+
+      <!-- right side of the page(B) -->
+      <div class="B">
+        <!-- link to signup & signin pages -->
+        <header class="links">
+          <!-- signin link -->
+          <div class="sign-link signin">
+            <h3><a href="signin.html">Sign In</a></h3>
+            <div class="underline"></div>
+          </div>
+
+          <!-- signup link -->
+          <div class="sign-link signup">
+            <h3><a href="signup.html">Sign Up</a></h3>
+            <div class="underline"></div>
+          </div>
+        </header>
+        <!-- end of link to signup & signin pages -->
+
+        <!-- form -->
+        <form class="form" action="#">
+          <!-- email -->
+          <label for="email"><p>Email</p></label>
+          <input type="email" placeholder="Please enter your email" />
+          <small id="error"></small><br />
+
+          <!-- password -->
+          <label for="password"><p>Password</p></label>
+          <input type="password" placeholder="Please enter your password" />
+          <small id="error"></small><br />
+
+          <!-- checkbox & link to forgot password -->
+          <div class="checkbox-link">
+            <!-- checkbox -->
+            <div class="checkbox">
+              <input type="checkbox" name="remember-me" id="remember-me" />
+              <label for="remember-me"><p>Remember Me</p></label>
+            </div>
+
+            <!-- forgot password link -->
+            <div class="forgot-link">
+              <p><a href="">Forgot Password</a></p>
+            </div>
+          </div>
+
+          <!-- sigin button -->
+          <div class="signin-btn">
+            <button id="signin-btn"><h6>Sign In</h6></button><br />
+          </div>
+
+          <h5>OR</h5>
+
+          <!-- button to signin with other platforms -->
+          <div class="btn">
+            <button class="google-accnt">
+              <img src="./images/Frame.png" alt="google-logo" />
+              <h6>Continue with Google</h6>
+            </button>
+            <button class="github-accnt">
+              <img src="./images/Vector.png" alt="github-logo" />
+              <h6>Continue with Google</h6>
+            </button>
+          </div>
+        </form>
+        <!-- end of form -->
+      </div>
+      <!-- end of right side of the page(B) -->
+    </div>
+    <!-- end of container for both sides of the page(A & B) -->
+  </body>
+</html>

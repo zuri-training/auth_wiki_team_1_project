@@ -28,8 +28,4 @@ class PostDeleteApi(generics.DestroyAPIView):
     queryset = Post.objects.filter(active=True)
     serializer_class = PostSerializer
 
- 
-
-
-
 
