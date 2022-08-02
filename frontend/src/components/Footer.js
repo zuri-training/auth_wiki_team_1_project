@@ -16,21 +16,7 @@ const Footer = () => {
             width={40}
             height={54}
           />
-          <div className={styles.footer_company}>
-            <p>Company</p>
-            <ul>
-              <li>
-                <Link href="#">
-                  <a>Privacy Policy</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  <a>Legal</a>
-                </Link>
-              </li>
-            </ul>
-          </div>
+
           <div>
             <p>Information</p>
             <ul>
