@@ -11,6 +11,7 @@
   --heading-two: 36px;
   --heading-three: 28px;
   --heading-four: 22px;
+  --heading-five: 20px;
 
   /* PARAGRAPHS */
   --para-one: 16px;
@@ -24,6 +25,7 @@
   */
 
   --primary-100: #5600e2;
+  --dark-gray-100: #272727;
 }
 
 * {
