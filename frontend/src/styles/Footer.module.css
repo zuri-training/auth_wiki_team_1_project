@@ -20,7 +20,7 @@
 
 .footer_top_info {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 
 .footer_top_contact{
@@ -44,12 +44,6 @@
 .footer_top_subscribe form{
   margin-top: 19.5px;
 }
-.footer_company{
-  margin-right: 64px;
-  margin-left: 42px;
-}
-
-
 
 .footer_bottom_text {
   font-weight: 400;
