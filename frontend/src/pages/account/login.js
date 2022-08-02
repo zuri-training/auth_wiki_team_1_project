@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { toast } from "react-toastify";
 import { ThreeDots } from "react-loader-spinner";
 import { login, reset_register_success } from "../../actions/account";
 import { useRouter } from "next/router";
 import { useSelector, useDispatch } from "react-redux";
-
-
 
 const Login = () => {
   // load states from redux
@@ -15,7 +14,7 @@ const Login = () => {
   const router = useRouter();
 
   // create login form state
-  const [ formData, setFormData ] = useState({
+  const [formData, setFormData] = useState({
     username: "",
     password: "",
   });
@@ -32,7 +31,7 @@ const Login = () => {
     setFormData((prevState) => {
       return {
         ...prevState,
-        [ e.target.name ]: e.target.value,
+        [e.target.name]: e.target.value,
       };
     });
   };
@@ -79,6 +78,7 @@ const Login = () => {
             name="password"
             onChange={onChange}
           />
+          <Link href="/account/forgotPassword">Forgot Password?</Link>
         </div>
 
         <button type="submit" className="btn">

@@ -9,3 +9,7 @@
   align-items: center;
   column-gap: 1rem;
 }
+
+.active {
+  color: #5600e2;
+}
