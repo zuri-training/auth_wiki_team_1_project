@@ -14,12 +14,16 @@
     <title>Forgot Password</title>
   </head>
   <body>
+    <!-- container for both sides of the page(A & B) -->
     <div class="container">
+      <!-- left side of the page(A) -->
       <div class="A">
+        <!-- image for curved line at the top right-->
         <div class="top">
           <img src="./images/Frame.svg" alt="top-line" />
         </div>
 
+        <!-- logo and reset password text -->
         <div class="logo-text">
           <img src="./images/Group.png" alt="logo" />
           <h2>Reset Password</h2>
@@ -34,13 +38,18 @@
           </ul>
         </div>
 
+        <!-- image for curved line bottom left -->
         <div class="bottom">
           <img src="./images/Shapes (1).png" alt="bottom-line" />
         </div>
       </div>
+      <!-- end of left side of the page(A) -->
 
+      <!-- right side of the page(B) -->
       <div class="B">
+        <!-- form -->
         <form class="form" action="#">
+          <!-- email -->
           <div class="form-control">
             <label for="email"><p>Email</p></label>
             <input
@@ -51,15 +60,19 @@
             <small class="error"></small><br />
           </div>
 
+          <!-- verify account instruction text -->
           <p>Verify account by clicking on images with a cap.</p>
 
+          <!-- container to hold images for account verification(grandparent container) -->
           <div class="imgs">
+            <!-- parent container(A) for images -->
             <div class="choose-img">
               <div class="top-row">
                 <img src="./images/Frame 7.jpg" alt="red cap" />
                 <img src="./images/Frame 8.jpg" alt="black cap" />
                 <img src="./images/Frame 12.jpg" alt="sneakers" />
               </div>
+              <!-- parent container(B) for images -->
               <div class="bottom-row">
                 <img src="./images/Frame 7 (1).jpg" alt="car" />
                 <img src="./images/Frame 8 (1).jpg" alt="gray cap" />
@@ -67,15 +80,21 @@
               </div>
             </div>
           </div>
+          <!-- end of container to hold images for account verification(grandparent container) -->
 
+          <!-- recovery button -->
           <div class="recovery-btn">
             <button id="recovery-btn"><h6>Email me a recovery link</h6></button
             ><br />
           </div>
         </form>
+        <!-- end of form -->
       </div>
+      <!-- end of right side of the page(B) -->
     </div>
+    <!-- end of container for both sides of the page(A & B) -->
 
+    <!-- link .js file -->
     <script src="forgot.js"></script>
   </body>
 </html>
