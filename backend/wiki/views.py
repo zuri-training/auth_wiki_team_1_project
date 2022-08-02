@@ -5,6 +5,9 @@ from django.views import generic
 from rest_framework import generics
 from .models import Comment
 from .serializers import CommentSerializer
+from rest_framework import generics, viewsets
+from .models import Post, File
+from .serializers import PostSerializer, FileSerializer
 
 # Create your views here.
 
@@ -58,3 +61,12 @@ class PostUpdateApi(generics.UpdateAPIView):
 class PostDeleteApi(generics.DestroyAPIView):
     queryset = Comment.objects.filter(active=True)
     serializer_class = CommentSerializer
+    queryset = Post.objects.filter(active=True)
+    serializer_class = PostSerializer
+
+
+class FileViewSet(viewsets.ModelViewSet):
+    queryset  = File.objects.all()
+    serializer_class = FileSerializer
+    
+    
