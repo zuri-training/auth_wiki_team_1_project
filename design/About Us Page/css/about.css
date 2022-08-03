@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Navigation bar */
+
 header{
     display: flex;
     justify-content: space-between;
@@ -74,7 +77,9 @@ header{
     transition: all 0.3s ease;
 }
 
-.head h1{
+/* About Section*/
+
+.team-content h1{
     font-family: 'Sora';
     font-style: normal;
     font-weight: 600;
@@ -84,7 +89,11 @@ header{
     flex: none;
 }
 
+/* Media Queries*/
+
 @media screen and (max-width: 950px) {
+
+    /* Navigation Section*/
     body{
         overflow-x: hidden;
     }
@@ -115,6 +124,10 @@ header{
     .nav-active{
         transform: translateX(0);
     }
+
+    /* About Section*/
+
+
 }
 @keyframes navLinkFade{
     from{
