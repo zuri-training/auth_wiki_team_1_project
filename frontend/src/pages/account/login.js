@@ -58,6 +58,12 @@ const Login = () => {
     router.push("/dashboard");
   }
 
+  // password toggle visibility
+  const [passwordShown, setPasswordShown] = useState(false);
+  const togglePassword = () => {
+    setPasswordShown(!passwordShown);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.A}>
@@ -122,12 +128,23 @@ const Login = () => {
               Password
             </label>
             <input
-              type="password"
+              type={passwordShown ? "text" : "password"}
               value={password}
               name="password"
               onChange={onChange}
               placeholder="Please enter your password"
             />
+
+            <div className="eye_icon">
+              <Image
+                onClick={togglePassword}
+                src="/assets/eye.svg"
+                alt="eye-icon"
+                width={24}
+                height={24}
+                // className={styles.eye_icon}
+              />
+            </div>
           </div>
           <div className={styles.checkbox_link}>
             <div className={styles.checkbox}>

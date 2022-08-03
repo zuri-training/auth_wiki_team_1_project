@@ -74,6 +74,12 @@ const Register = () => {
     router.push("/account/login");
   }
 
+  // password toggle visibility
+  const [passwordShown, setPasswordShown] = useState(false);
+  const togglePassword = () => {
+    setPasswordShown(!passwordShown);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.A}>
@@ -188,20 +194,29 @@ const Register = () => {
               Password
             </label>
             <input
-              type="password"
+              type={passwordShown ? "text" : "password"}
               value={password1}
               name="password1"
               onChange={onChange}
               placeholder="Please enter your password"
               className={styles.input}
             />
+            <div className="eye_icon">
+              <Image
+                onClick={togglePassword}
+                src="/assets/eye.svg"
+                alt="eye-icon"
+                width={24}
+                height={24}
+              />
+            </div>
           </div>
           <div className={styles.form_group}>
             <label htmlFor="password2" className={styles.label}>
               Confirm Password
             </label>
             <input
-              type="password"
+              type={passwordShown ? "text" : "password"}
               value={password2}
               name="password2"
               onChange={onChange}
