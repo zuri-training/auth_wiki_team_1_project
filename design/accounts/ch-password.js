@@ -70,7 +70,7 @@ document.querySelector('button').addEventListener('click', (event) => {
 // function to change error message when user puts in correct info
 function onSuccess(input) {
   // get parent container holding the input
-  let parent = input.parentElement;
+  let parent = input.parentElement.parentElement;
   //   get element where error message would be displayed
   let message = parent.querySelector('small');
   //   hide the visibility when user input is correct
@@ -84,7 +84,7 @@ function onSuccess(input) {
 // function to display error message for when user inputs wrong info
 function onError(input, emessage) {
   // get parent container holding the input
-  let parent = input.parentElement;
+  let parent = input.parentElement.parentElement;
   //   get element where error message would be displayed
   let message = parent.querySelector('small');
   //   show visibility when user input is not correct
