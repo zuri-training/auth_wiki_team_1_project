@@ -1,6 +1,30 @@
 // get items from html(DOM manipulation)
 const password = document.getElementById('password');
 const conPassword = document.getElementById('c-password');
+const icon = document.getElementById('eye');
+
+// event listener to toggle password type with eye icon
+icon.addEventListener('click', function () {
+  passwordType();
+  icon.classList.toggle('fa-eye-slash');
+});
+
+// function to toggle password and confirm password type to text
+function passwordType() {
+  // for password
+  if (password.type === 'password') {
+    password.type = 'text';
+  } else {
+    password.type = 'password';
+  }
+
+  // for confirm password
+  if (conPassword.type === 'password') {
+    conPassword.type = 'text';
+  } else {
+    conPassword.type = 'password';
+  }
+}
 
 // function to validate user input
 function validateInput() {
