@@ -116,7 +116,11 @@ margin-bottom: 0; */
     background-color: #CBCBCB;
 }
 
-
+.eye_icon{
+   
+    margin-left: 90%;
+    margin-top: -8%;
+}
 
 .checkbox_link {
     display: flex;
