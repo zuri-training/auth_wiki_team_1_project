@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="signin.css" />
     <title>Sign In</title>
   </head>
@@ -74,11 +78,15 @@
           <!-- password -->
           <div class="form-control">
             <label for="password"><p>Password</p></label>
-            <input
-              type="password"
-              id="password"
-              placeholder="Please enter your password"
-            />
+            <div class="input-icon">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Please confirm your new password"
+              />
+              <i class="fas fa-eye" id="eye"></i>
+            </div>
             <small class="error"></small><br />
           </div>
 
