@@ -1,0 +1,104 @@
+.faq {
+  position: relative;
+  margin-top: 36px;
+  overflow: hidden;
+}
+
+/* faq heading */
+.faq_heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+  background: rgba(86, 0, 226, 0.02);
+  width: 100%;
+  padding: 80px 300px;
+}
+
+.faq_heading h2 {
+  color: var(--primary-100);
+  font-weight: 600;
+  font-size: var(--heading-one);
+  margin-bottom: 10px;
+}
+
+/* faq cards */
+.faq_cards_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 40px;
+  margin: 40px;
+}
+
+.faq_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 100px;
+  background: #ffffff;
+  box-shadow: 4px 4px 25px rgba(238, 230, 252, 0.6);
+  border-radius: 10px;
+  color: rgba(86, 0, 226, 0.7);
+  cursor: pointer;
+}
+
+.faq_card h4 {
+  font-size: var(--heading-four);
+}
+
+/* faq shape */
+.faq_bg_shape {
+  position: absolute;
+  left: -400px;
+  top: 300px;
+}
+
+.faq_bg_shape2 {
+  position: absolute;
+  content: "";
+  right: -400px;
+  top: 500px;
+}
+
+/* faq questions wrapper */
+.faq_questions_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.faq_questions_wrapper p,
+.faq_questions_wrapper h4 {
+  font-size: var(--para-16);
+}
+
+/* faq cta */
+.faq_cta {
+  margin: 40px 0;
+  border: 1px solid var(--primary-100);
+  padding: 20px 100px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.faq_cta h4 {
+  margin-bottom: 0;
+  color: var(--primary-100);
+  font-size: var(--heading-five);
+}
+
+.faq_cta p {
+  color: var(--dark-gray-100);
+}
+
+.faq_cta_btn {
+  font-size: var(--para-16);
+  font-family: "Sora", sans-serif;
+  padding: 0.8rem 1.5rem;
+}
