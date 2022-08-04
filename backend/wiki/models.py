@@ -24,7 +24,6 @@ class Comment(models.Model):
     content = models.TextField()
     created_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now=True)
-    active = models.BooleanField(default=True)
 
     # relationships
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -38,17 +37,16 @@ class Comment(models.Model):
 class File(models.Model):
     # fields
     name = models.CharField(max_length=200)
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
-    post_id = models.ForeignKey(Post, on_delete=models.CASCADE)
-    code_sample = models.TextField()
     download_counts = models.PositiveIntegerField(default=0)
     created_date = models.DateTimeField()
     updated_date = models.DateTimeField()
+
+    # relationships
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE)
     
 class Reaction(models.Model): 
     content = models.TextField()
-    post_id = models.ForeignKey(Post, on_delete=models.CASCADE)
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
 
     # relationships
     user = models.ForeignKey(User, on_delete=models.CASCADE)
