@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap');
+
 .footer {
   padding: 50px 100px;
   background-color: var(--primary-100);
@@ -18,9 +20,55 @@
 
 .footer_top_info {
   display: flex;
-  gap: 20px;
+  gap: 40px;
+}
+
+.footer_top_contact{
+  margin-left: 64px;
+  margin-right: 50px;
+  /* margin-right: 113.5px; */
+}
+
+.footer_top_contact p, .footer_top_subscribe p, .footer_top_info p{
+  font-family: 'Sora', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer_top_subscribe span, .footer_top_info li{
+  font-weight: 300;
+  font-family: 'Sora', sans-serif;
+  font-size: 16px;
+}
+
+.footer_top_subscribe form{
+  margin-top: 19.5px;
 }
 
 .footer_bottom_text {
   font-weight: 400;
+}
+
+.footer button{
+  background-color: #FBB130;
+  border: none;
+  width: 117px;
+  height: 42px;
+  color: #fff;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-left: -50px;
+}
+
+.footer input{
+  height: 42px;
+  width: 277px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: none;
+}
+
+.footer input::placeholder{
+  color: #1D1E2030;
+  padding-left: 12px;
 }
