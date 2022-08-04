@@ -62,42 +62,42 @@
         <!-- form -->
         <form class="form" action="#">
           <!-- fullname -->
-          <label for="fullname"><p>Full Name</p></label>
-          <input
-            type="text"
-            name="fullname"
-            id="fullname"
-            placeholder="Please enter your full name"
-          />
-          <small id="error"></small><br />
+          <div class="form-control">
+            <label for="fullname"><p>Full Name</p></label>
+            <input
+              type="text"
+              name="fullname"
+              id="fullname"
+              placeholder="Please enter your full name"
+            />
+            <small class="error"></small><br />
+          </div>
 
           <!-- email -->
-          <label for="email"><p>Email</p></label>
-          <input type="email" placeholder="Please enter your email" />
-          <small id="error"></small><br />
+          <div class="form-control">
+            <label for="email"><p>Email</p></label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Please enter your email"
+            />
+            <small class="error"></small><br />
+          </div>
 
           <!-- password -->
-          <label for="password"><p>Password</p></label>
-          <input type="password" placeholder="Please enter your password" />
-          <small id="error"></small><br />
+          <div class="form-control">
+            <label for="password"><p>Password</p></label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Please enter your password"
+            />
+            <small class="error"></small><br />
+          </div>
 
           <!-- signup button -->
           <div class="signup-btn">
             <button id="signup-btn"><h6>Sign Up</h6></button><br />
-          </div>
-
-          <h5>OR</h5>
-
-          <!-- button to signup with other platforms -->
-          <div class="btn">
-            <button class="google-accnt">
-              <img src="./images/Frame.png" alt="google-logo" />
-              <h6>Continue with Google</h6>
-            </button>
-            <button class="github-accnt">
-              <img src="./images/Vector.png" alt="github-logo" />
-              <h6>Continue with Google</h6>
-            </button>
           </div>
         </form>
         <!-- end of form -->
@@ -105,5 +105,8 @@
       <!-- end of right side of the page(B) -->
     </div>
     <!-- end of container for both sides of the page(A & B) -->
+
+    <!-- link to .js -->
+    <script src="signup.js"></script>
   </body>
 </html>
