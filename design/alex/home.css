@@ -84,8 +84,7 @@ margin-top: 4px;
     padding: 5px;
     color: #5600E2;
     border-radius: 10px;
-    cursor: pointer;
-    
+    cursor: pointer; 
   }
   .login img{
     width: 14px;
@@ -120,19 +119,7 @@ margin-top: 4px;
     cursor: pointer;
     text-decoration: none;
   }
-  /*nav ul li a::after {
-    content: "";
-    width: 0%;
-    height: 3px;
-    background: #5600E2;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-  }
-  nav ul li a:hover::after {
-    width: 100%;
-  }*/
+  
   .header-text {
     margin-top: 10%;
     font-size: 20px;
@@ -516,5 +503,166 @@ form .btn2 {
     margin-left: 50px;
   }
 
+
+  /*------------for small screens------------*/
+
+
+
+  @media only screen and (max-width: 600px){
+    #header1{
+      background-image: url(img/Man\ on\ Laptop\ illustration\ -\ HomePage.svg);
+    }
+    .header-text{
+      margin-top: 10%;
+      font-size: 16px;
+    }
+    .header-text h1{
+      font-size: 30px;
+    }
+    .login{
+      font-size: 10px; 
+    }
+    
+    .signup{
+      font-size: 10px;
+      margin-left: 200px; 
+    }
+
+    .full{
+      width: 185px;
+      font-size: 8px;
+      margin-left: 10px; 
+    }
+    nav ul li {
+      margin: 5px 10px;  
+    }
+    nav ul li a {
+      font-size: 15px; 
+    }
+
+    /*--------about us------*/
+
+    .sub-titles{
+      font-size: 20px;
+      margin-left: 30%;
+    
+    }
+    
+  .sub-info{
+    
+    font-size: 10px;
+    margin-right: -130px;
+    
+  }
+  
+  .circle{
+    position: absolute;
+    width: 30%;
+    margin-top: -5px;
+    margin-left: -23px;
+    
+  }
+  /*-----our features----*/
+  .containers h1{
+    color: #5600E2;
+    margin-left: 25%;
+    font-size: 15px;   
+  }
+  .containers h5{
+    margin-left: 2%;
+    font-size: 12px;
+    padding: 5px;
+    
+  }
+  .features-box{
+     width: 250px;
+     height: 45vh;
+     padding: 50px;
+     margin: 20px;
+    
+    
+   }
+   .download-span span{
+    width: 30px;
+    margin-left: 45px;
+    font-size: 10px;
+    
+    
+  }
+  .contribute-span span{
+    width: 30px;
+   font-size: 10px;
+    
+  }
+  .view-span span{
+    font-size: 10px;
+    width: 30px;
+    
+  }
+  
+  .icon1{
+    margin-top: -80px;
+    margin-left: 60px;
+   width: 20%;
+  }
+  .icon2{
+    margin-top: -80%;
+    margin-left: 60px;
+   
+  }
+  .icon3{
+    margin-top: -80%;
+    margin-left: 60px;
+  }
+  .features-box p{
+     font-size: 10px;
+   margin-top: -5px; 
+    
+  }
+  
+  /*----------get in touch------*/
+
+  .about-col-11 img {
+    
+    margin-top: 100px; 
+    width: 200px;
+    height: 732px;
+   
+    
+  }
+
+  .sub-get span{
+    width: 321px;
+    height: 45px;
+    font-size: 15px;
+
+  }
+  
+  .sub-getin{
+    line-height: 2;
+    margin-left: 120px;
+    font-size: 10px;
+  }
+  
+.sub-info{
+  margin-left: 40%;
+}
+
+/*--------Form--------*/
+
+
+form input,
+form textarea {
+width: 50%;
+  padding: 15px;
+  font-size: 10px; 
+}
+.contact-right .btn2{
+  font-size: 5px;
+  margin-left: 150px; 
+  
+}
+
+  }
 
   
