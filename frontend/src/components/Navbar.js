@@ -50,7 +50,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className={styles.nav}>
+    <nav className={`container ${styles.nav}`}>
       <h2>
         <Link href="/">
           <Image
