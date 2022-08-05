@@ -79,14 +79,57 @@ header{
 
 /* About Section*/
 
-.team-content h1{
+.about-container{
+    display: flex;
+    align-items: center;
+}
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.add h1{
     font-family: 'Sora';
     font-style: normal;
     font-weight: 600;
     font-size: 45px;
     line-height: 57px;
     color: #5600E2;
-    flex: none;
+    margin-bottom: 16px;
+    margin-top: 36px;
+}
+.add p{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #272727;
+}
+.add .marge{
+    margin-top: 20px;
+}
+.hero-img{
+    width: 624px;
+    height: 340px;
+    position: relative;
+    left: 30px;
+    top: 54px;
+}
+
+/* Team Section*/
+.team-content h1{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 57px;
+    text-align: center;
+    color: #272727;
 }
 
 /* Media Queries*/
