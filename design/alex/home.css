@@ -1,0 +1,668 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sora, sans-serif; 
+    box-sizing: border-box;
+  }
+  body {
+    background: #fff;
+    color: #fff;
+   
+    
+   
+  }
+  #header1 {
+    width: 100%;
+    height: 120vh;
+    background-image: url(img/Man\ on\ Laptop\ illustration\ -\ HomePage.svg);
+    background-repeat: no-repeat;
+    background-size: 700px 500px;
+    background-position: 700px;
+    cursor: pointer;
+    
+    
+  }
+
+  .header-text img{
+position: absolute;
+margin-left: -20px;
+margin-top: 4px;
+
+
+  }
+  .container {
+    padding: 30px 5%;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+  .logo {
+    width: 107.75px;
+    height: 28.36px;
+    left: 100px;
+    top: 30px;
+    gap: 11px;
+    cursor: pointer;
+  }
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+   
+    
+  }
+  nav ul li a {
+    width: 144px;
+    height: 23px;
+    color: #575757;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    
+  }
+
+  .container span {
+    color: #5600E2;
+    width: 56px;
+    height: 23px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+  }
+  .login{
+    background-color: #fff;
+    width: 55px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid #5600E2;
+    padding: 5px;
+    color: #5600E2;
+    border-radius: 10px;
+    cursor: pointer; 
+  }
+  .login img{
+    width: 14px;
+    height: 14px;
+    margin-bottom: -2px;
+
+  }
+  .signup{
+    background-color: #5600E2;
+    width: 55px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid #5600E2;
+    padding: 5px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .full{
+    background-color: #5600E2;
+    width: 185px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    border: 2px solid #5600E2;
+    padding: 5px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .header-text {
+    margin-top: 10%;
+    font-size: 20px;
+    color: #272727;
+  }
+  
+  .header-text h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    
+  }
+  .header-text h1 span {
+   color: #5600E2;
+   font-size: 40px;
+  }
+  .header-text1{
+    width: 444px;
+    height: 20px;
+    left: 126px;
+    top: 285px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #575757;
+    
+  }
+  .header-text h6{
+    line-height: 2;
+    margin-top: 20px;
+    padding: 10px;
+    color: #272727;
+    
+  }
+
+
+  /*-----------about us----------*/
+
+  #about {
+    padding: 80px 0;
+    color: #272727;
+    background-color: rgba(255, 247, 234, 0.5);
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .about-col-1 {
+    flex-basis: 35%;
+  }
+  .about-col-1 img {
+    width: 150%;
+    border-radius: 15px;
+    margin-top: -50px;
+    cursor: pointer;
+  }
+  .about-col-2 {
+    flex-basis: 65%;  
+  }
+  .about-col-2 h1{
+    color: #272727;
+  }
+  .sub-titles{
+    font-size: 36px;
+    font-weight: 700;
+    color: #1D1E20;
+    margin-left: 40%;
+    padding: 20px;
+    line-height: 70px;
+  
+  }
+  
+.sub-info{
+  margin-left: 40%;
+  line-height: 30px;
+color: #272727;
+  width: 419px;
+  height: 210px;
+  font-family: sora;
+  font-weight: 400;
+  font-size: 16px;
+  
+}
+
+.circle{
+  position: absolute;
+  width: 15%;
+  margin-top: -30px;
+  margin-left: -25px;
+  
+}
+ 
+
+  /*-------our features-----*/
+
+  #services {
+    padding: 30px 0;
+    background-image: url(img/Core\ Features\ SVG\ bg.svg);
+    
+  }
+  .containers h1{
+    color: #5600E2;
+    margin-left: 40%;
+    font-size: 20px;
+    padding: 50px;
+    margin-bottom: -50px; 
+    font-weight: 600;
+    line-height: 25px;
+     
+  }
+
+  .containers h5{
+    color: #272727;
+    margin-left: 5%;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+    line-height: 25px;
+  }
+
+.features-box{
+
+ background-color: #fff;
+  width: 370px;
+  height: 45vh;
+  border: 1px solid #5600E2;
+  padding: 50px;
+  margin: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+ 
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin: 50px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.download-span span{
+  width: 30px;
+  margin-left: 70px;
+  text-align: center;
+  line-height: 90px;
+  color: rgba(85, 0 226, 0.7);
+  opacity: 0.8
+}
+.contribute-span span{
+  width: 30px;
+  margin-left: 70px;
+  text-align: center;
+  line-height: 90px;
+  color: rgba(85, 0 226, 0.7);
+  opacity: 0.8;
+}
+.view-span span{
+  width: 30px;
+  margin-left: 30px;
+  text-align: center;
+  line-height: 90px;
+  color: rgba(85, 0 226, 0.7);
+  opacity: 0.8
+}
+
+.icon1{
+  margin-top: -80px;
+  margin-left: 100px;
+ width: 20%;
+ color: #5600E2;
+}
+.icon2{
+  margin-top: -80%;
+  margin-left: 100px;
+ width: 20%;
+ color: #5600E2;
+ gap: 24px;
+}
+.icon3{
+  margin-top: -80%;
+  margin-left: 100px;
+ width: 20%;
+ color: #5600E2;
+ 
+}
+.features-box p{
+   font-size: 15px;
+  padding: 10px;
+  line-height: 1.50;
+ margin-top: -5px; 
+  color: #272727;
+  text-align: center;
+}
+
+
+  /*------------get in touch-----------*/
+
+
+  #getintouch {
+    padding: 80px 0;
+    color: #272727;
+     
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  /*.about-col-1 {
+    flex-basis: 35%;
+  }*/
+  .about-col-11 img {
+    
+    margin-top: 100px; 
+    width: 500px;
+    height: 732px;
+    position: absolute;
+    background-color: rgba(255, 247, 234, 0.5);
+    box-shadow: 70px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+   
+    
+  }
+  .about-col-22 {
+    flex-basis: 65%;  
+  }
+  .about-col-22 h1{
+    color: #272727;
+    
+  }
+  .sub-get span{
+    width: 321px;
+    height: 45px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 45px;
+    left: 750px;
+    top: 70px;
+    color: #5600E2;
+    margin-left: -0%;
+    padding: 10px;
+    margin-left: 115px;
+  }
+  .btn2{
+    width: 151px;
+    padding: 12px 24px 12px 24px;
+    color: #fff;
+    gap: 10px;
+    background-color: #5600E2;
+    border: none;
+    border-radius: 12px;
+  }
+
+  .sub-getin{
+    line-height: 2;
+    margin-left: 120px;
+  }
+  
+.sub-info{
+  margin-left: 40%;
+}
+
+
+/*--------Form--------*/
+
+
+form input,
+form textarea {
+width: 80%;
+  background-color: #fff;
+  padding: 15px;
+  margin: 15px 0;
+  color: #272727;
+  font-size: 18px;
+  border-radius: 6px; 
+  margin-left: 120px;
+  position: relative;
+}
+
+
+.contact-right textarea{
+  height: 50vh;
+}
+
+form .btn2 {
+  width: 20%;
+  padding: 14px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  margin-left: 45%;
+}
+
+
+
+
+/*--------footer---------*/
+
+.footer{
+  margin-top: 50px;
+  background: #3D00A0;
+  color: #fff;
+}
+.footerlogo img{
+  width: 40%;
+  margin-bottom: -60px;
+  margin-top: 30px;
+  margin-left: 70px;
+  margin-right: 50px;
+  
+}
+.footer h1{
+  font-size: 18px;
+  margin: 25px 0;
+  margin-right: 90px;
+}
+.footer p{
+  font-size: 15px;
+  margin: 5px 0; 
+  line-height: 2;
+}
+
+.col-md-3 .fab{
+  float: inline-end;
+  padding-right: 7px;
+  color: #fff;
+}
+.contain{
+  width: 100%;
+  height: 90px;
+  mix-blend-mode: normal;;
+  background: #3D00A0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.contain form{
+  background: #fff;
+  width: 400px;
+  height: 50px;
+  display: flex;
+  margin-right: 40px;
+  border-radius: 5px;
+}
+.contain form input{
+  flex: 1;
+  border: none;
+  outline: none;
+  margin-left: -0px;
+   
+}
+.contain form button{
+  background: #fBB130;
+  padding: 10px 50px;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  letter-spacing: 1;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+  /*-------copyright----*/
+  .line{
+    width: 400px;
+    margin-left: 110px;
+  }
+
+  .copyright{
+    margin-bottom: -80px;
+    font-size: 15px;
+    padding-bottom: 20px;
+    margin-left: 50px;
+  }
+
+
+  /*------------for small screens------------*/
+
+
+
+  @media only screen and (max-width: 600px){
+    #header1{
+      background-image: url(img/Man\ on\ Laptop\ illustration\ -\ HomePage.svg);
+    }
+    .header-text{
+      margin-top: 10%;
+      font-size: 16px;
+    }
+    .header-text h1{
+      font-size: 30px;
+    }
+    .login{
+      font-size: 10px; 
+    }
+    
+    .signup{
+      font-size: 10px;
+      margin-left: 200px; 
+    }
+
+    .full{
+      width: 185px;
+      font-size: 8px;
+      margin-left: 10px; 
+    }
+    nav ul li {
+      margin: 5px 10px;  
+    }
+    nav ul li a {
+      font-size: 15px; 
+    }
+
+    /*--------about us------*/
+
+    .sub-titles{
+      font-size: 20px;
+      margin-left: 30%;
+    
+    }
+    
+  .sub-info{
+    
+    font-size: 10px;
+    margin-right: -130px;
+    
+  }
+  
+  .circle{
+    position: absolute;
+    width: 30%;
+    margin-top: -5px;
+    margin-left: -23px;
+    
+  }
+  /*-----our features----*/
+  .containers h1{
+    color: #5600E2;
+    margin-left: 25%;
+    font-size: 15px;   
+  }
+  .containers h5{
+    margin-left: 2%;
+    font-size: 12px;
+    padding: 5px;
+    
+  }
+  .features-box{
+     width: 250px;
+     height: 45vh;
+     padding: 50px;
+     margin: 20px;
+    
+    
+   }
+   .download-span span{
+    width: 30px;
+    margin-left: 45px;
+    font-size: 10px;
+    
+    
+  }
+  .contribute-span span{
+    width: 30px;
+   font-size: 10px;
+    
+  }
+  .view-span span{
+    font-size: 10px;
+    width: 30px;
+    
+  }
+  
+  .icon1{
+    margin-top: -80px;
+    margin-left: 60px;
+   width: 20%;
+  }
+  .icon2{
+    margin-top: -80%;
+    margin-left: 60px;
+   
+  }
+  .icon3{
+    margin-top: -80%;
+    margin-left: 60px;
+  }
+  .features-box p{
+     font-size: 10px;
+   margin-top: -5px; 
+    
+  }
+  
+  /*----------get in touch------*/
+
+  .about-col-11 img {
+    
+    margin-top: 100px; 
+    width: 200px;
+    height: 732px;
+   
+    
+  }
+
+  .sub-get span{
+    width: 321px;
+    height: 45px;
+    font-size: 15px;
+
+  }
+  
+  .sub-getin{
+    line-height: 2;
+    margin-left: 120px;
+    font-size: 10px;
+  }
+  
+.sub-info{
+  margin-left: 40%;
+}
+
+/*--------Form--------*/
+
+
+form input,
+form textarea {
+width: 50%;
+  padding: 15px;
+  font-size: 10px; 
+}
+.contact-right .btn2{
+  font-size: 5px;
+  margin-left: 150px; 
+  
+}
+
+  }
+
+  
