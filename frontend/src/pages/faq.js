@@ -45,38 +45,40 @@ const FAQ = () => {
       </div>
 
       {/* questions */}
-      <div className={styles.faq_questions_wrapper}>
-        {faqData &&
-          faqData.map((question) => (
-            <div key={question.id}>
-              <h4>{question.question}</h4>
-              <p>{question.response}</p>
-            </div>
-          ))}
-      </div>
-
-      {/* faq cta */}
-      <div className={styles.faq_cta}>
-        <div>
-          <h4>Still have questions?</h4>
-          <p>
-            Can’t find an answer to the questions you are looking for? Please
-            get in touch with us
-          </p>
+      <div className="container">
+        <div className={styles.faq_questions_wrapper}>
+          {faqData &&
+            faqData.map((question) => (
+              <div key={question.id}>
+                <h4>{question.question}</h4>
+                <p>{question.response}</p>
+              </div>
+            ))}
         </div>
-        <PrimaryButton className={styles.faq_cta_btn}>
-          Get in touch
-        </PrimaryButton>
-      </div>
 
-      {/* faq bg shape */}
-      <div className={styles.faq_bg_shape2}>
-        <Image
-          src="/assets/faq_shape_2.svg"
-          alt="faq curved lines"
-          width={1000}
-          height={1000}
-        />
+        {/* faq cta */}
+        <div className={styles.faq_cta}>
+          <div>
+            <h4>Still have questions?</h4>
+            <p>
+              Can’t find an answer to the questions you are looking for? Please
+              get in touch with us
+            </p>
+          </div>
+          <PrimaryButton className={styles.faq_cta_btn}>
+            Get in touch
+          </PrimaryButton>
+        </div>
+
+        {/* faq bg shape */}
+        <div className={styles.faq_bg_shape2}>
+          <Image
+            src="/assets/faq_shape_2.svg"
+            alt="faq curved lines"
+            width={1000}
+            height={1000}
+          />
+        </div>
       </div>
     </div>
   );
