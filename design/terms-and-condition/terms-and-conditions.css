@@ -50,6 +50,9 @@ h1.title{
 .header>p:nth-child(n){
     margin-bottom: 8px;
 }
+main p {
+    padding-right: 46px;
+}
 main>div:first-child{
     margin: 61px 0 48px;
     line-height: 36px;
@@ -63,7 +66,6 @@ main>div:last-child::-webkit-scrollbar-track
 	border-radius: 16px 16px 0 0;
 	background-color: var(--lighter-purple);
 }
-
 main>div:last-child::-webkit-scrollbar
 {
 	width: 11px;
@@ -105,7 +107,46 @@ footer>a button:first-child{
     box-shadow: 0px 4px 25px rgba(86, 0, 226, 0.15);
     margin-right: 41px;
 }
+.accept-button:hover{
+    background-color: hsl(263, 100%, 50%);
+}
 .decline-button{
     color: var(--error);
     border: 1px solid var(--error);
+}
+.decline-button:hover{
+    background-color: hsl(0, 81%, 90%);
+}
+@media screen and (max-width: 768px) {
+    *{
+        font-size: 16px;
+    }
+    body {
+        padding: 50px 18px;
+    }
+    .card>div:first-child {
+        padding: 30px 15px 0;
+    }
+    .header>p:nth-child(n) {
+        margin-bottom: 4px;
+    }
+    .header>p {
+        font-size: 15px;
+    }
+    h1.title {
+        font-size: 20px;
+    }
+    main>div:first-child {
+        margin: 40px 0;
+    }
+    footer {
+        padding: 20px 0;
+    }
+    footer button {
+        padding: 10px 7px;
+        font-size: 16px;
+    }
+    main p {
+        padding-right: 15px;
+    }
 }
