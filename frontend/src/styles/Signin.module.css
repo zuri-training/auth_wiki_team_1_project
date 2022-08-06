@@ -1,97 +1,75 @@
-
-.container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    
-   
+.loginWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+  margin-top: 94px;
 }
 
-.A{
-    text-align: center;
- 
-    width: 50%;
-    height: 850px;
-   
-    color: #fff;
-    margin-bottom: 80px;
-    margin-top: 94px;
-    
+.A {
+  text-align: center;
+  height: 850px;
+  color: #fff;
 }
 
-.top{
-    position: relative;
+.top {
+  position: relative;
 }
 
-.logo_text{
-    margin-top: -500px;
-   
+.logo_text {
+  margin-top: -500px;
 }
-
 
 .logo_text h2 {
-    font-weight: 700;
-    font-size: 36px;
-    width: 276px;
-    margin-top: 30px;
-    margin-left: 26%;
-    position: absolute;
- 
-   
-    
+  font-weight: 700;
+  font-size: 36px;
+  width: 276px;
+  margin-top: 30px;
+  margin-left: 26%;
+  position: absolute;
 }
 
 .logo_text p {
-    font-weight: 400;
-    line-height: 26px;
-    font-size: 16px;
-    height: 52px;
-    width: 280px;
-    
-    margin-left: 26%;
-    margin-top: 80px;
-    position: absolute;
-    
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 16px;
+  height: 52px;
+  width: 280px;
 
-} 
-
-
-.B{
-    width: 50%;
-    margin-top: 0;
-    padding-top: 0;
-    margin-top: -9%;
-    height: 742px;
-    padding: 0 60px;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 25px rgba(120, 51, 232, 0.1);
-
-  
+  margin-left: 26%;
+  margin-top: 80px;
+  position: absolute;
 }
 
-.B > .links{
-    display: flex;
-    padding: 0 40px;
-    width: 100%;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 28px;
-    
+.B {
+  width: 50%;
+  height: 850px;
+  padding: 0 60px;
+  background: #ffffff;
+  box-shadow: 0px 2px 25px rgba(120, 51, 232, 0.1);
 }
 
+.B > .links {
+  display: flex;
+  padding: 0 40px;
+  width: 100%;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 28px;
+}
 .sign_link > h3 {
-    text-align: center;
-    font-family: 'Sora';
-font-weight: 700;
-font-size: 28px;
-line-height: 35px;
-margin-bottom: 0;
+  text-align: center;
+  font-family: "Sora";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  margin-bottom: 0;
 }
 
-.B>.links>.sign_link>h3>a {
-    text-decoration: none;
-    color: #5600E2;
-    /* text-align: center;
+.B > .links > .sign_link > h3 > a {
+  text-decoration: none;
+  color: #5600e2;
+  /* text-align: center;
     font-family: 'Sora';
 font-weight: 700;
 font-size: 28px;
@@ -99,80 +77,76 @@ line-height: 35px;
 margin-bottom: 0; */
 }
 
-.links>.sign_link>.underline {
-    margin-top: 0px;
-    background-color: #5600E2;
-    border-radius: 4px;
-    width: 150px;
-    height: 4px;
-  
+.links > .sign_link > .underline {
+  margin-top: 0px;
+  background-color: #5600e2;
+  border-radius: 4px;
+  width: 150px;
+  height: 4px;
 }
 
-.B>.links>.signup>h3>a {
-    color: #CBCBCB;
+.B > .links > .signup > h3 > a {
+  color: #cbcbcb;
 }
 
-.B>.links>.signup>.underline {
-    background-color: #CBCBCB;
+.B > .links > .signup > .underline {
+  background-color: #cbcbcb;
 }
 
-.eye_icon{
-   
-    margin-left: 90%;
-    margin-top: -8%;
+.eye_icon {
+  margin-left: 90%;
+  margin-top: -8%;
 }
 
 .checkbox_link {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
 }
 
-.checkbox_link>.checkbox {
-    display: flex;
-    
+.checkbox_link > .checkbox {
+  display: flex;
 }
 
-.checkbox_link>.checkbox>label {
-    font-weight: 400;
-    font-size: 14px;
-    margin-left: 8px;
-    color: #575757;
+.checkbox_link > .checkbox > label {
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 8px;
+  color: #575757;
 }
 
-.forgot_link{
-    color: #5600E2;
-    font-weight: 400;
-    font-size: 14px;
-    margin-top: 16px;
+.forgot_link {
+  color: #5600e2;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 16px;
 }
 
-.signinbtn{
-    /* width: 506px; */
-    width: 100%;
-    height: 60px;
-    background-color: #5600E2;
-    border: none;
-    color: #fff;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 16px;
-    cursor: pointer;
+.signinbtn {
+  /* width: 506px; */
+  width: 100%;
+  height: 60px;
+  background-color: #5600e2;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.or_text{
-    text-align: center;
-    font-weight: 600;
-    font-size: 20px;
-    color: #575757;
-    margin-bottom: 20px;
+.or_text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #575757;
+  margin-bottom: 20px;
 }
 
-.git_text{
-    font-family: 'Sora';
-    font-weight: 400;
-    font-size: 16px;
-    padding-left: 10px;
-    color: #5600E2;
-    
+.git_text {
+  font-family: "Sora";
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 10px;
+  color: #5600e2;
 }

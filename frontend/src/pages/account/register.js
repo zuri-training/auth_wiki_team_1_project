@@ -81,7 +81,7 @@ const Register = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={`container ${styles.signUpWrapper}`}>
       <div className={styles.A}>
         <div className={styles.top}>
           <Image

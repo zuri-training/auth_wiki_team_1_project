@@ -65,7 +65,7 @@ const Login = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={`container ${styles.loginWrapper}`}>
       <div className={styles.A}>
         <div className={styles.top}>
           <Image
