@@ -358,9 +358,7 @@ nav ul li a {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/*.about-col-1 {
-    flex-basis: 35%;
-  }*/
+
 .about-col-11 img {
   margin-top: 100px;
   width: 500px;
