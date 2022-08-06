@@ -46,7 +46,7 @@ body {
     line-height: 45.36px;
 }
 /* instructions on how to reset password */
-.A>.logo-text>ul>li {
+.A>.logo-text>p {
     font-weight: 400;
     line-height: 26px;
     font-size: 16px;
