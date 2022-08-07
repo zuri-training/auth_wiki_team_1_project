@@ -93,7 +93,7 @@ body {
     border-radius: 8px;
 }
 
-/* new */
+/* error */
 .form>.form-control>.error {
     color: red;
     visibility: hidden;
