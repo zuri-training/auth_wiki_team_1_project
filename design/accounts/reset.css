@@ -98,14 +98,6 @@ body {
     color: red;
     visibility: hidden;
 }
-/* resend mail question */
-.form>p {
-    margin-top: 24px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
-    color: #272727;
-}
 
 /* resend button */
 #resend-btn {
