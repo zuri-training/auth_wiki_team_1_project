@@ -232,7 +232,7 @@ const Register = () => {
               "Sign Up"
             )}
           </PrimaryButton>
-          <h5 className={styles.or_text}>OR</h5>
+          {/* <h5 className={styles.or_text}>OR</h5>
           <div className="github_btn">
             <button className="github-accnt">
               <Image
@@ -243,7 +243,7 @@ const Register = () => {
               />
               <h6 className={styles.git_text}>Continue with Github</h6>
             </button>
-          </div>
+          </div> */}
         </form>
       </div>
     </div>
