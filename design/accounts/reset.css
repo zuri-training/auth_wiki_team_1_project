@@ -114,18 +114,16 @@ body {
     padding: 20px;
     font-weight: 700;
     font-size: 16px;
-    background: #fff;
-    color: #5600E2;
+    background: #5600E2;
+    color: #fff;
     border: 1px solid #5600E2;
     border-radius: 8px;
     cursor: pointer;
 }
 #resend-btn:hover {
-    background: #3D00A0;
-    color: #fff;
+    background: #8E54EC;
 }
 #resend-btn:active {
-    background: #EEE6FC;
-    color: #7833E8;
+    background: #3D00A0;
 }
 /* end of sidde B */
