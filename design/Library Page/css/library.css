@@ -74,6 +74,31 @@ header{
     transition: all 0.3s ease;
 }
 
+
+.container{
+    display: flex;
+    align-items: center;
+}
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+.big{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Sora';
+    font-style: normal;
+}
+.big h1{
+    width: 848px;
+    height: 57px;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 57px;
+    margin-top: 96px;
+}
+
 @media screen and (max-width: 950px) {
     body{
         overflow-x: hidden;
