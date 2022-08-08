@@ -1,87 +1,79 @@
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
+/* 
+  STYLING FOR DESKTOP VIEW
+*/
 
-.footerWrapper {
+.footer_wrapper {
   background-color: var(--primary-100);
   color: #fff;
+  position: relative;
+  padding: 80px 0;
+}
+
+.footer_bg_circle {
+  position: absolute;
+  left: -300px;
+  bottom: -10px;
 }
 
 .footer {
-  padding: 20px 0;
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  gap: 55px;
+}
+
+.footer ul > li {
+  margin: 12px 0;
 }
 
 .footer a {
   color: #fff;
+  font-size: var(--para-two);
+  font-weight: normal;
 }
 
-.footer_top {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer_top_info {
-  display: flex;
-  gap: 40px;
-}
-
-.footer_top_contact {
-  margin-left: 64px;
-  margin-right: 50px;
-  /* margin-right: 113.5px; */
-}
-
-.footer_top_contact p,
-.footer_top_subscribe p,
-.footer_top_info p {
-  font-family: "Sora", sans-serif;
+.footer h4 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
+  margin: 0;
+}
+/* logo */
+
+.footer_logo {
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+.footer_logo_blue {
+  color: #cbb0f6;
 }
 
-.footer_top_subscribe span,
-.footer_top_info li {
-  font-weight: 300;
-  font-family: "Sora", sans-serif;
-  font-size: 16px;
+.footer_logo {
+  font-weight: 700;
+  font-size: var(--heading-three);
 }
 
-.footer_top_subscribe form {
-  margin-top: 19.5px;
-}
-.footer_top_subscribe input {
-  text-indent: 5px;
-}
-.footer_top_subscribe input:focus {
-  outline: none;
-  border: none;
+/* copyright */
+.footer_copyright {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
 }
 
-.footer_bottom_text {
-  font-weight: 400;
+.footer_copyright div span {
+  display: block;
+  margin: 5px 0;
 }
 
-.footer button {
-  background-color: #fbb130;
-  border: none;
-  width: 117px;
-  height: 42px;
-  color: #fff;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  margin-left: -50px;
-}
+/* 
+  STYLING FOR MOBILE VIEW
+*/
 
-.footer input {
-  height: 42px;
-  width: 277px;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border: none;
-}
-
-.footer input::placeholder {
-  color: #1d1e2030;
-  padding-left: 12px;
+@media (max-width: 600px) {
+  .footer_wrapper {
+    padding: 80px 0;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
