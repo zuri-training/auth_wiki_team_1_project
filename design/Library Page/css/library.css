@@ -97,6 +97,23 @@ header{
     font-size: 45px;
     line-height: 57px;
     margin-top: 96px;
+    color: #272727;
+}
+.big h1 span{
+    color: #5600E2;
+}
+
+/* search box */
+
+.search-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 596px;
+    width: 1240px;
+    height: 61px;
+    margin-top: 45px;
 }
 
 @media screen and (max-width: 950px) {
