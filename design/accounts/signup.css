@@ -291,3 +291,46 @@ body {
         padding: 15px;
     }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .container {
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+
+    .A,
+    .B {
+        height: 100%;
+        width: 50%;
+    }
+
+    .A {
+        padding: 50px;
+        padding-top: 210px;
+    }
+
+    .top {
+        left: 35%;
+    }
+
+    .top>img {
+        height: 270px;
+    }
+
+    .bottom {
+        bottom: -50px;
+    }
+
+    .bottom>img {
+        height: 270px;
+    }
+
+    .B {
+        padding-top: 90px;
+    }
+
+    .links>.sign-link>.underline {
+        width: 100%;
+    }
+}
