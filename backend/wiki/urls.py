@@ -6,12 +6,8 @@ from rest_framework import routers
 app_name = "wiki"
 
 router = routers.DefaultRouter()
-router.register(r'files', views.FileViewSet)
+router.register(r'posts', views.PostViewSet, basename='posts')
+router.register(r'comments', views.CommentViewSet, basename='comments')
+router.register(r'files', views.FileViewSet, basename='files')
 
-urlpatterns = [
-    path("create/", views.PostCreateApi.as_view(), name="api_create"),
-    path("update/<int:pk>", views.PostUpdateApi.as_view(), name="api_update"),
-    path("delete/<int:pk>", views.PostDeleteApi.as_view(), name="api_delete"),
-    path("", views.PostListApi.as_view(), name="api_list"),
-    router.urls,
-]
+urlpatterns = router.urls
