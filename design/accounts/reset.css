@@ -119,3 +119,191 @@ body {
     background: #3D00A0;
 }
 /* end of sidde B */
+
+/* responsiveness */
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+    }
+
+    .A {
+        height: 191px;
+        padding: 60px;
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .top {
+        top: 4px;
+        left: 71%;
+    }
+
+    .top>img {
+        height: 130px;
+    }
+
+    .A>.logo-text>img {
+        width: 20px;
+        margin-bottom: 16px;
+    }
+
+    .A>.logo-text>h2 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .A>.logo-text>p {
+        line-height: 18px;
+        font-size: 12px;
+        margin-bottom: 26px;
+    }
+
+    .bottom {
+        bottom: 66%;
+    }
+
+    .bottom>img {
+        height: 130px;
+    }
+
+    .B {
+        margin-top: 44px;
+        padding: 0 24px;
+        width: 100%;
+    }
+
+    .B>.links {
+        padding: 0;
+        font-size: 20px;
+        line-height: 25.2px;
+        width: 100%;
+    }
+
+    .links>.sign-link>.underline {
+        width: 120px;
+    }
+
+    .form{
+        margin-top: 50px;
+    }
+    .form>.form-control>input,
+    .form>.form-control>.input-icon>input {
+        padding: 12px;
+    }
+
+    .form>.form-control>.input-icon>i {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .A {
+        padding: 150px;
+        padding-top: 50px;
+        width: 100%;
+        height: 300px;
+    }
+
+    .top {
+        left: 78%;
+    }
+
+    .top>img {
+        height: 210px;
+    }
+
+    .A>.logo-text>img {
+        width: 30px;
+        margin-bottom: 18px;
+    }
+
+    .A>.logo-text>h2 {
+        font-size: 30px;
+        line-height: 29px;
+    }
+
+    .A>.logo-text>p {
+        line-height: 30px;
+        font-size: 19px;
+    }
+
+    .bottom {
+        bottom: 50%;
+    }
+
+    .bottom>img {
+        height: 210px;
+    }
+
+    .B {
+        margin-top: 50px;
+        padding: 0 30px;
+        width: 100%;
+    }
+
+    .B>.links {
+        padding: 0 50px;
+        font-size: 25px;
+        line-height: 28px;
+        width: 100%;
+    }
+
+    .links>.sign-link>.underline {
+        width: 230px;
+    }
+
+    .form>.form-control>input,
+    .form>.form-control>.input-icon>input {
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .container {
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+
+    .A,
+    .B {
+        height: 100%;
+        width: 50%;
+    }
+
+    .A {
+        padding: 90px;
+        padding-top: 210px;
+    }
+
+    .top {
+        left: 30%;
+    }
+
+    .top>img {
+        height: 270px;
+    }
+
+    .bottom {
+        bottom: -50px;
+    }
+
+    .bottom>img {
+        height: 270px;
+    }
+
+    .B {
+        padding-top: 90px;
+    }
+
+    .links>.sign-link>.underline {
+        width: 100%;
+    }
+}
