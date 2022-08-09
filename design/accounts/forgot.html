@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="forgot.css" />
+    <title>Forgot Password</title>
+  </head>
+  <body>
+    <!-- container for both sides of the page(A & B) -->
+    <div class="container">
+      <!-- left side of the page(A) -->
+      <div class="A">
+        <!-- image for curved line at the top right-->
+        <div class="top">
+          <img src="./images/Frame.svg" alt="top-line" />
+        </div>
+
+        <!-- logo and reset password text -->
+        <div class="logo-text">
+          <img src="./images/Group.png" alt="logo" />
+          <h2>Reset Password</h2>
+          <p>Enter your valid email.</p>
+          <p>
+            Select the appropriate image to verify your account and request for
+            a password reset mail.
+          </p>
+        </div>
+
+        <!-- image for curved line bottom left -->
+        <div class="bottom">
+          <img src="./images/Shapes (1).png" alt="bottom-line" />
+        </div>
+      </div>
+      <!-- end of left side of the page(A) -->
+
+      <!-- right side of the page(B) -->
+      <div class="B">
+        <!-- form -->
+        <form class="form" action="#">
+          <!-- email -->
+          <div class="form-control">
+            <label for="email"><p>Email</p></label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Please enter your email"
+            />
+            <small class="error"></small><br />
+          </div>
+
+          <!-- verify account instruction text -->
+          <p>Verify account by clicking on images with a cap.</p>
+
+          <!-- container to hold images for account verification(grandparent container) -->
+          <div class="imgs">
+            <!-- parent container(A) for images -->
+            <div class="choose-img">
+              <div class="top-row">
+                <img src="./images/Frame 7.jpg" alt="red cap" />
+                <img src="./images/Frame 8.jpg" alt="black cap" />
+                <img src="./images/Frame 12.jpg" alt="sneakers" />
+              </div>
+              <!-- parent container(B) for images -->
+              <div class="bottom-row">
+                <img src="./images/Frame 7 (1).jpg" alt="car" />
+                <img src="./images/Frame 8 (1).jpg" alt="gray cap" />
+                <img src="./images/Frame 12 (1).jpg" alt="plane" />
+              </div>
+            </div>
+          </div>
+          <!-- end of container to hold images for account verification(grandparent container) -->
+
+          <!-- recovery button -->
+          <div class="recovery-btn">
+            <button id="recovery-btn"><h6>Email me a recovery link</h6></button
+            ><br />
+          </div>
+        </form>
+        <!-- end of form -->
+      </div>
+      <!-- end of right side of the page(B) -->
+    </div>
+    <!-- end of container for both sides of the page(A & B) -->
+
+    <!-- link .js file -->
+    <script src="forgot.js"></script>
+  </body>
+</html>

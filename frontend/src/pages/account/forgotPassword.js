@@ -19,7 +19,11 @@ const ForgotPassword = () => {
         </div>
 
         <div className={styles.forgotpwd_solid_text}>
+<<<<<<< HEAD
           <div>
+=======
+          <div className={styles.forgotpwd_top_logo}>
+>>>>>>> dev-main
             <Image
               className={styles.img}
               src="/assets/auth_wiki.svg"

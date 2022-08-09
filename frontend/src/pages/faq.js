@@ -1,37 +1,48 @@
 import Image from "next/image";
+import { useState, useEffect } from "react";
 import styles from "../styles/Faq.module.css";
 import { PrimaryButton } from "../components/utils/Buttons";
 import faqData from "../data/faqdata";
 
 const FAQ = () => {
+  const [faqs, setFaqs] = useState(faqData);
+  const [searchInput, setSearchInput] = useState("");
+
+  const onSearchSubmit = (e) => {
+    e.preventDefault();
+    const filteredFaq = faqs.filter((faq) =>
+      faq.question.toLocaleLowerCase().includes(searchInput.toLocaleLowerCase())
+    );
+
+    setFaqs(filteredFaq);
+  };
+
+  useEffect(() => {
+    if (searchInput === "") {
+      setFaqs(faqData);
+    }
+  }, [searchInput]);
+
   return (
     <div className={styles.faq}>
       {/* faq heading */}
       <div className={styles.faq_heading}>
         <h2>Frequently Asked Questions</h2>
         <span>Have any questions? Find answers here</span>
-      </div>
-
-      {/* faq cards */}
-      <div className={styles.faq_cards_wrapper}>
-        <div className={styles.faq_card}>
+        <form className={styles.faq_heading_form} onSubmit={onSearchSubmit}>
           <Image
-            src="/assets/video-square.svg"
-            alt="message question"
-            width={64}
-            height={64}
+            src="/assets/search.svg"
+            alt="search faq"
+            width={14}
+            height={14}
           />
-          <h4>Watch Tutorial</h4>
-        </div>
-        <div className={styles.faq_card}>
-          <Image
-            src="/assets/message-question.svg"
-            alt="message question"
-            width={64}
-            height={64}
+          <input
+            type="text"
+            placeholder="Search your question"
+            value={searchInput}
+            onChange={(e) => setSearchInput(e.target.value)}
           />
-          <h4>Get Support</h4>
-        </div>
+        </form>
       </div>
 
       {/* faq shape */}
@@ -48,7 +59,11 @@ const FAQ = () => {
       <div className="container">
         <div className={styles.faq_questions_wrapper}>
           {faqData &&
+<<<<<<< HEAD
             faqData.map((question) => (
+=======
+            faqs.map((question) => (
+>>>>>>> dev-main
               <div key={question.id}>
                 <h4>{question.question}</h4>
                 <p>{question.response}</p>

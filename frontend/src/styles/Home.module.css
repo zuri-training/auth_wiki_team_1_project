@@ -1,0 +1,240 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 62px; */
+}
+
+.discovery {
+  display: flex;
+  gap: 8px;
+  width: 470px;
+}
+
+.discovery p,
+.description {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.header_text {
+  margin-top: 187px;
+}
+
+.home_image {
+  margin-top: 96.31px;
+}
+.community {
+  font-size: 45px;
+  font-family: "Sora";
+  margin-top: 15px;
+  width: 518px;
+
+  font-weight: 600;
+}
+
+.community span {
+  color: #5600e2;
+}
+
+.description {
+  margin-top: 12px;
+  margin-bottom: 0;
+  line-height: 32px;
+  color: #272727;
+}
+
+.signup {
+  border: none;
+  color: #fff;
+  background: #5600e2;
+  box-shadow: 0px 4px 20px rgba(86, 0, 226, 0.25);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 64px;
+  /* height: 60px; */
+}
+
+/* ABOUT */
+.about_wrapper {
+  padding: 40px 0;
+  background: rgba(86, 0, 226, 0.02);
+  margin-top: 116px;
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 66px;
+}
+
+.about_text {
+  position: relative;
+}
+
+.about_text p {
+  font-weight: 400;
+  font-size: var(--para-one);
+  line-height: 30px;
+  color: #272727;
+}
+
+.about_text h2 {
+  font-weight: 700;
+  font-size: 36px;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  color: #1d1e20;
+}
+
+.features {
+  background-image: url("/assets/featuresBackground.svg");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: right;
+  margin-top: 116px;
+  margin-bottom: 116px;
+}
+
+.feature_title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #5600e2;
+  text-align: center;
+}
+
+.features_subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #272727;
+  margin-bottom: 44px;
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+  gap: 54px;
+}
+
+.card {
+  border: 1px solid #5600e2;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 319px;
+  height: 294px;
+  align-content: center;
+  background-color: #fff;
+  align-items: center;
+}
+
+.feature_icon {
+  margin-top: 24px;
+}
+
+.feature_header {
+  margin-top: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: rgba(86, 0, 226, 0.7);
+  opacity: 0.8;
+}
+
+.feature_description {
+  width: 271px;
+  height: 84px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.contact {
+  display: flex;
+  gap: 81px;
+}
+
+.left {
+  width: 50%;
+
+  height: 732px;
+  background: rgba(255, 247, 234, 0.5);
+}
+
+.contact_image {
+  display: flex;
+  justify-content: center;
+  height: 732px;
+  align-items: center;
+}
+
+.right {
+  width: 504px;
+  height: 591px;
+  margin-top: 70px;
+}
+
+.right h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  color: #5600e2;
+}
+
+.right p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #272727;
+}
+
+.right input,
+.right textarea {
+  text-indent: 5px;
+}
+
+.right input {
+  border: 1px solid #cbcbcb;
+  border-radius: 8px;
+  padding: 12px;
+  width: 90%;
+  margin-bottom: 24px;
+}
+
+.right textarea {
+  border: 1px solid #cbcbcb;
+  border-radius: 8px;
+  width: 90%;
+}
+
+.right textarea::placeholder {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #cbcbcb;
+}
+
+.contact_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right button {
+  border: none;
+  color: #fff;
+  padding: 12px 24px;
+  width: 151px;
+  height: 49px;
+  background: #5600e2;
+  box-shadow: 0px 4px 20px rgba(86, 0, 226, 0.25);
+  border-radius: 12px;
+  margin-top: 40px;
+}

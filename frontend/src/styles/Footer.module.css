@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
 
 .footerWrapper {
@@ -10,12 +11,41 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+=======
+/* 
+  STYLING FOR DESKTOP VIEW
+*/
+
+.footer_wrapper {
+  background-color: var(--primary-100);
+  color: #fff;
+  position: relative;
+  padding: 80px 0;
+}
+
+.footer_bg_circle {
+  position: absolute;
+  left: -300px;
+  bottom: -10px;
+}
+
+.footer {
+  display: flex;
+  gap: 55px;
+}
+
+.footer ul > li {
+  margin: 12px 0;
+>>>>>>> dev-main
 }
 
 .footer a {
   color: #fff;
+  font-size: var(--para-two);
+  font-weight: normal;
 }
 
+<<<<<<< HEAD
 .footer_top {
   display: flex;
   justify-content: space-between;
@@ -36,10 +66,26 @@
 .footer_top_subscribe p,
 .footer_top_info p {
   font-family: "Sora", sans-serif;
+=======
+.footer h4 {
+>>>>>>> dev-main
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
+  margin: 0;
+}
+/* logo */
+
+.footer_logo {
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+.footer_logo_blue {
+  color: #cbb0f6;
 }
 
+<<<<<<< HEAD
 .footer_top_subscribe span,
 .footer_top_info li {
   font-weight: 300;
@@ -49,6 +95,18 @@
 
 .footer_top_subscribe form {
   margin-top: 19.5px;
+=======
+.footer_logo {
+  font-weight: 700;
+  font-size: var(--heading-three);
+}
+
+/* copyright */
+.footer_copyright {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+>>>>>>> dev-main
 }
 .footer_top_subscribe input {
   text-indent: 5px;
@@ -58,10 +116,12 @@
   border: none;
 }
 
-.footer_bottom_text {
-  font-weight: 400;
+.footer_copyright div span {
+  display: block;
+  margin: 5px 0;
 }
 
+<<<<<<< HEAD
 .footer button {
   background-color: #fbb130;
   border: none;
@@ -84,4 +144,18 @@
 .footer input::placeholder {
   color: #1d1e2030;
   padding-left: 12px;
+=======
+/* 
+  STYLING FOR MOBILE VIEW
+*/
+
+@media (max-width: 600px) {
+  .footer_wrapper {
+    padding: 80px 0;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+>>>>>>> dev-main
 }
