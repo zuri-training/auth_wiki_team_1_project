@@ -57,26 +57,27 @@ section p{
 .cards>div:first-child{
     margin-right: 24px;
 }
-@media screen and (max-width: 320px){
-    * {
-        font-size: 13px;
+@media screen and (max-width: 1024px){
+    .cards{
+        width:700px
     }
-    h1{
-        font-size: 36px;
+}
+@media screen and (max-width: 767px){
+    section {
+        padding: 41px 30px;
+        margin: 69px 0 56px 0;
     }
-    .main-grid-cards {
-        padding: 6px;
+    section h1 {
+        font-size: 28px;
     }
-    .main-grid-cards p, .main-grid-cards a {
-        font-size: 10px;
+    section p {
+        font-size: 16px;
     }
-    .main-grid>.main-grid-cards:last-child {
-        height: 110px;
+    .cards{
+        padding: 15px;
+        width: auto;
+        margin: 60px 24px;
+        font-size: 14px;
     }
-    footer input {
-        width: 65%;
-    }
-    .footer-subtitle {
-        font-size: 17px;
-    }
+   
 }
