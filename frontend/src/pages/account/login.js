@@ -65,7 +65,7 @@ const Login = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={`container ${styles.loginWrapper}`}>
       <div className={styles.A}>
         <div className={styles.top}>
           <Image
@@ -165,7 +165,7 @@ const Login = () => {
               "Sign In"
             )}
           </button>
-          <h5 className={styles.or_text}>OR</h5>
+          {/* <h5 className={styles.or_text}>OR</h5>
           <div className="github_btn">
             <button className="github-accnt">
               <Image
@@ -176,7 +176,7 @@ const Login = () => {
               />
               <h6 className={styles.git_text}>Continue with Github</h6>
             </button>
-          </div>
+          </div> */}
 
           {/* Register? */}
         </form>

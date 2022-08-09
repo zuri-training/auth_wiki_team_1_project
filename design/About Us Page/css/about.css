@@ -79,16 +79,329 @@ header{
 
 /* About Section*/
 
-.team-content h1{
+.about-container{
+    display: flex;
+    align-items: center;
+}
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.add h1{
     font-family: 'Sora';
     font-style: normal;
     font-weight: 600;
     font-size: 45px;
     line-height: 57px;
     color: #5600E2;
-    flex: none;
+    margin-bottom: 16px;
+    margin-top: 36px;
+}
+.add p{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #272727;
+}
+.add .marge{
+    margin-top: 20px;
+}
+.hero-img{
+    width: 624px;
+    height: 340px;
+    position: relative;
+    left: 30px;
+    top: 54px;
 }
 
+/* Team Section*/
+.team-container{
+    display: flex;
+    align-items: center;
+    font-family: 'Sora';
+    font-style: normal;
+}
+.team-content h1{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 57px;
+    text-align: center;
+    color: #272727;
+    margin-top: 100px;
+}
+.team-content h1 span{
+    color: #5600E2;
+}
+.team-content p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #131415;
+    width: 938px;
+    height: 64px;
+    left: 251px;
+    top: 714px;
+    position: absolute;
+}
+.team-img{
+    display: flex;
+}
+.team-img p{
+    color: #272727;
+}
+.frame1{
+    position: absolute;
+    width: 379px;
+    height: 266px;
+    left: 100px;
+    top: 815px;
+    background: #FFFFFF;
+    border: 1px solid #5600E2;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.frame1 img{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    left: 64px;
+    top: 33px;
+}
+.frame2{
+    position: absolute;
+    width: 379px;
+    height: 266px;
+    left: 529px;
+    top: 815px;
+    background: #FFFFFF;
+    border: 1px solid #5600E2;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.frame2 img{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    left: 64px;
+    top: 33px;
+}
+.frame3{
+    position: absolute;
+    width: 379px;
+    height: 266px;
+    left: 961px;
+    top: 815px;
+    background: #FFFFFF;
+    border: 1px solid #5600E2;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.frame3 img{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    left: 64px;
+    top: 33px;
+}
+.frame4{
+    position: absolute;
+    width: 379px;
+    height: 266px;
+    left: 101px;
+    top: 1214px;
+    background: #FFFFFF;
+    border: 1px solid #5600E2;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.frame4 img{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    left: 64px;
+    top: 33px;
+}
+.frame5{
+    position: absolute;
+    width: 379px;
+    height: 266px;
+    left: 530px;
+    top: 1214px;
+    background: #FFFFFF;
+    border: 1px solid #5600E2;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.frame5 img{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    left: 64px;
+    top: 33px;
+}
+.frame6{
+    position: absolute;
+    width: 294px;
+    height: 266px;
+    left: 1003px;
+    top: 1214px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.frame6 .frame6a{
+    position: absolute;
+    width: 294px;
+    height: 266px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(0deg, #5600E2 -3.2%, rgba(86, 0, 226, 0.931851) 35.63%, rgba(86, 0, 226, 0) 123.31%);
+    border-radius: 16px;
+    z-index: 1;
+}
+.frame6 .frame6a .ccc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 109px;
+    height: 136px;
+    left: 92px;
+    top: 76px;
+}
+.frame6 .frame6a .ccc p{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.frame6 .bbb{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 22px;
+    top: 33px;
+    border-radius: 17px;
+}
+.team-img .a1{
+    position: absolute;
+    width: 104px;
+    height: 25px;
+    left: 100px;
+    top: 1105px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px
+}
+.team-img .b1{
+    position: absolute;
+    width: 193px;
+    height: 23px;
+    left: 100px;
+    top: 1138px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #5600E2;
+}
+.team-img .a2{
+    position: absolute;
+    width: 159px;
+    height: 25px;
+    left: 529px;
+    top: 1105px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px
+}
+.team-img .b2{
+    position: absolute;
+    width: 305px;
+    height: 23px;
+    left: 529px;
+    top: 1138px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #5600E2;
+}
+.team-img .a3{
+    position: absolute;
+    width: 226px;
+    height: 25px;
+    left: 961px;
+    top: 1105px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px
+}
+.team-img .b3{
+    position: absolute;
+    width: 193px;
+    height: 23px;
+    left: 961px;
+    top: 1138px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #5600E2;
+}
+.team-img .a4{
+    position: absolute;
+    width: 196px;
+    height: 25px;
+    left: 101px;
+    top: 1504px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px
+}
+.team-img .b4{
+    position: absolute;
+    width: 255px;
+    height: 23px;
+    left: 101px;
+    top: 1537px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #5600E2;
+}
+.team-img .a5{
+    position: absolute;
+    width: 269px;
+    height: 25px;
+    left: 530px;
+    top: 1504px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px
+}
+.team-img .b5{
+    position: absolute;
+    width: 197px;
+    height: 23px;
+    left: 530px;
+    top: 1537px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #5600E2;
+}
 /* Media Queries*/
 
 @media screen and (max-width: 950px) {
