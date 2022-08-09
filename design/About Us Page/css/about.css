@@ -278,6 +278,7 @@ header{
     height: 136px;
     left: 92px;
     top: 76px;
+    cursor: pointer;
 }
 .frame6 .frame6a .ccc p{
     font-weight: 600;
