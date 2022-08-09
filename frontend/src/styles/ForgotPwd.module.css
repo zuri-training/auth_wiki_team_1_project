@@ -1,3 +1,7 @@
+/* 
+  STYLES FOR MOBILE VIEW
+*/
+
 .forgotpwdWrapper {
   display: flex;
   align-items: center;
@@ -71,4 +75,51 @@
   font-family: "Sora", sans-serif;
   font-size: var(--para-16);
   width: 506px;
+}
+
+/* 
+  STYLES FOR MOBILE VIEW
+*/
+
+@media screen and (max-width: 600px) {
+  .forgotpwdWrapper {
+    width: 375px;
+    height: 441px;
+    flex-direction: column;
+  }
+
+  .forgotpwd_solid_text {
+    margin-top: 20px;
+  }
+
+  .forgotpwd_solid {
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .forgotpwd_form {
+    margin-top: 20px;
+  }
+
+  .forgotpwd_solid_top_img {
+    width: 100px;
+    height: 100px;
+    right: 0px;
+    top: -10px;
+  }
+
+  .forgotpwd_solid_bottom_img {
+    width: 100px;
+    height: 100px;
+    bottom: 0px;
+    left: -20px;
+  }
+
+  .forgotpwd_form_input input {
+    max-width: 300px;
+  }
+
+  .forgotpwd_form_btn {
+    max-width: 300px;
+  }
 }
