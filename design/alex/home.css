@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  background: #fff;
+  background: #ffffff;
   color: #fff;
 }
 #header1 {
@@ -26,6 +26,7 @@ body {
 }
 .container {
   padding: 30px 5%;
+ 
 }
 nav {
   display: flex;
@@ -184,19 +185,18 @@ nav ul li a {
   height: 18px;
 }
 
-.header-text h6 {
-  position: absolute;
-  width: 503px;
-  height: 163px;
-  left: 100px;
-  top: 457px;
-  font-family: "sora";
-  font-size: normal;
-  font-weight: 400px;
-  font-size: 16px;
+.header-text h6{
+  position: relative;
+  top: 270px;
+  left: 38px;
   line-height: 32px;
-  color: #272727;
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #272727;
 }
+
 
 /*-----------about us----------*/
 
@@ -245,9 +245,10 @@ nav ul li a {
   color: #272727;
   width: 419px;
   height: 210px;
-  font-family: "sora";
-  font-weight: 600;
-  font-size: 16px;
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
 }
 
 /*-------our features------------*/
@@ -439,12 +440,15 @@ form textarea {
   background: #ffffff;
   padding: 15px;
   margin: 15px 0;
-  color: #cbcbcb;
-  font-size: 18px;
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
   border-radius: 8px;
   margin-left: 120px;
   position: relative;
   border: 1px solid #cbcbcb;
+  color: #CBCBCB;
 }
 
 .contact-right textarea {
@@ -455,7 +459,6 @@ form textarea {
 
 .footer {
   position: absolute;
-  background-image: url(img/Footer\ SVG\ circle.svg);
 width: 1355px;
 height: 246px;
 left: -6px;
@@ -464,7 +467,7 @@ background: #3D00A0;
 }
 
 .footerlogo img {
-
+  
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -472,13 +475,14 @@ padding: 0px;
 gap: 21px;
 position: relative;
 width: 194.5px;
-height: 40px;
+height: 54.44px;
 margin-top: 80px;
-left: 50px;
+left: 64px;
 }
 
 
 .container .tex-center{
+  
   display: flex;
 flex-direction: row;
 align-items: flex-start;
@@ -508,6 +512,7 @@ font-family: 'Sora';
 font-style: normal;
 font-weight: 600;
 line-height: 20px;
+left: 100px;
 }
 .col-md-a p{
   color: #CBB0F6;
@@ -534,6 +539,7 @@ line-height: 20px;
 font-style: normal;
 font-weight: 600;
 line-height: 20px;
+left: 40px;
 }
 .col-md-b p{
   color: #CBB0F6;
@@ -590,8 +596,16 @@ color: #CBB0F6;
   right: 10px;
   top: 13px;
   text-decoration: none;
+ 
 }
-
+.circle{
+  position: absolute;
+right: 88.77%;
+top: -72.36%;
+bottom: -115.85%;
+mix-blend-mode: normal;
+opacity: 0.5;
+}
 
 
 
@@ -605,138 +619,78 @@ nav .fas{
 }
 
 @media only screen and (max-width: 600px) {
-  #header1 {
-    background-image: url(img/Man\ on\ Laptop\ illustration\ -\ HomePage.svg);
-  }
-  .header-text {
-    margin-top: 10%;
-    font-size: 16px;
-  }
-  .header-text h1 {
-    font-size: 30px;
-  }
-  .login {
-    font-size: 10px;
-  }
+  nav ul li a{
+  display: none;
+ }
+ .logo{
+  position: absolute;
+  left: 20px;
+ }
+ 
+ .header-text1{
+  width: 278px;
+  height: 13px;
+  
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: #575757;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  position: absolute;
+ margin-left: -55px;
+ }
 
-  .signup {
-    font-size: 10px;
-    margin-left: 200px;
-  }
+ .header-text1 img{
+  position: absolute;
+left: -2px;
+right: 11.57%;
+top: -6px;
+ }
 
-  .full {
-    width: 185px;
-    font-size: 8px;
-    margin-left: 10px;
-  }
-  nav ul li {
-    margin: 5px 10px;
-  }
-  nav ul li a {
-    font-size: 15px;
-  }
+ .header-text h1{
+  position: absolute;
+  width: 285px;
+  height: 20px;
+  left: 47px;
+  top: 373px;
+  
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #272727;
+  margin-top: -70px;
+ }
 
-  /*--------about us------*/
+ .header-text h1 span{
+  position: absolute;
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: -20px;
+  left: 190px;
+ }
+ .header-text h6{
+  position: relative;
+width: 327px;
+left: 24px;
+top: 401px;
 
-  .sub-titles {
-    font-size: 20px;
-    margin-left: 30%;
-  }
+font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
 
-  .sub-info {
-    font-size: 10px;
-    margin-right: -130px;
-  }
+color: #272727;
 
-  .circle {
-    position: absolute;
-    width: 30%;
-    margin-top: -5px;
-    margin-left: -23px;
-  }
-  /*-----our features----*/
-  .containers h1 {
-    color: #5600e2;
-    margin-left: 25%;
-    font-size: 15px;
-  }
-  .containers h5 {
-    margin-left: 2%;
-    font-size: 12px;
-    padding: 5px;
-  }
-  .features-box {
-    width: 250px;
-    height: 45vh;
-    padding: 50px;
-    margin: 20px;
-  }
-  .download-span span {
-    width: 30px;
-    margin-left: 45px;
-    font-size: 10px;
-  }
-  .contribute-span span {
-    width: 30px;
-    font-size: 10px;
-  }
-  .view-span span {
-    font-size: 10px;
-    width: 30px;
-  }
+ }
 
-  .icon1 {
-    margin-top: -80px;
-    margin-left: 60px;
-    width: 20%;
-  }
-  .icon2 {
-    margin-top: -80%;
-    margin-left: 60px;
-  }
-  .icon3 {
-    margin-top: -80%;
-    margin-left: 60px;
-  }
-  .features-box p {
-    font-size: 10px;
-    margin-top: -5px;
-  }
 
-  /*----------get in touch------*/
-
-  .about-col-11 img {
-    margin-top: 100px;
-    width: 200px;
-    height: 732px;
-  }
-
-  .sub-get span {
-    width: 321px;
-    height: 45px;
-    font-size: 15px;
-  }
-
-  .sub-getin {
-    line-height: 2;
-    margin-left: 120px;
-    font-size: 10px;
-  }
-
-  .sub-info {
-    margin-left: 40%;
-  }
-
-  /*--------Form--------*/
-
-  form input,
-  form textarea {
-    width: 50%;
-    padding: 15px;
-    font-size: 10px;
-  }
-  .contact-right .btn2 {
-    font-size: 5px;
-    margin-left: 150px;
-  }
 }
