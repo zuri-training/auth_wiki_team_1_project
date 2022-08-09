@@ -1,10 +1,63 @@
+import { useState } from "react";
+import { toast } from "react-toastify";
+
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 const Home = () => {
+  const [formData, setFormData] = useState({
+    fullname: "",
+    email: "",
+    message: "",
+  });
+
+  const { fullname, email, message } = formData;
+
+  // create function that deals with inputs
+  const onInputChange = (e) => {
+    setFormData((prevForm) => {
+      return {
+        ...prevForm,
+        [e.target.name]: e.target.value,
+      };
+    });
+  };
+
+  // create function that submits get in touch data to api route
+  const onSubmitGetInTouch = async (e) => {
+    e.preventDefault();
+    if (!fullname || !email || !message) {
+      toast.error("Please you cannot send an empty message");
+      return;
+    }
+
+    const res = await fetch("/api/getInTouch", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await res.json();
+    if (res.ok) {
+      toast.success(data.message);
+    }
+
+    if (!res.ok) {
+      toast.error(data.message);
+    }
+    setFormData({
+      fullname: "",
+      email: "",
+      message: "",
+    });
+  };
+
   return (
-    <div className={styles.container}>
-      <div className={styles.header}>
+    <div>
+      <div className={`container ${styles.header}`}>
         <div className={styles.header_text}>
           <div className={styles.discovery}>
             <Image
@@ -42,45 +95,46 @@ const Home = () => {
         </div>
       </div>
 
-      <div className={styles.about}>
-        <div className={styles.about_image}>
-          <Image
-            src="/assets/aboutImage.svg"
-            alt="about image"
-            width={584}
-            height={370}
-          />
-        </div>
+      <div className={styles.about_wrapper}>
+        <div className={`container ${styles.about}`}>
+          <div className={styles.about_image}>
+            <Image
+              src="/assets/aboutImage.svg"
+              alt="about image"
+              width={584}
+              height={370}
+            />
+          </div>
+          <div className={styles.about_text}>
+            <Image
+              src="/assets/aboutCircle.svg"
+              alt="about circle"
+              width={209}
+              height={107}
+            />
+            <h2>ABOUT US</h2>
 
-        <div className={styles.about_text}>
-          <Image
-            src="/assets/aboutCircle.svg"
-            alt="about circle"
-            width={209}
-            height={107}
-          />
-          <h2>ABOUT US</h2>
-
-          <p>
-            Auth-Wiki is an authentication platform that aims <br /> to provide
-            users with different authentication code <br /> samples. You can
-            make use of our library of codes <br /> whether you are creating an
-            authentication system <br /> or simply browsing through. Users can
-            download <br />
-            our code samples or just viewing its usage for use <br /> in their
-            own application.
-          </p>
+            <p>
+              Auth-Wiki is an authentication platform that aims <br /> to
+              provide users with different authentication code <br /> samples.
+              You can make use of our library of codes <br /> whether you are
+              creating an authentication system <br /> or simply browsing
+              through. Users can download <br />
+              our code samples or just viewing its usage for use <br /> in their
+              own application.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className={styles.features}>
+      <div className={`container ${styles.features}`}>
         <h5 className={styles.feature_title}>Our Core Features</h5>
-        <p className={styles.features_subtitle}>
+        {/* <p className={styles.features_subtitle}>
           Auth-Wiki allows users to make use of our library of codes whether you
           are creating an authentication system or simply browsing through.
           Users can download our code samples or just viewing its usage for use
           in their own application
-        </p>
+        </p> */}
         <div className={styles.card_container}>
           <div className={styles.card}>
             <div className={styles.feature_icon}>
@@ -147,12 +201,31 @@ const Home = () => {
             For your enquiries and questions, make use of the form fields below
             to get in touch with us.
           </p>
-          <form>
-            <input type="text" placeholder="Full Name" />
-            <input type="email" placeholder="Email Address" />
-            <textarea placeholder="Message" rows={10} cols={52}></textarea>
+          <form onSubmit={onSubmitGetInTouch}>
+            <input
+              type="text"
+              placeholder="Full Name"
+              value={fullname}
+              onChange={onInputChange}
+              name="fullname"
+            />
+            <input
+              type="email"
+              placeholder="Email Address"
+              value={email}
+              onChange={onInputChange}
+              name="email"
+            />
+            <textarea
+              placeholder="Message"
+              rows={10}
+              cols={52}
+              name="message"
+              value={message}
+              onChange={onInputChange}
+            ></textarea>
             <div className={styles.contact_button}>
-              <button>Submit</button>
+              <button type="submit">Submit</button>
             </div>
           </form>
         </div>

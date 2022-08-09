@@ -1,39 +1,40 @@
 const data = [
   {
     id: 1,
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    question: "How does AuthWiki work?",
     response:
-      "Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.",
+      "AuthWiki allows authenticated access downloadable code samples, have access to documentations, interact by means of comments and reactions whereas unauthenticated users do not have this much access authenticated",
   },
   {
     id: 2,
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    question:
+      "Does AuthWiki have code samples to implement two-factor authentication?",
     response:
-      "Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.",
+      "AuthWiki library consist of various two-factor authentication code samples that one can implement in their code and get users to verify themselves using this two-factor authentication method ",
   },
   {
     id: 3,
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    question: "How does AuthWiki store data?",
     response:
-      "Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.",
+      "AuthWiki stores user information for users in a hosted cloud database or one can choose to user data in their own custom external database",
   },
   {
     id: 4,
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    question: "Do I need AuthWiki?",
     response:
-      "Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.",
+      "Yes, if you are interested in building an application you need to find the most effective way to add authentication to your app. We suggest you use AuthWiki for this purpose because this solution is both convenient and profitable",
   },
   {
     id: 5,
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    question: "Does AuthWiki have documentation to help users?",
     response:
-      "Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.",
+      "Yes, AuthWiki has well detailed documentations that help users walk their way around using various codes on our platform",
   },
   {
     id: 6,
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    question: "Who can use AuthWiki?",
     response:
-      "Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.",
+      "Anyone who is interested in developing an application and needs an effective way to add authentication to his app",
   },
 ];
 
