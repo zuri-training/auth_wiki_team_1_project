@@ -27,8 +27,7 @@ header>i{
 }
 /* date */
 .date>p{
-    margin: 40px 62px 0 62px;
-    margin-top: 16px;
+    margin: 16px 62px 0 62px;
     font-weight: 400;
     font-size: 18px;
     color: #4E4E4E;
@@ -154,3 +153,49 @@ main::-webkit-scrollbar-thumb:hover{
     color: #fff;
 }
 /* end of decline button */
+
+/* responsiveness */
+@media screen and (min-width:300px) and (max-width: 767px) {
+    header {
+        margin: 20px 32px 0 32px;
+    }
+    header>h4{
+        font-size: 14px;
+    }
+    .date>p{
+        margin: 6px 32px 0 32px;
+        font-size: 10px;
+    }
+    .privacy{
+        margin: 20px 32px 0 32px;
+        padding-right: 53px;
+    }
+    .one>p, section>p, li{
+        font-size: 12px;
+    }
+    section>h3{
+        font-weight: bold;
+        font-size: 12px;
+    }
+    main::-webkit-scrollbar{
+        width: 3px;
+    }
+    .buttons{
+        height: 100px;
+    }
+    .accept, .decline{
+        margin-top: 28px;
+        padding-left: 50px;
+        width: 60px;
+    }
+    .accept{
+        margin-right: 3px;
+    }
+    .decline{
+        margin-left: 3px;
+    }
+    .accept>h5,
+    .decline>h5{
+        font-size: 8px;
+    }
+}
