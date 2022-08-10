@@ -42,16 +42,17 @@ main>section:first-child a:hover{
     transition: .1s
 }
 main>section:last-child{
-   padding: 0 103px 80px 64px
+   padding: 0 100px 80px 64px
 }
 main>section:last-child>div:last-child{
-    margin-top: 36px;
+    margin-top: 80.62px;
 }
 main>section:last-child p{
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;
-    color: var(--black)
+    color: var(--black);
+    margin-bottom: 24px;
 }
 main>section:last-child a{
     color: var(--purple);
@@ -59,11 +60,6 @@ main>section:last-child a{
 }
 main>section:last-child a:hover{
     color: hsl(263, 100%, 60%);
-}
-main>section:last-child ul li{
-    list-style: none;
-    line-height: 32px;
-    font-size: 18px;
 }
 @media screen and (max-width: 1024px){
     main {
@@ -84,6 +80,9 @@ main>section:last-child ul li{
         flex-direction: row;
         overflow-x: scroll;
     }
+    main>section:last-child>div:last-child {
+        margin-top: 18px;
+    }
     main>section:first-child>ul::-webkit-scrollbar
     {
         width: 0;
@@ -103,7 +102,8 @@ main>section:last-child ul li{
         padding: 0 24px;
     }
     main>section:last-child p {
-        font-size: 13px
+        font-size: 13px;
+        line-height: 24px;
     }
     main>section:last-child ul li {
         font-size: 13px;

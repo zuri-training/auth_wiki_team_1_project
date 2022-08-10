@@ -48,7 +48,7 @@ main>section:last-child>div:last-child{
     margin-top: 36px;
 }
 main>section:last-child p{
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
     line-height: 32px;
     color: var(--black)
