@@ -8,21 +8,14 @@ body {
   background: #ffffff;
   color: #fff;
 }
-#header1 {
-  width: 100%;
-  height: 135vh;
-  background-image: url(img/Man\ on\ Laptop\ illustration\ -\ HomePage.svg);
-  background-repeat: no-repeat;
-  background-size: 700px 500px;
-  background-position: 700px;
 
-  cursor: pointer;
-}
-
-.header-text img {
+.header-text .man{
+  width: 40%;
+  justify-content: space-between;
   position: absolute;
-  margin-left: -20px;
-  margin-top: 4px;
+  left: 700px;
+  margin-top: -30px;
+  
 }
 .container {
   padding: 30px 5%;
@@ -117,7 +110,7 @@ nav ul li a {
   width: 225px;
   height: 60px;
   left: 100px;
-  top: 684px;
+  top: 660px;
   background-color: #5600e2;
   box-shadow: 0px 4px 20px rgba(86, 0, 226, 0.25);
   border-radius: 12px;
@@ -141,6 +134,7 @@ nav ul li a {
   margin-top: 10%;
   font-size: 20px;
   color: #272727;
+ 
 }
 
 .header-text h1 {
@@ -178,11 +172,14 @@ nav ul li a {
   
   
 }
+/*-----small icon----*/
 .header-text1 img {
   position: absolute;
-  left: -8px;
-  width: 18px;
+  left: -20px;
+  width: 13px;
   height: 18px;
+
+  justify-content: space-between;
 }
 
 .header-text h6{
@@ -198,17 +195,19 @@ color: #272727;
 }
 
 
-/*-----------about us----------*/
+/*-----------about us------------*/
 
 #about {
-  padding: 80px 0;
-  color: #272727;
-  background-color: rgba(255, 247, 234, 0.5);
+  padding: 80px 0; 
+ background-color: rgba(255, 247, 234, 0.5);
   background-image: url(img/About\ us\ circle.svg);
   background-repeat: no-repeat;
   background-size: 200px 100px;
   background-position: 805px;
   background-position-y: 110px;
+
+  
+  margin-top: 350px;
 }
 .row {
   display: flex;
@@ -219,10 +218,16 @@ color: #272727;
   flex-basis: 35%;
 }
 .about-col-1 img {
+  
   width: 150%;
   border-radius: 15px;
-  margin-top: -50px;
+  margin-top: 10px;
+  margin-left: 50px;
   cursor: pointer;
+  top: 100px;
+  
+  
+ 
 }
 .about-col-2 {
   flex-basis: 65%;
@@ -256,6 +261,7 @@ font-size: 16px;
 #services {
   padding: 30px 0;
   background-image: url(img/Core\ Features\ SVG\ bg.svg);
+  margin-top: 100px;
 }
 .containers h1 {
   color: #5600e2;
@@ -277,9 +283,14 @@ font-size: 16px;
   padding: 5px;
   text-align: center;
   line-height: 30px;
+ 
 }
 
-.features-box {
+.boxtext3{
+  position: absolute;
+}
+
+.features1-box {
   background-color: #ffffff;
   width: 360px;
   height: 266px;
@@ -289,6 +300,29 @@ font-size: 16px;
   text-decoration: none;
   border-radius: 10px;
 }
+
+.features2-box {
+  background-color: #ffffff;
+   width: 360px;
+   height: 266px;
+   border: 1px solid #5600e2;
+   padding: 50px;
+   margin: 20px;
+   text-decoration: none;
+   border-radius: 10px;
+ }
+
+ .features3-box {
+   background-color: #ffffff;
+   width: 360px;
+   height: 266px;
+   border: 1px solid #5600e2;
+   padding: 50px;
+   margin: 20px;
+   text-decoration: none;
+   border-radius: 10px;
+ }
+
 
 .services-list {
   display: grid;
@@ -343,7 +377,9 @@ font-size: 16px;
   width: 20%;
   color: #5600e2;
 }
-.features-box p {
+
+/*.features-box p*/
+.services-list p {        
   font-family: "sora";
   font-weight: 400;
   font-style: normal;
@@ -360,6 +396,9 @@ font-size: 16px;
 #getintouch {
   padding: 80px 0;
   color: #272727;
+
+
+  margin-top: 500px;
 }
 .row {
   display: flex;
@@ -368,7 +407,8 @@ font-size: 16px;
 }
 
 .about-col-11 img {
-  margin-top: 100px;
+  margin-top: -500px;
+
   width: 500px;
   height: 732px;
   position: absolute;
@@ -377,6 +417,9 @@ font-size: 16px;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
+  position: absolute;
+  justify-content: space-between;
+  
 }
 .about-col-22 {
   flex-basis: 65%;
@@ -386,17 +429,21 @@ font-size: 16px;
 }
 .sub-get span {
   font-family: "sora";
-  width: 231px;
+  width: 300px;
   height: 45px;
   font-size: 36px;
   font-weight: 600;
   line-height: 45px;
-  left: 750px;
+  left: 500px;
   top: 70px;
   color: #5600e2;
-  margin-left: -0%;
   padding: 10px;
-  margin-left: 115px;
+  margin-left: 100px;
+  position: absolute;
+  top: 2110px;
+  
+  
+  
 }
 .btn2 {
   width: 151px;
@@ -413,6 +460,8 @@ font-size: 16px;
   cursor: pointer;
   margin-left: 45%;
   box-shadow: 0px 4px 20px rgba(86, 0, 226, 0.25);
+  right: 300px;
+  position: absolute;
 }
 
 .sub-getin {
@@ -424,8 +473,9 @@ font-size: 16px;
   font-style: normal;
   width: 504px;
   height: 49px;
-  left: 750px;
-  top: 123px;
+  left: 490px;
+  position: absolute;
+  top: 2180px;
 }
 
 .sub-info {
@@ -449,6 +499,8 @@ font-size: 14px;
   position: relative;
   border: 1px solid #cbcbcb;
   color: #CBCBCB;
+
+ top: -400px;
 }
 
 .contact-right textarea {
@@ -622,9 +674,18 @@ nav .fas{
   nav ul li a{
   display: none;
  }
+
+.header-text .man{
+  position: absolute;
+  margin-left: -590px;
+  width: 200px;
+  margin-top: -6px;
+}
+
  .logo{
   position: absolute;
-  left: 20px;
+  left: 25px;
+  top: 45px;
  }
  
  .header-text1{
@@ -641,14 +702,16 @@ nav .fas{
   order: 1;
   flex-grow: 0;
   position: absolute;
- margin-left: -55px;
+ margin-left: -65px;
+margin-top: 25px;
+
  }
 
  .header-text1 img{
   position: absolute;
-left: -2px;
+left: -15px;
 right: 11.57%;
-top: -6px;
+top: -3px;
  }
 
  .header-text h1{
@@ -656,7 +719,7 @@ top: -6px;
   width: 285px;
   height: 20px;
   left: 47px;
-  top: 373px;
+  top: 400px;
   
   font-family: 'Sora';
   font-style: normal;
@@ -679,18 +742,263 @@ top: -6px;
  }
  .header-text h6{
   position: relative;
-width: 327px;
+width: 330px;
 left: 24px;
-top: 401px;
 
+top: 270px;
+left: 10px;
+line-height: 24px;
 font-family: 'Sora';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
-
 color: #272727;
 
  }
 
+ .full{
+position: absolute;
+margin-top: -70px;
+background: #5600E2;
+box-shadow: 0px 1.28789px 6.43943px rgba(86, 0, 226, 0.25);
+border-radius: 5px;
+ }
 
+ .sub-titles{
+  position: absolute;
+  left: -5.57%;
+font-weight: 700;
+font-size: 13.7944px;
+justify-content: space-between;
+margin-top: -140px; 
+
+ }
+
+ .about-col-1 img {
+  position: absolute;
+  right: 75px;
+  width: 60%;
+  margin-top: 610px;
+  
+ }
+
+ #about {
+  background-image: url(img/About\ us\ circle.svg);
+  
+ }
+ .sub-info{
+  position: absolute;
+  left: -127px;
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 30px;
+color: #272727;
+margin-top: 110px;
+ }
+
+ .containers h1{
+  position: absolute;
+left: -100px;
+font-family: 'Sora';
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 28px;
+ }
+
+ .features1-box{
+  position: absolute;
+  margin-left: -15px;
+  height: 160px;
+  width: 42%;
+  margin-top: 100px;
+  
+ }
+
+ .icon1{
+  position: absolute;
+  left: -30px;
+  top: 90px; 
+  width: 20px;
+ }
+
+ .download-span span{
+position: absolute;
+left: -30px;
+top: 35px;
+font-family: 'Sora';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+
+ }
+ /*.features-box p*/
+ .features1-box .boxtext1 {
+  width: 180px;
+margin-left: -55px;
+bottom: 10px;
+font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+  line-height: 15px;
+  font-size: 12px;
+  color: #272727;
+  justify-content: space-between;
+  position: absolute;
+  text-align: center;
+  
+ }
+ .features2-box{
+  position: absolute;
+  margin-left: 160px;
+  height: 160px;
+  width: 42%;
+  margin-top: 100px;
+ }
+ .icon2{
+  position: absolute;
+  left: -30px;
+  top: 145px; 
+  width: 20px;
+ }
+
+ .contribute-span span{
+  position: absolute;
+left: -35px;
+top: 35px;
+font-family: 'Sora';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+ }
+ /*.features-box p*/
+.features2-box .boxtext2{
+  width: 180;
+margin-left: -55px;
+bottom: 10px;
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+  line-height: 12px;
+  font-size: 12px;
+  color: #272727;
+  justify-content: space-between;
+  position: absolute;
+  text-align: center;
+  
+ }
+
+ .features3-box{
+  position: absolute;
+  margin-left: 50px;
+  height: 160px;
+  width: 50%;
+  margin-top: 300px;
+ }
+
+ .icon3{
+  position: absolute;
+  left: -10px;
+  top: 165px; 
+  width: 20px;
+ }
+ .view-span span{
+  position: absolute;
+left: -3px;
+top: 35px;
+font-family: 'Sora';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 10px;
+align-items: center;
+width: 144px;
+height: 40px;
+ }
+
+ /*.features-box p*/
+.features3-box .boxtext3{
+  width: 180px;
+  margin-left: -40px;
+  bottom: 10px;
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+  line-height: 15px;
+  font-size: 12px;
+  color: #272727;
+  justify-content: space-between;
+  position: absolute;
+  text-align: center;
+ }
+
+ .sub-get span{
+  position: relative;
+  left: -48px;
+  width: 103%;
+  top: -185px;
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+justify-content: space-between;
+color: #5600E2;
+ }
+
+ .sub-getin {
+  line-height: 26px;
+  margin-left: 120px;
+  font-size: 10px;
+  font-family: "sora";
+  font-weight: 400;
+  font-style: normal;
+  width: 145px;
+  height: 49px;
+  left: 90px;
+  position: absolute;
+  margin-top: -600px;
+  color: #272727;
+}
+
+ .about-col-11 img{
+  display: block;
+  width: 200px;
+  margin-top: -150px;
+  height: 400px;
+  left: -0px;
+ 
+ }
+ form input,
+form textarea {
+  display: block;
+  width: 80%;
+  height: 20px;
+  left: -60px;
+  top: -100px;
+
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+line-height: 6px;
+color: #CBCBCB;
+justify-content: space-between;
+}
+.contact-right textarea {
+  height: 150px;
+}
+
+.btn2{
+  display: block;
+  position: absolute;
+  width: 180px;
+  margin-top: 100px;
+  left: 30px;
+  justify-content: space-between;
+margin-top: -80px;
+}
 }
