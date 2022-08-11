@@ -157,3 +157,17 @@ input::placeholder {
   margin-left: 90%;
   margin-top: -8%;
 }
+
+.cancel {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .cancel {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+}
