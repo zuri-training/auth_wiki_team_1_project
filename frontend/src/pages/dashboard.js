@@ -13,7 +13,7 @@ const Dashboard = () => {
     }
   }, [isLoggedIn, router]);
 
-  return <div>Dashboard {user !== null && user.first_name}</div>;
+  return <div>Welcome {user !== null && user.first_name}</div>;
 };
 
 export default Dashboard;
