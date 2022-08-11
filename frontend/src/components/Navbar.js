@@ -64,12 +64,14 @@ const Navbar = () => {
     <nav className={`container ${styles.nav}`}>
       <h2>
         <Link href="/">
-          <Image
-            src="/assets/logo.svg"
-            alt="auth wiki logo"
-            width={100}
-            height={30}
-          />
+          <a>
+            <Image
+              src="/assets/logo.svg"
+              alt="auth wiki logo"
+              width={100}
+              height={30}
+            />
+          </a>
         </Link>
       </h2>
 
