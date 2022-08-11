@@ -86,14 +86,8 @@ const Terms = () => {
               </p>
             </div>
           </div>
-          {/* <div className={styles.modal}>
-            <button type="submit-">ACCEPT</button>
 
-            <button type="submit">DECLINE</button>
-          </div> */}
           <div className={styles.modal}>
-            {/* omoo this thing fast, ee don done?. It should come down some more
-          the button should be at */}
             <button
               type="submit"
               className={[styles.button, styles.accept].join(" ")}
