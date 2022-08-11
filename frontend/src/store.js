@@ -40,9 +40,6 @@ export const initializeStore = (preloadedState) => {
   // Create the store once in the client
   if (!store) store = _store;
 
-  //   I think we should use PersistStore here, okay
-  // i no sabi oo, i just dey try lmao
-
   return _store;
 };
 

@@ -54,7 +54,7 @@ const Login = () => {
     }
   };
 
-  // redirect to dashboard page if user is logged in
+  // redirect to home page if user is logged in
   if (isLoggedIn) {
     router.push("/");
   }
@@ -145,7 +145,6 @@ const Login = () => {
                   alt="eye-icon"
                   width={24}
                   height={24}
-                  // className={styles.eye_icon}
                 />
               </div>
             </div>
@@ -168,20 +167,6 @@ const Login = () => {
                 "Sign In"
               )}
             </button>
-            {/* <h5 className={styles.or_text}>OR</h5>
-            <div className="github_btn">
-              <button className="github-accnt">
-                <Image
-                  src="/assets/Github.svg"
-                  alt="github_logo"
-                  width={24}
-                  height={24}
-                />
-                <h6 className={styles.git_text}>Continue with Github</h6>
-              </button>
-            </div> */}
-
-            {/* Register? */}
           </form>
         </div>
       </div>
