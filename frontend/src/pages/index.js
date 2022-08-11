@@ -69,7 +69,7 @@ const Home = () => {
             <p>Discover a new resource for authentication codes here.</p>
           </div>
           <p className={styles.community}>
-            Join our ever-growing <br />
+            Join our ever-growing <br className={styles.community_break} />
             <span>Community</span>
           </p>
           <p className={styles.description}>
@@ -95,6 +95,7 @@ const Home = () => {
         </div>
       </div>
 
+      {/* about */}
       <div className={styles.about_wrapper}>
         <div className={`container ${styles.about}`}>
           <div className={styles.about_image}>
@@ -127,14 +128,10 @@ const Home = () => {
         </div>
       </div>
 
+      {/* features */}
+
       <div className={`container ${styles.features}`}>
         <h5 className={styles.feature_title}>Our Core Features</h5>
-        {/* <p className={styles.features_subtitle}>
-          Auth-Wiki allows users to make use of our library of codes whether you
-          are creating an authentication system or simply browsing through.
-          Users can download our code samples or just viewing its usage for use
-          in their own application
-        </p> */}
         <div className={styles.card_container}>
           <div className={styles.card}>
             <div className={styles.feature_icon}>
@@ -183,7 +180,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className={styles.contact}>
+      <div className={`container ${styles.contact}`}>
         <div className={styles.left}>
           <div className={styles.contact_image}>
             <Image
