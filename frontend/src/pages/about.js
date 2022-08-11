@@ -89,7 +89,7 @@ const About = () => {
 
               <div className={styles.grid_card}>
                 <div className={styles.frame6}>
-                  <Link href="/about2">
+                  <Link href="/aboutus">
                     <div className={styles.frame6a}>
                       <div className={styles.subframe}>
                         <img src="/assets/Group 658.svg" alt="see more" />
