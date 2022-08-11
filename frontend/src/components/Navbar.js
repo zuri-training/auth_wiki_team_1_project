@@ -62,18 +62,16 @@ const Navbar = () => {
 
   return (
     <nav className={`container ${styles.nav}`}>
-      <h2>
-        <Link href="/">
-          <a>
-            <Image
-              src="/assets/logo.svg"
-              alt="auth wiki logo"
-              width={100}
-              height={30}
-            />
-          </a>
-        </Link>
-      </h2>
+      <Link href="/">
+        <a>
+          <Image
+            src="/assets/logo.svg"
+            alt="auth wiki logo"
+            width={100}
+            height={30}
+          />
+        </a>
+      </Link>
 
       <div
         className={

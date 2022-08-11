@@ -82,6 +82,7 @@
   content: "";
   right: -400px;
   top: 500px;
+  z-index: 1;
 }
 
 /* faq questions wrapper */
@@ -122,6 +123,7 @@
   font-size: var(--para-16);
   font-family: "Sora", sans-serif;
   padding: 0.8rem 1.5rem;
+  z-index: 10;
 }
 
 @media screen and (max-width: 600px) {

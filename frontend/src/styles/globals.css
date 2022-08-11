@@ -38,6 +38,13 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Sora", sans-serif;
+  position: relative;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 a {
@@ -69,14 +76,14 @@ ul li {
 }
 
 .primaryBtn {
-  padding: 7px 24px;
+  padding: 10px 20px;
   background-color: #5600e2;
   color: #fff;
   cursor: pointer;
 }
 
 .secondaryBtn {
-  padding: 6px 20px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
