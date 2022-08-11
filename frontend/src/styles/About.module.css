@@ -29,10 +29,16 @@
 .add .marge{
     margin-top: 20px;
 }
+
+.hero_image1{
+    display: none;
+    width: 100%;
+}
 .hero_image{
     position: relative;
     left: 30px;
     top: 54px;
+    width: 100%;
 }
 
 
@@ -156,7 +162,20 @@
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 600px) {
-   
+   .add{
+    flex-direction: column-reverse;
+   }
+   .hero_image{
+    display: none;
+   }
+   .hero_image1{
+    display: block;
+   }
+   /* .add{
+    max-width: 90%;
+  margin: 0 60%;
+   overflow: hidden; 
+   } */
 
 
 }
