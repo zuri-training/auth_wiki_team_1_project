@@ -17,12 +17,12 @@ const Login = () => {
 
   // create login form state
   const [formData, setFormData] = useState({
-    email: "",
+    username: "",
     password: "",
   });
 
   // destructure login data from state
-  const { email, password } = formData;
+  const { username, password } = formData;
 
   useEffect(() => {
     dispatch(reset_register_success());
@@ -41,13 +41,13 @@ const Login = () => {
   // create form submit handler function
   const onSubmit = (e) => {
     e.preventDefault();
-    if (!email || !password) {
+    if (!username || !password) {
       toast.error("Please provide all fields");
       return;
     } else {
       dispatch(login(formData));
       setFormData({
-        email: "",
+        username: "",
         password: "",
       });
     }
@@ -112,15 +112,15 @@ const Login = () => {
 
         <form onSubmit={onSubmit}>
           <div className="form_group">
-            <label className="label" htmlFor="email">
-              Email
+            <label className="label" htmlFor="username">
+              Username
             </label>
             <input
-              type="email"
-              value={email}
-              name="email"
+              type="username"
+              value={username}
+              name="username"
               onChange={onChange}
-              placeholder="Please enter your email"
+              placeholder="Please enter your username"
             />
           </div>
           <div className="form_group">
