@@ -1,8 +1,12 @@
+import AppLayout from "../../components/Layouts/AppLayout";
+
 const Documentation = () => {
   return (
-    <div>
-      <h2>Welcome to the documentation page</h2>
-    </div>
+    <AppLayout>
+      <div>
+        <h2>Welcome to the documentation page</h2>
+      </div>
+    </AppLayout>
   );
 };
 
