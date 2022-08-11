@@ -1,0 +1,49 @@
+{
+  "samples": [
+    {
+      "id": 1,
+      "title": "EXPRESSJS LOGIN",
+      "description": "Use this Authentication code to log your users in. It accepts two parameters, a request (req) and a response (res). The request parameter (req) helps you get the email and password of your user, checks if it is empty and then compares it to the record in your database. If the login details of the user are correct, it generates a json web token for your user. ",
+      "date": "July 12, 2022",
+      "downloads": 1234,
+      "likes": 2,
+      "comments": 5
+    },
+    {
+      "id": 2,
+      "title": "EXPRESSJS LOGIN",
+      "description": "Use this Authentication code to log your users in. It accepts two parameters, a request (req) and a response (res). The request parameter (req) helps you get the email and password of your user, checks if it is empty and then compares it to the record in your database. If the login details of the user are correct, it generates a json web token for your user. ",
+      "date": "July 12, 2022",
+      "downloads": "1234",
+      "likes": 2,
+      "comments": 5
+    },
+    {
+      "id": 3,
+      "title": "EXPRESSJS LOGIN",
+      "description": "Use this Authentication code to log your users in. It accepts two parameters, a request (req) and a response (res). The request parameter (req) helps you get the email and password of your user, checks if it is empty and then compares it to the record in your database. If the login details of the user are correct, it generates a json web token for your user. ",
+      "date": "July 12, 2022",
+      "downloads": "1234",
+      "likes": 2,
+      "comments": 5
+    },
+    {
+      "id": 4,
+      "title": "EXPRESSJS LOGIN",
+      "description": "Use this Authentication code to log your users in. It accepts two parameters, a request (req) and a response (res). The request parameter (req) helps you get the email and password of your user, checks if it is empty and then compares it to the record in your database. If the login details of the user are correct, it generates a json web token for your user. ",
+      "date": "July 12, 2022",
+      "downloads": "1234",
+      "likes": 2,
+      "comments": 5
+    },
+    {
+      "id": 5,
+      "title": "EXPRESSJS LOGIN",
+      "description": "Use this Authentication code to log your users in. It accepts two parameters, a request (req) and a response (res). The request parameter (req) helps you get the email and password of your user, checks if it is empty and then compares it to the record in your database. If the login details of the user are correct, it generates a json web token for your user. ",
+      "date": "July 12, 2022",
+      "downloads": "1234",
+      "likes": 2,
+      "comments": 5
+    }
+  ]
+}
