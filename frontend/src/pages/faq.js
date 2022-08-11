@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import { useState, useEffect } from "react";
 import styles from "../styles/Faq.module.css";
 import { PrimaryButton } from "../components/utils/Buttons";
