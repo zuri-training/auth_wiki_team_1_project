@@ -1,13 +1,16 @@
+/* 
+  STYLES FOR DESKTOP
+*/
+
 .header {
   display: flex;
   justify-content: space-between;
-  /* gap: 62px; */
+  align-items: center;
 }
 
 .discovery {
   display: flex;
   gap: 8px;
-  width: 470px;
 }
 
 .discovery p,
@@ -24,11 +27,8 @@
   margin-top: 96.31px;
 }
 .community {
-  font-size: 45px;
-  font-family: "Sora";
+  font-size: var(--heading-one);
   margin-top: 15px;
-  width: 518px;
-
   font-weight: 600;
 }
 
@@ -92,7 +92,7 @@
 .features {
   background-image: url("/assets/featuresBackground.svg");
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-position: right;
   margin-top: 116px;
   margin-bottom: 116px;
@@ -118,6 +118,8 @@
 .card_container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 54px;
 }
 
@@ -147,8 +149,6 @@
 }
 
 .feature_description {
-  width: 271px;
-  height: 84px;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
@@ -156,14 +156,15 @@
   margin-top: 16px;
 }
 
+/* contact */
 .contact {
   display: flex;
-  gap: 81px;
+  /* gap: 81px; */
 }
 
 .left {
-  width: 50%;
-
+  /* width: 50%; */
+  flex: 1;
   height: 732px;
   background: rgba(255, 247, 234, 0.5);
 }
@@ -176,9 +177,8 @@
 }
 
 .right {
-  width: 504px;
-  height: 591px;
-  margin-top: 70px;
+  flex: 1;
+  padding-left: 20px;
 }
 
 .right h2 {
@@ -237,4 +237,108 @@
   box-shadow: 0px 4px 20px rgba(86, 0, 226, 0.25);
   border-radius: 12px;
   margin-top: 40px;
+}
+
+/* STYLES FOR MOBILE */
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .discovery {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .discovery p {
+    font-size: var(--para-small-two);
+  }
+
+  .community {
+    font-size: var(--para-one);
+    text-align: center;
+  }
+
+  .community_break {
+    display: none;
+  }
+
+  .home_image {
+    margin-top: 0;
+    order: 0;
+  }
+
+  .header_text {
+    margin-top: 20px;
+    order: 1;
+    /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+  }
+
+  .description {
+    font-size: var(--para-two);
+    text-align: left;
+  }
+
+  .signup {
+    margin-top: 32px;
+    box-shadow: 0px 1.28789px 6.43943px rgba(86, 0, 226, 0.25);
+  }
+
+  /* about section */
+
+  .about {
+    flex-direction: column;
+  }
+
+  /* features */
+  .card {
+    width: 176px;
+    height: 151px;
+    padding: 0 5px;
+  }
+  .feature_icon {
+    /* margin-top: 10px; */
+    width: 20px;
+    height: 20px;
+  }
+
+  .feature_icon img {
+    width: 100%;
+  }
+
+  .feature_header {
+    font-size: var(--para-one);
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .feature_description {
+    font-size: var(--para-small-two);
+    align-items: center;
+    margin-top: 0;
+    line-height: 16px;
+  }
+
+  /* GET IN TOUCH */
+  .right {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .right input,
+  .right textarea {
+    width: 100%;
+  }
+
+  .right h2 {
+    font-size: var(--para-one);
+  }
+
+  .right p {
+    font-size: var(--para-small-one);
+  }
 }
