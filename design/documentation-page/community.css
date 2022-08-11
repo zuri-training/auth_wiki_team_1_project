@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: 'Sora', sans-serif;
+}
+:root{
+    --grey: #CBCBCB;
+    --purple: #5600E2;
+    --light-purple: rgba(203, 176, 246, 1);
+    --black: #272727;
+}
+main{
+    display: grid;
+    grid-template-columns: 27.72% 72.28%;
+    grid-template-rows: 100%;
+    margin: 36px 0 0 0 ;
+}
+main>section:first-child{
+    border-right: 1px solid var(--light-purple);
+    background-image: url(get-started-assets/images/Frame.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 122px
+}
+main>section:first-child>ul>li{
+    list-style: none;
+    margin: 24px 12px 24px 133px;
+}
+main>section:first-child a{
+    text-decoration: none;
+    color: var(--grey);
+    font-size: 18px
+}
+main>section:first-child a.active{
+    font-weight: 900;
+    color: var(--purple)
+}
+main>section:first-child a:hover{
+    color: var(--purple);
+    transition: .1s
+}
+main>section:last-child{
+   padding: 0 103px 80px 64px
+}
+main>section:last-child>div:last-child{
+    margin-top: 36px;
+}
+main>section:last-child p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--black)
+}
+main>section:last-child a{
+    color: var(--purple);
+    text-decoration: none;
+}
+main>section:last-child a:hover{
+    color: hsl(263, 100%, 60%);
+}
+main>section:last-child ul li{
+    list-style: none;
+    line-height: 32px;
+    font-size: 18px;
+}
+@media screen and (max-width: 1024px){
+    main {
+        grid-template-columns: 30% 70%;
+    }
+    main>section:first-child>ul>li {
+        list-style: none;
+        margin: 24px 12px 24px 76px;
+    }
+}
+@media screen and (max-width: 767px){
+    main{
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 95%;
+    }
+    main>section:first-child>ul{
+        display: -webkit-inline-box;
+        flex-direction: row;
+        overflow-x: scroll;
+    }
+    main>section:first-child>ul::-webkit-scrollbar
+    {
+        width: 0;
+    }
+    main>section:first-child>ul>li {
+        margin: 0px 24px 0 0;
+    }
+    main>section:first-child a {
+        font-size: 16px;
+    }
+    main>section:first-child{
+        border-right: none;
+        background-image: none;
+        margin: 0 24px;
+    }
+    main>section:last-child {
+        padding: 0 24px;
+    }
+    main>section:last-child p {
+        font-size: 13px
+    }
+    main>section:last-child ul li {
+        font-size: 13px;
+    }
+}
