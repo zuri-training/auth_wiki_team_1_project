@@ -49,6 +49,9 @@ const About = () => {
                 download our code samples or just viewing its usage for use in
                 their own application
               </p>
+              <div className={styles.hero_image1}>
+                <img src="/assets/aboutUs.svg" alt="about Image" />
+              </div>
               <p className={styles.marge}>
                 At AuthWiki, guest users can view documentations, interact and
                 contribute, however, download of codes is unavailable while
