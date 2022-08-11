@@ -78,8 +78,8 @@ const About = () => {
 
             <div className={styles.team_img}>
               {TEAM_MEMBERS.map((member, index) => (
-                <div className={styles.grid_card}>
-                  <div key={index} className={styles.frame1}>
+                <div key={index} className={styles.grid_card}>
+                  <div className={styles.frame1}>
                     <img src={member.profilePicture} alt="profile picture" />
                   </div>
                   <p className={styles.a1}>{member.name}</p>
