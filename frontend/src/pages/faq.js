@@ -1,12 +1,17 @@
 import Image from "next/image";
-
+import Link from 'next/link';
 import { useState, useEffect } from "react";
 import styles from "../styles/Faq.module.css";
 import { PrimaryButton } from "../components/utils/Buttons";
 import faqData from "../data/faqdata";
+import {useRouter} from "next/router"
 
 const FAQ = () => {
   const [faqs, setFaqs] = useState(faqData);
+  const router = useRouter();
+  function handleButton(){
+      router.push ("/support/support")
+  }
   const [searchInput, setSearchInput] = useState("");
 
   const onSearchSubmit = (e) => {
@@ -77,7 +82,7 @@ const FAQ = () => {
               get in touch with us
             </p>
           </div>
-          <PrimaryButton className={styles.faq_cta_btn}>
+          <PrimaryButton className={styles.faq_cta_btn} onClick={handleButton}>
             Get in touch
           </PrimaryButton>
         </div>
