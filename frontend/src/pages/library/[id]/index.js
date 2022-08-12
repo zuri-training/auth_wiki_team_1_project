@@ -1,5 +1,11 @@
+import AppLayout from "../../../components/Layouts/AppLayout";
+
 const SingleSample = () => {
-  return <h2>Single Sample Page</h2>;
+  return (
+    <AppLayout>
+      <h2>Single Sample Page</h2>
+    </AppLayout>
+  );
 };
 
 export default SingleSample;

@@ -110,7 +110,7 @@ const Register = () => {
           </div>
           <div className={styles.bottom}>
             <Image
-              src="/assets/bottom ellipse.svg"
+              src="/assets/bottomellipse.svg"
               alt="top-line"
               width={330}
               height={450}
