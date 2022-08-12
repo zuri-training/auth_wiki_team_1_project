@@ -102,12 +102,16 @@ const AboutUs = () => {
           <section>
             <div className={styles.team_img}>
               {TEAM_MEMBERS.map((member, index) => (
-                <div className={styles.grid_card}>
-                  <div key={index} className={styles.frame1}>
-                    <img src={member.profilePicture} alt="profile picture" />
+                <div key={index} className={styles.grid_card}>
+                  <div>
+                    <div className={styles.frame1}>
+                      <img src={member.profilePicture} alt="profile picture" />
+                    </div>
+                    <div className={styles.grid_title}>
+                      <p className={styles.a1}>{member.name}</p>
+                      <p className={styles.b1}>{member.position}</p>
+                    </div>
                   </div>
-                  <p className={styles.a1}>{member.name}</p>
-                  <p className={styles.b1}>{member.position}</p>
                 </div>
               ))}
             </div>

@@ -10,17 +10,7 @@
   justify-content: space-between;
 }
 
-/* .hero_content {
-  flex: 0.7;
-}
-
-.hero_image {
-  flex: 0.3;
-} */
-
 .add h1 {
-  font-family: "Sora";
-  font-style: normal;
   font-weight: 600;
   font-size: 45px;
   line-height: 57px;
@@ -77,8 +67,6 @@
   margin: 37px auto;
   text-align: center;
   color: #131415;
-  /* width: 938px;  */
-  /* height: 64px; */
 }
 .team_img {
   display: grid;
@@ -185,9 +173,4 @@
   .hero_image1 {
     display: block;
   }
-  /* .add{
-    max-width: 90%;
-  margin: 0 60%;
-   overflow: hidden; 
-   } */
 }
