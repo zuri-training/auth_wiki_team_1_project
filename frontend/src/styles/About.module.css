@@ -3,11 +3,21 @@
 }
 
 .add {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
   align-items: center;
   gap: 73px;
   justify-content: space-between;
 }
+
+/* .hero_content {
+  flex: 0.7;
+}
+
+.hero_image {
+  flex: 0.3;
+} */
+
 .add h1 {
   font-family: "Sora";
   font-style: normal;
@@ -17,6 +27,9 @@
   color: #5600e2;
   margin-bottom: 16px;
   margin-top: 36px;
+}
+.add img {
+  width: 100%;
 }
 
 .add p {
@@ -40,6 +53,12 @@
   width: 100%;
 }
 
+.grid_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .team_content h1 {
   font-weight: 700;
   font-size: 45px;
@@ -58,12 +77,13 @@
   margin: 37px auto;
   text-align: center;
   color: #131415;
-  width: 938px;
-  height: 64px;
+  /* width: 938px;  */
+  /* height: 64px; */
 }
 .team_img {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   gap: 50px;
 }
 .team_img p {
@@ -86,7 +106,7 @@
   height: 250px;
 }
 
-.team_img .a1 {
+.team .team_img .a1 {
   font-weight: 600;
   font-size: 20px;
   line-height: 25px;
@@ -157,7 +177,7 @@
 /* MEDIA QUERIES */
 @media only screen and (max-width: 600px) {
   .add {
-    flex-direction: column-reverse;
+    grid-template-columns: 1fr;
   }
   .hero_image {
     display: none;
