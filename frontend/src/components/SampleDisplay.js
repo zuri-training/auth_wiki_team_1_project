@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 import { useRouter } from "next/router";
 
 import styles from "../styles/SampleCodeDisplay.module.css";
@@ -8,15 +9,14 @@ import Modal from "./Modal";
 
 const SampleDisplay = ({ sample }) => {
   const { title, date, description, downloads, likes, comments, id } = sample;
+  const user = useSelector((state) => state.account.user);
 
   const [modalShow, setModalShow] = useState(false);
 
   const router = useRouter();
 
-  let user = "authenticated";
-
   function handleViewMore() {
-    if (user !== "authenticated") {
+    if (!user) {
       setModalShow(true);
     } else {
       router.push(`/library/:${id}`);

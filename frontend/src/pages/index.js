@@ -180,7 +180,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className={`container ${styles.contact}`}>
+      <div className={` ${styles.contact}`}>
         <div className={styles.left}>
           <div className={styles.contact_image}>
             <Image
@@ -192,7 +192,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className={styles.right}>
+        <div className={`container ${styles.right}`}>
           <h2>Get In Touch</h2>
           <p>
             For your enquiries and questions, make use of the form fields below

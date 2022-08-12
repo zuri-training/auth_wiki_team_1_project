@@ -159,6 +159,7 @@
 /* contact */
 .contact {
   display: flex;
+  padding: 20px 0;
   /* gap: 81px; */
 }
 
@@ -193,6 +194,11 @@
   font-size: 16px;
   line-height: 26px;
   color: #272727;
+}
+
+.right input:focus,
+.right textarea:focus {
+  outline: 1px solid var(--primary-100);
 }
 
 .right input,
@@ -325,12 +331,22 @@
   }
 
   /* GET IN TOUCH */
+  .left {
+    width: 100%;
+  }
+  .contact {
+    flex-direction: column;
+  }
   .right {
     margin-right: 0;
     margin-left: 0;
   }
   .right input,
   .right textarea {
+    width: 100%;
+  }
+
+  .right button {
     width: 100%;
   }
 

@@ -25,11 +25,17 @@
   max-width: 500px;
   padding: 30px;
   z-index: 100;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .modal_items_color {
   color: var(--primary-100);
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .modal_actions {
@@ -62,4 +68,10 @@
   border-radius: 8px;
   color: #fff;
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .modal {
+    margin: 10px;
+  }
 }

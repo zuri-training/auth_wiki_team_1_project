@@ -30,8 +30,8 @@ const mailer = async (email, subject, text) => {
 // handle sending get in touch message
 export default async (request, response) => {
   if (request.method === "POST") {
-    const { fullname, email, message } = request.body;
-    if (!fullname || !email || !message) {
+    const { email, message } = request.body;
+    if (!email || !message) {
       response
         .status(400)
         .json({ error: "Please make sure form fields are filled" });

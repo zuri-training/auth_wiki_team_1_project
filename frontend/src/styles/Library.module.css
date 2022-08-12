@@ -1,5 +1,6 @@
 .library_wrapper {
-  margin-bottom: 10rem;
+  /* margin-bottom: 10rem; */
+  padding: 40px 0;
 }
 
 .library_wrapper h2 span {
@@ -19,14 +20,16 @@
   border-radius: 8px;
   height: 60px;
   width: 430px;
+  margin-top: 32px;
   padding: 0;
 }
 
 .library_search_wrapper input {
   height: 100%;
+  width: 100%;
   border: none;
   outline: none;
-  flex: 5;
+  width: 80%;
 
   text-indent: 5px;
 }
@@ -41,8 +44,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 1;
+  width: 20%;
   padding: 0;
+}
+
+.library_search_wrapper_icon img {
+  color: #fff;
 }
 
 .library_header_sort select {
@@ -56,4 +63,23 @@
 .library_samples_wrapper {
   margin-top: 50px;
   border-top: 1px solid #5600e2;
+}
+
+@media screen and (max-width: 600px) {
+  .library_wrapper h2 {
+    font-size: var(--heading-five);
+  }
+  .library_header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .library_search_wrapper {
+    width: 100%;
+  }
+
+  .library_header_sort {
+    align-self: flex-end;
+    text-align: end;
+  }
 }

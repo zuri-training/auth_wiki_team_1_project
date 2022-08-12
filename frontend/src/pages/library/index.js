@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 import { FaSearch } from "react-icons/fa";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 import styles from "../../styles/Library.module.css";
 import SampleDisplay from "../../components/SampleDisplay";
@@ -9,17 +11,16 @@ const Library = ({ samples }) => {
   const [searchInput, setSearchInput] = useState("");
   const router = useRouter();
 
-  const isLoggedIn = true;
+  // const isLoggedIn = useSelector((state) => state.account.isLoggedIn);
 
-  function checkIfUserIsLoggedIn() {
+  let isLoggedIn = true;
+
+  useEffect(() => {
     if (!isLoggedIn) {
       router.push("/account/login");
     }
-  }
+  }, [isLoggedIn, router]);
 
-  useEffect(() => {
-    checkIfUserIsLoggedIn();
-  }, []);
   return (
     <section className={`container ${styles.library_wrapper}`}>
       <h2>
@@ -35,7 +36,12 @@ const Library = ({ samples }) => {
             onChange={(e) => setSearchInput(e.target.value)}
           />
           <span className={styles.library_search_wrapper_icon}>
-            <FaSearch />
+            <Image
+              src="/assets/search_white.svg"
+              alt="library search"
+              width={24}
+              height={24}
+            />
           </span>
         </div>
 
