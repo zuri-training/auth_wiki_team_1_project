@@ -183,54 +183,55 @@ const Home = () => {
           </div>
         </div>
 
-      <div className={` ${styles.contact}`}>
-        <div className={styles.left}>
-          <div className={styles.contact_image}>
-            <Image
-              src="/assets/contactImage.svg"
-              alt="contact  image"
-              width={397.96}
-              height={461.01}
-            />
+        <div className={` ${styles.contact}`}>
+          <div className={styles.left}>
+            <div className={styles.contact_image}>
+              <Image
+                src="/assets/contactImage.svg"
+                alt="contact  image"
+                width={397.96}
+                height={461.01}
+              />
+            </div>
+          </div>
+
+          <div className={`container ${styles.right}`}>
+            <h2>Get In Touch</h2>
+            <p>
+              For your enquiries and questions, make use of the form fields
+              below to get in touch with us.
+            </p>
+            <form onSubmit={onSubmitGetInTouch}>
+              <input
+                type="text"
+                placeholder="Full Name"
+                value={fullname}
+                onChange={onInputChange}
+                name="fullname"
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                value={email}
+                onChange={onInputChange}
+                name="email"
+              />
+              <textarea
+                placeholder="Message"
+                rows={10}
+                cols={52}
+                name="message"
+                value={message}
+                onChange={onInputChange}
+              ></textarea>
+              <div className={styles.contact_button}>
+                <button type="submit">Submit</button>
+              </div>
+            </form>
           </div>
         </div>
-
-        <div className={`container ${styles.right}`}>
-          <h2>Get In Touch</h2>
-          <p>
-            For your enquiries and questions, make use of the form fields below
-            to get in touch with us.
-          </p>
-          <form onSubmit={onSubmitGetInTouch}>
-            <input
-              type="text"
-              placeholder="Full Name"
-              value={fullname}
-              onChange={onInputChange}
-              name="fullname"
-            />
-            <input
-              type="email"
-              placeholder="Email Address"
-              value={email}
-              onChange={onInputChange}
-              name="email"
-            />
-            <textarea
-              placeholder="Message"
-              rows={10}
-              cols={52}
-              name="message"
-              value={message}
-              onChange={onInputChange}
-            ></textarea>
-            <div className={styles.contact_button}>
-              <button type="submit">Submit</button>
-            </div>
-          </form>
-        </div>
       </div>
-    </div>
+    </AppLayout>
   );
 };
 
