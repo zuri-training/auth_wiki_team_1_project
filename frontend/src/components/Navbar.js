@@ -26,16 +26,6 @@ const Navbar = () => {
   const authLinks = (
     <>
       <li>
-        <Link href="/dashboard">
-          <a
-            className={`${router.pathname == "/dashboard" && styles.active}`}
-            onClick={() => setShowMenu(false)}
-          >
-            Dashboard
-          </a>
-        </Link>
-      </li>
-      <li>
         <a onClick={handleLogout}>Logout</a>
       </li>
     </>
