@@ -68,33 +68,41 @@ const Login = () => {
   return (
     <AuthLayout>
       <div className={`container ${styles.loginWrapper}`}>
-        <div className={styles.A}>
-          <div className={styles.top}>
+        <div className={styles.loginSolid}>
+          <div className={styles.loginSolid_top_img}>
             <Image
-              src="/assets/Frame.svg"
+              src="/assets/topellipse.svg"
               alt="top-line"
-              width={630}
-              height={850}
+              width={300}
+              height={300}
             />
-            <div className={styles.logo_text}>
-              <Image
-                className={styles.img}
-                src="/assets/auth_wiki.svg"
-                alt="logo"
-                width={41}
-                height={64}
-              />
+          </div>
+          <div className={styles.loginSolid_text}>
+            <Image
+              className={styles.img}
+              src="/assets/auth_wiki.svg"
+              alt="logo"
+              width={41}
+              height={64}
+            />
 
-              <h2>Welcome back</h2>
-              <p>
-                Sign in to get access to all pages, download codes and
-                contribute.
-              </p>
-            </div>
+            <h2>Welcome back</h2>
+            <p>
+              Sign in to get access to all pages, download codes and contribute.
+            </p>
           </div>
         </div>
 
-        <div className={styles.B}>
+        <div className={styles.loginSolid_bottom_img}>
+          <Image
+            src="/assets/bottomellipse.svg"
+            alt="top-line"
+            width={300}
+            height={300}
+          />
+        </div>
+
+        <div className={styles.loginForm}>
           <header className={styles.links}>
             {/* Signin Link */}
             <div className={`${styles.sign_link} ${styles.signin}`}>
@@ -113,38 +121,39 @@ const Login = () => {
             </div>
           </header>
 
-          <form onSubmit={onSubmit}>
-            <div className="form_group">
-              <label className="label" htmlFor="username">
-                Username
+          <form onSubmit={onSubmit} className={styles.form_group_wrapper}>
+            <div className={styles.form_group}>
+              <label className="label" htmlFor="email">
+                Email
               </label>
               <input
-                type="username"
-                value={username}
-                name="username"
+                type="email"
+                value={email}
+                name="email"
                 onChange={onChange}
-                placeholder="Please enter your username"
+                placeholder="Please enter your email"
               />
             </div>
-            <div className="form_group">
+            <div className={styles.form_group}>
               <label className="label" htmlFor="password">
                 Password
               </label>
-              <input
-                type={passwordShown ? "text" : "password"}
-                value={password}
-                name="password"
-                onChange={onChange}
-                placeholder="Please enter your password"
-              />
+              <div className={styles.form_group_input_wrapper}>
+                <input
+                  type={passwordShown ? "text" : "password"}
+                  value={password}
+                  name="password"
+                  onChange={onChange}
+                  placeholder="Please enter your password"
+                />
 
-              <div className="eye_icon">
                 <Image
                   onClick={togglePassword}
                   src="/assets/eye.svg"
                   alt="eye-icon"
                   width={24}
                   height={24}
+                  // className={styles.eye_icon}
                 />
               </div>
             </div>
