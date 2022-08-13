@@ -123,15 +123,15 @@ const Login = () => {
 
           <form onSubmit={onSubmit} className={styles.form_group_wrapper}>
             <div className={styles.form_group}>
-              <label className="label" htmlFor="email">
-                Email
+              <label className="label" htmlFor="username">
+                Username
               </label>
               <input
-                type="email"
-                value={email}
-                name="email"
+                type="username"
+                value={username}
+                name="username"
                 onChange={onChange}
-                placeholder="Please enter your email"
+                placeholder="Please enter your username"
               />
             </div>
             <div className={styles.form_group}>
