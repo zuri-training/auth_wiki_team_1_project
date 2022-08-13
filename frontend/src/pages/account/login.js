@@ -7,6 +7,7 @@ import { login, reset_register_success } from "../../actions/account";
 import { useRouter } from "next/router";
 import { useSelector, useDispatch } from "react-redux";
 import styles from "../../styles/Signin.module.css";
+import AuthLayout from "../../components/Layouts/AuthLayout";
 
 const Login = () => {
   // load states from redux
@@ -17,12 +18,12 @@ const Login = () => {
 
   // create login form state
   const [formData, setFormData] = useState({
-    email: "",
+    username: "",
     password: "",
   });
 
   // destructure login data from state
-  const { email, password } = formData;
+  const { username, password } = formData;
 
   useEffect(() => {
     dispatch(reset_register_success());
@@ -41,21 +42,21 @@ const Login = () => {
   // create form submit handler function
   const onSubmit = (e) => {
     e.preventDefault();
-    if (!email || !password) {
+    if (!username || !password) {
       toast.error("Please provide all fields");
       return;
     } else {
       dispatch(login(formData));
       setFormData({
-        email: "",
+        username: "",
         password: "",
       });
     }
   };
 
-  // redirect to dashboard page if user is logged in
+  // redirect to home page if user is logged in
   if (isLoggedIn) {
-    router.push("/dashboard");
+    router.push("/");
   }
 
   // password toggle visibility
@@ -65,16 +66,18 @@ const Login = () => {
   };
 
   return (
-    <div className={`container ${styles.loginWrapper}`}>
-      <div className={styles.A}>
-        <div className={styles.top}>
-          <Image
-            src="/assets/Frame.svg"
-            alt="top-line"
-            width={630}
-            height={850}
-          />
-          <div className={styles.logo_text}>
+    <AuthLayout>
+      <div className={`container ${styles.loginWrapper}`}>
+        <div className={styles.loginSolid}>
+          <div className={styles.loginSolid_top_img}>
+            <Image
+              src="/assets/topellipse.svg"
+              alt="top-line"
+              width={300}
+              height={300}
+            />
+          </div>
+          <div className={styles.loginSolid_text}>
             <Image
               className={styles.img}
               src="/assets/auth_wiki.svg"
@@ -89,99 +92,94 @@ const Login = () => {
             </p>
           </div>
         </div>
-      </div>
 
-      <div className={styles.B}>
-        <header className={styles.links}>
-          {/* Signin Link */}
-          <div className={`${styles.sign_link} ${styles.signin}`}>
-            <h3>
-              <Link href="/account/login">Sign In</Link>
-            </h3>
-            <div className={styles.underline}></div>
-          </div>
+        <div className={styles.loginSolid_bottom_img}>
+          <Image
+            src="/assets/bottomellipse.svg"
+            alt="top-line"
+            width={300}
+            height={300}
+          />
+        </div>
 
-          {/* signup link */}
-          <div className={`${styles.sign_link} ${styles.signup}`}>
-            <h3>
-              <Link href="/account/register">Sign Up</Link>
-            </h3>
-            <div className={styles.underline}></div>
-          </div>
-        </header>
-
-        <form onSubmit={onSubmit}>
-          <div className="form_group">
-            <label className="label" htmlFor="email">
-              Email
-            </label>
-            <input
-              type="email"
-              value={email}
-              name="email"
-              onChange={onChange}
-              placeholder="Please enter your email"
-            />
-          </div>
-          <div className="form_group">
-            <label className="label" htmlFor="password">
-              Password
-            </label>
-            <input
-              type={passwordShown ? "text" : "password"}
-              value={password}
-              name="password"
-              onChange={onChange}
-              placeholder="Please enter your password"
-            />
-
-            <div className="eye_icon">
-              <Image
-                onClick={togglePassword}
-                src="/assets/eye.svg"
-                alt="eye-icon"
-                width={24}
-                height={24}
-                // className={styles.eye_icon}
-              />
+        <div className={styles.loginForm}>
+          <header className={styles.links}>
+            {/* Signin Link */}
+            <div className={`${styles.sign_link} ${styles.signin}`}>
+              <h3>
+                <Link href="/account/login">Sign In</Link>
+              </h3>
+              <div className={styles.underline}></div>
             </div>
-          </div>
-          <div className={styles.checkbox_link}>
-            <div className={styles.checkbox}>
-              <input type="checkbox" name="remember-me" id="remember-me" />
-              <label htmlFor="remember-me">
-                <p>Remember Me</p>
+
+            {/* signup link */}
+            <div className={`${styles.sign_link} ${styles.signup}`}>
+              <h3>
+                <Link href="/account/register">Sign Up</Link>
+              </h3>
+              <div className={styles.underline}></div>
+            </div>
+          </header>
+
+          <form onSubmit={onSubmit} className={styles.form_group_wrapper}>
+            <div className={styles.form_group}>
+              <label className="label" htmlFor="username">
+                Username
               </label>
-            </div>
-            <div className={styles.forgot_link}>
-              <Link href="/account/forgotPassword">Forgot Password?</Link>
-            </div>
-          </div>
-
-          <button type="submit" className={styles.signinbtn}>
-            {loading ? (
-              <ThreeDots color="#FFF" height={40} width={40} />
-            ) : (
-              "Sign In"
-            )}
-          </button>
-          {/* <h5 className={styles.or_text}>OR</h5>
-          <div className="github_btn">
-            <button className="github-accnt">
-              <Image
-                src="/assets/Github.svg"
-                alt="github_logo"
-                width={24}
-                height={24}
+              <input
+                type="username"
+                value={username}
+                name="username"
+                onChange={onChange}
+                placeholder="Please enter your username"
               />
-              <h6 className={styles.git_text}>Continue with Github</h6>
-            </button>
-          </div> */}
+            </div>
+            <div className={styles.form_group}>
+              <label className="label" htmlFor="password">
+                Password
+              </label>
+              <div className={styles.form_group_input_wrapper}>
+                <input
+                  type={passwordShown ? "text" : "password"}
+                  value={password}
+                  name="password"
+                  onChange={onChange}
+                  placeholder="Please enter your password"
+                />
 
-          {/* Register? */}
-        </form>
+                <Image
+                  onClick={togglePassword}
+                  src="/assets/eye.svg"
+                  alt="eye-icon"
+                  width={24}
+                  height={24}
+                  // className={styles.eye_icon}
+                />
+              </div>
+            </div>
+            <div className={styles.checkbox_link}>
+              <div className={styles.checkbox}>
+                <input type="checkbox" name="remember-me" id="remember-me" />
+                <label htmlFor="remember-me">
+                  <p>Remember Me</p>
+                </label>
+              </div>
+              <div className={styles.forgot_link}>
+                <Link href="/account/forgotPassword">Forgot Password?</Link>
+              </div>
+            </div>
+
+            <button type="submit" className={styles.signinbtn}>
+              {loading ? (
+                <ThreeDots color="#FFF" height={40} width={40} />
+              ) : (
+                "Sign In"
+              )}
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
+    </AuthLayout>
   );
 };
 

@@ -145,8 +145,13 @@
 
   .faq_cta {
     flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
+  .faq_cta_btn {
+    width: 100%;
+  }
   .faq_cta p {
     font-size: var(--para-small-one);
   }

@@ -1,3 +1,7 @@
+.sampleDisplay_wrapper {
+  padding: 20px 0;
+}
+
 .sampleDisplay_actions {
   display: flex;
   align-items: center;
@@ -30,4 +34,13 @@
   display: flex;
   align-items: center;
   column-gap: 8px;
+  margin-bottom: 12px;
+}
+
+/* mobile view */
+
+@media screen and (max-width: 600px) {
+  .sampleDisplay_top p {
+    font-size: var(--para-two);
+  }
 }
