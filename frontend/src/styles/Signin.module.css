@@ -16,6 +16,8 @@
   color: #fff;
   flex: 1;
   position: relative;
+  width: 630px;
+  height: 850px;
 }
 
 .loginForm {
