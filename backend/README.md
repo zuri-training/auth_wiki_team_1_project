@@ -8,7 +8,7 @@
 
 2.  Inside the project folder, run
 
-    `virtualvenv venv && source venv/bin/activate`
+    `virtualvenv venv && source venv/bin/activate` or on Windows `\venv\Scripts\activate`
 
 3.  Inside the repository folder run
 
@@ -16,7 +16,7 @@
 
 4.  Create ENV file
 
-    `cp .env.example .env`
+    `cp .env.example .env` On windows, this command is best run on `git bash` command line
 
 5.  Generate a new secret key [from here](https://djecrety.ir) and put in the env file
 
