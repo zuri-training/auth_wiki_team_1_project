@@ -5,27 +5,21 @@
   box-sizing: border-box;
 }
 body {
-  background: #fff;
+  background: #ffffff;
   color: #fff;
 }
-#header1 {
-  width: 100%;
-  height: 135vh;
-  background-image: url(img/Man\ on\ Laptop\ illustration\ -\ HomePage.svg);
-  background-repeat: no-repeat;
-  background-size: 700px 500px;
-  background-position: 700px;
 
-  cursor: pointer;
-}
-
-.header-text img {
+.header-text .man{
+  width: 40%;
+  justify-content: space-between;
   position: absolute;
-  margin-left: -20px;
-  margin-top: 4px;
+  left: 700px;
+  margin-top: -30px;
+  
 }
 .container {
   padding: 30px 5%;
+ 
 }
 nav {
   display: flex;
@@ -116,7 +110,7 @@ nav ul li a {
   width: 225px;
   height: 60px;
   left: 100px;
-  top: 684px;
+  top: 660px;
   background-color: #5600e2;
   box-shadow: 0px 4px 20px rgba(86, 0, 226, 0.25);
   border-radius: 12px;
@@ -140,6 +134,7 @@ nav ul li a {
   margin-top: 10%;
   font-size: 20px;
   color: #272727;
+ 
 }
 
 .header-text h1 {
@@ -177,38 +172,42 @@ nav ul li a {
   
   
 }
+/*-----small icon----*/
 .header-text1 img {
   position: absolute;
-  left: -8px;
-  width: 18px;
+  left: -20px;
+  width: 13px;
   height: 18px;
+
+  justify-content: space-between;
 }
 
-.header-text h6 {
-  position: absolute;
-  width: 503px;
-  height: 163px;
-  left: 100px;
-  top: 457px;
-  font-family: "sora";
-  font-size: normal;
-  font-weight: 400px;
-  font-size: 16px;
+.header-text h6{
+  position: relative;
+  top: 270px;
+  left: 38px;
   line-height: 32px;
-  color: #272727;
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #272727;
 }
 
-/*-----------about us----------*/
+
+/*-----------about us---------------*/
 
 #about {
-  padding: 80px 0;
-  color: #272727;
-  background-color: rgba(255, 247, 234, 0.5);
+  padding: 80px 0; 
+ background-color: rgba(255, 247, 234, 0.5);
   background-image: url(img/About\ us\ circle.svg);
   background-repeat: no-repeat;
   background-size: 200px 100px;
   background-position: 805px;
   background-position-y: 110px;
+
+  
+  margin-top: 350px;
 }
 .row {
   display: flex;
@@ -219,10 +218,16 @@ nav ul li a {
   flex-basis: 35%;
 }
 .about-col-1 img {
+  
   width: 150%;
   border-radius: 15px;
-  margin-top: -50px;
+  margin-top: 10px;
+  margin-left: 50px;
   cursor: pointer;
+  top: 100px;
+  
+  
+ 
 }
 .about-col-2 {
   flex-basis: 65%;
@@ -245,16 +250,18 @@ nav ul li a {
   color: #272727;
   width: 419px;
   height: 210px;
-  font-family: "sora";
-  font-weight: 600;
-  font-size: 16px;
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
 }
 
-/*-------our features------------*/
+/*-------our features----------------*/
 
 #services {
   padding: 30px 0;
   background-image: url(img/Core\ Features\ SVG\ bg.svg);
+  margin-top: 100px;
 }
 .containers h1 {
   color: #5600e2;
@@ -276,9 +283,14 @@ nav ul li a {
   padding: 5px;
   text-align: center;
   line-height: 30px;
+ 
 }
 
-.features-box {
+.boxtext3{
+  position: absolute;
+}
+
+.features1-box {
   background-color: #ffffff;
   width: 360px;
   height: 266px;
@@ -288,6 +300,29 @@ nav ul li a {
   text-decoration: none;
   border-radius: 10px;
 }
+
+.features2-box {
+  background-color: #ffffff;
+   width: 360px;
+   height: 266px;
+   border: 1px solid #5600e2;
+   padding: 50px;
+   margin: 20px;
+   text-decoration: none;
+   border-radius: 10px;
+ }
+
+ .features3-box {
+   background-color: #ffffff;
+   width: 360px;
+   height: 266px;
+   border: 1px solid #5600e2;
+   padding: 50px;
+   margin: 20px;
+   text-decoration: none;
+   border-radius: 10px;
+ }
+
 
 .services-list {
   display: grid;
@@ -342,7 +377,9 @@ nav ul li a {
   width: 20%;
   color: #5600e2;
 }
-.features-box p {
+
+/*.features-box p*/
+.services-list p {        
   font-family: "sora";
   font-weight: 400;
   font-style: normal;
@@ -359,6 +396,9 @@ nav ul li a {
 #getintouch {
   padding: 80px 0;
   color: #272727;
+
+
+  margin-top: 500px;
 }
 .row {
   display: flex;
@@ -367,7 +407,8 @@ nav ul li a {
 }
 
 .about-col-11 img {
-  margin-top: 100px;
+  margin-top: -500px;
+
   width: 500px;
   height: 732px;
   position: absolute;
@@ -376,6 +417,9 @@ nav ul li a {
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
+  position: absolute;
+  justify-content: space-between;
+  
 }
 .about-col-22 {
   flex-basis: 65%;
@@ -385,17 +429,21 @@ nav ul li a {
 }
 .sub-get span {
   font-family: "sora";
-  width: 231px;
+  width: 300px;
   height: 45px;
   font-size: 36px;
   font-weight: 600;
   line-height: 45px;
-  left: 750px;
+  left: 500px;
   top: 70px;
   color: #5600e2;
-  margin-left: -0%;
   padding: 10px;
-  margin-left: 115px;
+  margin-left: 100px;
+  position: absolute;
+  top: 2110px;
+  
+  
+  
 }
 .btn2 {
   width: 151px;
@@ -412,6 +460,8 @@ nav ul li a {
   cursor: pointer;
   margin-left: 45%;
   box-shadow: 0px 4px 20px rgba(86, 0, 226, 0.25);
+  right: 300px;
+  position: absolute;
 }
 
 .sub-getin {
@@ -423,8 +473,9 @@ nav ul li a {
   font-style: normal;
   width: 504px;
   height: 49px;
-  left: 750px;
-  top: 123px;
+  left: 490px;
+  position: absolute;
+  top: 2180px;
 }
 
 .sub-info {
@@ -439,12 +490,17 @@ form textarea {
   background: #ffffff;
   padding: 15px;
   margin: 15px 0;
-  color: #cbcbcb;
-  font-size: 18px;
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
   border-radius: 8px;
   margin-left: 120px;
   position: relative;
   border: 1px solid #cbcbcb;
+  color: #CBCBCB;
+
+ top: -400px;
 }
 
 .contact-right textarea {
@@ -455,7 +511,6 @@ form textarea {
 
 .footer {
   position: absolute;
-  background-image: url(img/Footer\ SVG\ circle.svg);
 width: 1355px;
 height: 246px;
 left: -6px;
@@ -464,7 +519,7 @@ background: #3D00A0;
 }
 
 .footerlogo img {
-
+  
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -472,13 +527,14 @@ padding: 0px;
 gap: 21px;
 position: relative;
 width: 194.5px;
-height: 40px;
+height: 54.44px;
 margin-top: 80px;
-left: 50px;
+left: 64px;
 }
 
 
 .container .tex-center{
+  
   display: flex;
 flex-direction: row;
 align-items: flex-start;
@@ -508,6 +564,7 @@ font-family: 'Sora';
 font-style: normal;
 font-weight: 600;
 line-height: 20px;
+left: 100px;
 }
 .col-md-a p{
   color: #CBB0F6;
@@ -534,6 +591,7 @@ line-height: 20px;
 font-style: normal;
 font-weight: 600;
 line-height: 20px;
+left: 40px;
 }
 .col-md-b p{
   color: #CBB0F6;
@@ -590,8 +648,16 @@ color: #CBB0F6;
   right: 10px;
   top: 13px;
   text-decoration: none;
+ 
 }
-
+.circle{
+  position: absolute;
+right: 88.77%;
+top: -72.36%;
+bottom: -115.85%;
+mix-blend-mode: normal;
+opacity: 0.5;
+}
 
 
 
@@ -605,138 +671,334 @@ nav .fas{
 }
 
 @media only screen and (max-width: 600px) {
-  #header1 {
-    background-image: url(img/Man\ on\ Laptop\ illustration\ -\ HomePage.svg);
-  }
-  .header-text {
-    margin-top: 10%;
-    font-size: 16px;
-  }
-  .header-text h1 {
-    font-size: 30px;
-  }
-  .login {
-    font-size: 10px;
-  }
+  nav ul li a{
+  display: none;
+ }
 
-  .signup {
-    font-size: 10px;
-    margin-left: 200px;
-  }
+.header-text .man{
+  position: absolute;
+  margin-left: -590px;
+  width: 200px;
+  margin-top: -6px;
+}
 
-  .full {
-    width: 185px;
-    font-size: 8px;
-    margin-left: 10px;
-  }
-  nav ul li {
-    margin: 5px 10px;
-  }
-  nav ul li a {
-    font-size: 15px;
-  }
+ .logo{
+  position: absolute;
+  left: 25px;
+  top: 45px;
+ }
+ 
+ .header-text1{
+  width: 278px;
+  height: 13px;
+  
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: #575757;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  position: absolute;
+ margin-left: -65px;
+margin-top: 25px;
 
-  /*--------about us------*/
+ }
 
-  .sub-titles {
-    font-size: 20px;
-    margin-left: 30%;
-  }
+ .header-text1 img{
+  position: absolute;
+left: -15px;
+right: 11.57%;
+top: -3px;
+ }
 
-  .sub-info {
-    font-size: 10px;
-    margin-right: -130px;
-  }
+ .header-text h1{
+  position: absolute;
+  width: 285px;
+  height: 20px;
+  left: 47px;
+  top: 400px;
+  
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #272727;
+  margin-top: -70px;
+ }
 
-  .circle {
-    position: absolute;
-    width: 30%;
-    margin-top: -5px;
-    margin-left: -23px;
-  }
-  /*-----our features----*/
-  .containers h1 {
-    color: #5600e2;
-    margin-left: 25%;
-    font-size: 15px;
-  }
-  .containers h5 {
-    margin-left: 2%;
-    font-size: 12px;
-    padding: 5px;
-  }
-  .features-box {
-    width: 250px;
-    height: 45vh;
-    padding: 50px;
-    margin: 20px;
-  }
-  .download-span span {
-    width: 30px;
-    margin-left: 45px;
-    font-size: 10px;
-  }
-  .contribute-span span {
-    width: 30px;
-    font-size: 10px;
-  }
-  .view-span span {
-    font-size: 10px;
-    width: 30px;
-  }
+ .header-text h1 span{
+  position: absolute;
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: -20px;
+  left: 190px;
+ }
+ .header-text h6{
+  position: relative;
+width: 330px;
+left: 24px;
 
-  .icon1 {
-    margin-top: -80px;
-    margin-left: 60px;
-    width: 20%;
-  }
-  .icon2 {
-    margin-top: -80%;
-    margin-left: 60px;
-  }
-  .icon3 {
-    margin-top: -80%;
-    margin-left: 60px;
-  }
-  .features-box p {
-    font-size: 10px;
-    margin-top: -5px;
-  }
+top: 270px;
+left: 10px;
+line-height: 24px;
+font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+color: #272727;
 
-  /*----------get in touch------*/
+ }
 
-  .about-col-11 img {
-    margin-top: 100px;
-    width: 200px;
-    height: 732px;
-  }
+ .full{
+position: absolute;
+margin-top: -70px;
+background: #5600E2;
+box-shadow: 0px 1.28789px 6.43943px rgba(86, 0, 226, 0.25);
+border-radius: 5px;
+ }
 
-  .sub-get span {
-    width: 321px;
-    height: 45px;
-    font-size: 15px;
-  }
+ .sub-titles{
+  position: absolute;
+  left: -5.57%;
+font-weight: 700;
+font-size: 13.7944px;
+justify-content: space-between;
+margin-top: -140px; 
 
-  .sub-getin {
-    line-height: 2;
-    margin-left: 120px;
-    font-size: 10px;
-  }
+ }
 
-  .sub-info {
-    margin-left: 40%;
-  }
+ .about-col-1 img {
+  position: absolute;
+  right: 75px;
+  width: 60%;
+  margin-top: 610px;
+  
+ }
 
-  /*--------Form--------*/
+ #about {
+  background-image: url(img/About\ us\ circle.svg);
+  
+ }
+ .sub-info{
+  position: absolute;
+  left: -127px;
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 30px;
+color: #272727;
+margin-top: 110px;
+ }
 
-  form input,
-  form textarea {
-    width: 50%;
-    padding: 15px;
-    font-size: 10px;
-  }
-  .contact-right .btn2 {
-    font-size: 5px;
-    margin-left: 150px;
-  }
+ .containers h1{
+  position: absolute;
+left: -100px;
+font-family: 'Sora';
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 28px;
+ }
+
+ .features1-box{
+  position: absolute;
+  margin-left: -15px;
+  height: 160px;
+  width: 42%;
+  margin-top: 100px;
+  
+ }
+
+ .icon1{
+  position: absolute;
+  left: -30px;
+  top: 90px; 
+  width: 20px;
+ }
+
+ .download-span span{
+position: absolute;
+left: -30px;
+top: 35px;
+font-family: 'Sora';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+
+ }
+ /*.features-box p*/
+ .features1-box .boxtext1 {
+  width: 180px;
+margin-left: -55px;
+bottom: 10px;
+font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+  line-height: 15px;
+  font-size: 12px;
+  color: #272727;
+  justify-content: space-between;
+  position: absolute;
+  text-align: center;
+  
+ }
+ .features2-box{
+  position: absolute;
+  margin-left: 160px;
+  height: 160px;
+  width: 42%;
+  margin-top: 100px;
+ }
+ .icon2{
+  position: absolute;
+  left: -30px;
+  top: 145px; 
+  width: 20px;
+ }
+
+ .contribute-span span{
+  position: absolute;
+left: -35px;
+top: 35px;
+font-family: 'Sora';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+ }
+ /*.features-box p*/
+.features2-box .boxtext2{
+  width: 180;
+margin-left: -55px;
+bottom: 10px;
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+  line-height: 12px;
+  font-size: 12px;
+  color: #272727;
+  justify-content: space-between;
+  position: absolute;
+  text-align: center;
+  
+ }
+
+ .features3-box{
+  position: absolute;
+  margin-left: 50px;
+  height: 160px;
+  width: 50%;
+  margin-top: 300px;
+ }
+
+ .icon3{
+  position: absolute;
+  left: -10px;
+  top: 165px; 
+  width: 20px;
+ }
+ .view-span span{
+  position: absolute;
+left: -3px;
+top: 35px;
+font-family: 'Sora';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 10px;
+align-items: center;
+width: 144px;
+height: 40px;
+ }
+
+ /*.features-box p*/
+.features3-box .boxtext3{
+  width: 180px;
+  margin-left: -40px;
+  bottom: 10px;
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+  line-height: 15px;
+  font-size: 12px;
+  color: #272727;
+  justify-content: space-between;
+  position: absolute;
+  text-align: center;
+ }
+
+ .sub-get span{
+  position: relative;
+  left: -48px;
+  width: 103%;
+  top: -185px;
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+justify-content: space-between;
+color: #5600E2;
+ }
+
+ .sub-getin {
+  line-height: 26px;
+  margin-left: 120px;
+  font-size: 10px;
+  font-family: "sora";
+  font-weight: 400;
+  font-style: normal;
+  width: 145px;
+  height: 49px;
+  left: 90px;
+  position: absolute;
+  margin-top: -600px;
+  color: #272727;
+}
+
+ .about-col-11 img{
+  display: block;
+  width: 200px;
+  margin-top: -150px;
+  height: 400px;
+  left: -0px;
+ 
+ }
+ form input,
+form textarea {
+  display: block;
+  width: 80%;
+  height: 20px;
+  left: -60px;
+  top: -100px;
+
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+line-height: 6px;
+color: #CBCBCB;
+justify-content: space-between;
+}
+.contact-right textarea {
+  height: 150px;
+}
+
+.btn2{
+  display: block;
+  position: absolute;
+  width: 180px;
+  margin-top: 100px;
+  left: 30px;
+  justify-content: space-between;
+margin-top: -80px;
+}
 }

@@ -2,151 +2,100 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 80px;
-  margin-top: 94px;
-}
+  margin: 40px auto;
 
-.A {
-  text-align: center;
-  height: 850px;
-  color: #fff;
-}
-
-.top {
-  position: relative;
-}
-
-.logo_text {
-  margin-top: -500px;
-}
-
-.logo_text h2 {
-  font-weight: 700;
-  font-size: 36px;
-  width: 276px;
-  margin-top: 30px;
-  margin-left: 26%;
-  position: absolute;
-}
-
-.logo_text p {
-  font-weight: 400;
-  line-height: 26px;
-  font-size: 16px;
-  height: 52px;
-  width: 280px;
-
-  margin-left: 26%;
-  margin-top: 80px;
-  position: absolute;
-}
-
-.B {
-  width: 50%;
-  height: 850px;
-  padding: 0 60px;
+  width: 1240px;
+  height: 600px;
   background: #ffffff;
   box-shadow: 0px 2px 25px rgba(120, 51, 232, 0.1);
 }
 
-.B > .links {
+.loginSolid {
+  background-color: var(--primary-100);
+  height: 100%;
+  color: #fff;
+  flex: 1;
+  position: relative;
+  width: 630px;
+  height: 850px;
+}
+
+.loginForm {
+  flex: 1;
+  height: 100%;
+  padding: 20px;
+}
+
+.links {
   display: flex;
-  padding: 0 40px;
-  width: 100%;
+  align-items: center;
   justify-content: space-between;
-  font-weight: 700;
-  font-size: 28px;
 }
-.sign_link > h3 {
+
+.loginSolid_top_img {
+  position: absolute;
+  right: -10px;
+  top: -20px;
+}
+
+.loginSolid_text {
+  margin-top: 200px;
   text-align: center;
-  font-family: "Sora";
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 35px;
-  margin-bottom: 0;
 }
 
-.B > .links > .sign_link > h3 > a {
-  text-decoration: none;
-  color: #5600e2;
-  /* text-align: center;
-    font-family: 'Sora';
-font-weight: 700;
-font-size: 28px;
-line-height: 35px;
-margin-bottom: 0; */
+.loginSolid_bottom_img {
+  position: absolute;
+  bottom: -20px;
+  left: -40px;
 }
 
-.links > .sign_link > .underline {
-  margin-top: 0px;
-  background-color: #5600e2;
+.underline {
+  margin-top: 10px;
+  background-color: var(--grey);
   border-radius: 4px;
-  width: 150px;
+  width: 100px;
   height: 4px;
 }
 
-.B > .links > .signup > h3 > a {
-  color: #cbcbcb;
-}
-
-.B > .links > .signup > .underline {
-  background-color: #cbcbcb;
-}
-
-.eye_icon {
-  margin-left: 90%;
-  margin-top: -8%;
-}
-
-.checkbox_link {
+.form_group_wrapper {
   display: flex;
-  justify-content: space-between;
-  margin: 30px 0;
+  /* align-items: flex-start; */
+  flex-direction: column;
+  gap: 20px;
 }
 
-.checkbox_link > .checkbox {
+.form_group input,
+.form_group label {
+  display: block;
+}
+
+.form_group {
   display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
-.checkbox_link > .checkbox > label {
-  font-weight: 400;
-  font-size: 14px;
-  margin-left: 8px;
-  color: #575757;
+.loginForm label {
+  margin-bottom: 10px;
 }
 
-.forgot_link {
-  color: #5600e2;
-  font-weight: 400;
-  font-size: 14px;
-  margin-top: 16px;
-}
-
-.signinbtn {
-  /* width: 506px; */
+.form_group_input_wrapper {
   width: 100%;
-  height: 60px;
-  background-color: #5600e2;
-  border: none;
-  color: #fff;
+  background: #ffffff;
+  border: 1px solid rgba(29, 30, 32, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 8px;
-  font-weight: 700;
-  font-size: 16px;
-  cursor: pointer;
+  padding: 12px;
 }
 
-.or_text {
-  text-align: center;
-  font-weight: 600;
-  font-size: 20px;
-  color: #575757;
-  margin-bottom: 20px;
+.form_group_input_wrapper input {
+  border: none;
+  width: 80%;
 }
 
-.git_text {
-  font-family: "Sora";
-  font-weight: 400;
-  font-size: 16px;
-  padding-left: 10px;
-  color: #5600e2;
+.form_group_input_wrapper input:focus {
+  outline: none;
+  border: none;
 }

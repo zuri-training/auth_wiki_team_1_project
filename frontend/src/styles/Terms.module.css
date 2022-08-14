@@ -1,0 +1,120 @@
+.card_wrapper {
+  padding: 100px 0;
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 16px 10px 25px rgba(177, 138, 242, 0.12);
+  border-radius: 16px;
+  padding: 0px 62px;
+  position: relative;
+}
+
+.card p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  color: #272727;
+}
+
+.card h5 {
+  font-size: 22px;
+}
+
+.header {
+  padding-top: 40px;
+}
+
+.header h4 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  color: #4e00ce;
+}
+
+.header p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #4e4e4e;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.modal {
+  padding: 48px;
+  background: #ffffff;
+  margin-top: -25px;
+  z-index: 5;
+  position: sticky;
+  bottom: 0;
+  gap: 50px;
+  border: 1px solid #5600e2;
+  border-radius: 16px 16px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: 16px 80px;
+  border: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  box-shadow: 0px 4px 25px rgba(86, 0, 226, 0.15);
+  border-radius: 8px;
+  height: 57px;
+}
+
+.accept {
+  color: #ffffff;
+  background: #4e00ce;
+}
+
+.decline {
+  color: #d81717;
+  border: 1px solid #d81717;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 600px) {
+  .button {
+    padding: 4.21936px 21.0968px;
+    gap: 2.64px;
+    box-shadow: 0px 1.05484px 6.59274px rgba(86, 0, 226, 0.15);
+    border-radius: 4px;
+    height: 16px;
+    font-size: 6px;
+  }
+  .modal {
+    padding: 12px;
+    background: #ffffff;
+    margin-top: -10px;
+    z-index: 5;
+    position: sticky;
+    bottom: 0;
+    gap: 7px;
+    border: 0.26371px solid #5600e2;
+    border-radius: 4.21936px 4.21936px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header h4 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #4e00ce;
+  }
+  .card p {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    color: #272727;
+  }
+  .card h5 {
+    font-size: 12px;
+  }
+}

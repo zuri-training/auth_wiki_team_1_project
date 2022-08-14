@@ -1,15 +1,23 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 import { useRouter } from "next/router";
 import { useSelector, useDispatch } from "react-redux";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { GrClose } from "react-icons/gr";
 import { logout } from "../actions/account";
 import { PrimaryButton, SecondaryButton } from "./utils/Buttons";
 import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
   const dispatch = useDispatch();
   const isLoggedIn = useSelector((state) => state.account.isLoggedIn);
   const router = useRouter();
+
+  const handleShowMenu = () => {
+    setShowMenu((prevShow) => !prevShow);
+  };
 
   const handleLogout = () => {
     dispatch(logout());
@@ -17,13 +25,6 @@ const Navbar = () => {
 
   const authLinks = (
     <>
-      <li>
-        <Link href="/dashboard">
-          <a className={`${router.pathname == "/dashboard" && styles.active}`}>
-            Dashboard
-          </a>
-        </Link>
-      </li>
       <li>
         <a onClick={handleLogout}>Logout</a>
       </li>
@@ -35,14 +36,14 @@ const Navbar = () => {
       <li>
         <SecondaryButton>
           <Link href="/account/login">
-            <a>Log In</a>
+            <a onClick={() => setShowMenu(false)}>Log In</a>
           </Link>
         </SecondaryButton>
       </li>
       <li>
         <PrimaryButton>
           <Link href="/account/register">
-            <a>Sign Up</a>
+            <a onClick={() => setShowMenu(false)}>Sign Up</a>
           </Link>
         </PrimaryButton>
       </li>
@@ -51,29 +52,41 @@ const Navbar = () => {
 
   return (
     <nav className={`container ${styles.nav}`}>
-      <h2>
-        <Link href="/">
+      <Link href="/">
+        <a>
           <Image
             src="/assets/logo.svg"
             alt="auth wiki logo"
             width={100}
             height={30}
           />
-        </Link>
-      </h2>
+        </a>
+      </Link>
 
-      <div>
+      <div
+        className={
+          showMenu
+            ? `${styles.nav_wrapper} ${styles.active}`
+            : `${styles.nav_wrapper}`
+        }
+      >
         <ul className={styles.navList}>
           <li>
             <Link href="/about">
-              <a className={`${router.pathname == "/about" && styles.active}`}>
+              <a
+                className={`${router.pathname == "/about" && styles.active}`}
+                onClick={() => setShowMenu(false)}
+              >
                 About
               </a>
             </Link>
           </li>
           <li>
             <Link href="/faq">
-              <a className={`${router.pathname == "/faq" && styles.active}`}>
+              <a
+                className={`${router.pathname == "/faq" && styles.active}`}
+                onClick={() => setShowMenu(false)}
+              >
                 FAQ
               </a>
             </Link>
@@ -84,6 +97,7 @@ const Navbar = () => {
                 className={`${
                   router.pathname == "/documentation" && styles.active
                 }`}
+                onClick={() => setShowMenu(false)}
               >
                 Documentation
               </a>
@@ -93,6 +107,7 @@ const Navbar = () => {
             <Link href="/library">
               <a
                 className={`${router.pathname == "/library" && styles.active}`}
+                onClick={() => setShowMenu(false)}
               >
                 Library
               </a>
@@ -101,6 +116,9 @@ const Navbar = () => {
 
           {isLoggedIn ? authLinks : guestLinks}
         </ul>
+      </div>
+      <div className={styles.menu_wrapper} onClick={handleShowMenu}>
+        {showMenu ? <GrClose /> : <GiHamburgerMenu />}
       </div>
     </nav>
   );
