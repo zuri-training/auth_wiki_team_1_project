@@ -4,13 +4,13 @@
   margin-top: 32px;
   margin-bottom: 32px;
 }
-
+/* This is the style here  */
 .sample_line {
-  height: 100vh;
+  height: max-content;
   width: 2px;
   background-color: var(--primary-100);
 }
-
+/* I no see any error oo, where you go, i no see error oo */
 .singlesample_top {
   height: 100vh;
   position: relative;
@@ -44,4 +44,36 @@
   color: #fff;
   margin-top: 2rem;
   border-radius: 8px;
+  float: right;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #575757;
+}
+
+.code_box {
+  border: 2px dashed #7833e8;
+  border-radius: 16px;
+  height: fit-content;
+  width: max-content;
+  padding: 24px;
+  margin-top: 77px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+
+  color: #272727;
+}
+
+.copy {
+  float: right;
+  cursor: pointer;
+}
+
+.codeWrapper {
+  padding-left: 60px;
+  border-left: 1px solid #cbb0f6;
 }
