@@ -5,7 +5,7 @@
   margin: 36px 0 0 0;
 }
 .main > section:first-child {
-  border-right: 1px solid var(--light-purple);
+  border-right: 1px solid var(--primary-100);
   background-image: url("/Frame.svg");
   background-repeat: no-repeat;
   background-size: contain;
