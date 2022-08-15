@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
+import AppLayout from "../../components/Layouts/AppLayout";
 
 import styles from "../../styles/Documentation.module.css";
 
 const Documentation = () => {
   const router = useRouter();
   return (
-    <>
+    <AppLayout>
       <div className={styles.documentation_header}>
         <h2>AuthWiki Docs</h2>
         <span>Access our documentations right here.</span>
@@ -26,7 +27,6 @@ const Documentation = () => {
             height={48}
             width={48}
           />
-
           <div>
             <h4>Get Started</h4>
             <p>Learn the basics of our authentication codes</p>
@@ -35,7 +35,7 @@ const Documentation = () => {
         {/* code implementation */}
         <div
           className={styles.documentation_item}
-          nClick={() => router.push("/documentation/getstarted")}
+          onClick={() => router.push("/documentation/code")}
         >
           <Image
             src="/assets/code.svg"
@@ -52,7 +52,7 @@ const Documentation = () => {
         {/* community */}
         <div
           className={styles.documentation_item}
-          nClick={() => router.push("/documentation/getstarted")}
+          onClick={() => router.push("/documentation/community")}
         >
           <Image
             src="/assets/community.svg"
@@ -70,7 +70,7 @@ const Documentation = () => {
           </div>
         </div>
       </div>
-    </>
+    </AppLayout>
   );
 };
 

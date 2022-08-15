@@ -4,8 +4,11 @@
   grid-template-rows: 100%;
   margin: 36px 0 0 0;
 }
+
+.code_bd {
+  border-right: 1px solid var(--primary-100);
+}
 .main > section:first-child {
-  border-right: 1px solid var(--light-purple);
   background-image: url("/Frame.svg");
   background-repeat: no-repeat;
   background-size: contain;

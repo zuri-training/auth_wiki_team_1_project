@@ -40,6 +40,7 @@
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   gap: 50px;
+  margin-bottom: 96px;
 }
 .team_img p {
   color: #272727;
@@ -54,6 +55,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  margin-bottom: 24px;
 }
 
 .frame1 img {

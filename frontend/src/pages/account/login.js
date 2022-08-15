@@ -78,12 +78,12 @@ const Login = () => {
             />
           </div>
           <div className={styles.loginSolid_text}>
-            <Image
+            <img
               className={styles.img}
               src="/assets/auth_wiki.svg"
               alt="logo"
-              width={41}
-              height={64}
+              // width={41}
+              // height={64}
             />
 
             <h2>Welcome back</h2>
@@ -91,15 +91,14 @@ const Login = () => {
               Sign in to get access to all pages, download codes and contribute.
             </p>
           </div>
-        </div>
-
-        <div className={styles.loginSolid_bottom_img}>
-          <Image
-            src="/assets/bottomellipse.svg"
-            alt="top-line"
-            width={300}
-            height={300}
-          />
+          <div className={styles.loginSolid_bottom_img}>
+            <Image
+              src="/assets/bottomellipse.svg"
+              alt="top-line"
+              width={300}
+              height={300}
+            />
+          </div>
         </div>
 
         <div className={styles.loginForm}>
@@ -126,13 +125,15 @@ const Login = () => {
               <label className="label" htmlFor="username">
                 Username
               </label>
-              <input
-                type="username"
-                value={username}
-                name="username"
-                onChange={onChange}
-                placeholder="Please enter your username"
-              />
+              <div className={styles.form_group_input_wrapper}>
+                <input
+                  type="text"
+                  value={username}
+                  name="username"
+                  onChange={onChange}
+                  placeholder="Please enter your username"
+                />
+              </div>
             </div>
             <div className={styles.form_group}>
               <label className="label" htmlFor="password">
@@ -165,7 +166,9 @@ const Login = () => {
                 </label>
               </div>
               <div className={styles.forgot_link}>
-                <Link href="/account/forgotPassword">Forgot Password?</Link>
+                <p>
+                  <Link href="/account/forgotPassword">Forgot Password?</Link>
+                </p>
               </div>
             </div>
 

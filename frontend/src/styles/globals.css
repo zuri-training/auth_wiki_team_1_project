@@ -57,6 +57,7 @@ a {
   font-weight: 400;
   font-family: "Sora", sans-serif;
   font-size: 16px;
+  cursor: pointer;
 }
 
 ul {
@@ -96,6 +97,7 @@ ul li {
   color: #5600e2;
   background: transparent;
   border: 1px solid #5600e2;
+  cursor: pointer;
 }
 
 .flex {
@@ -166,13 +168,14 @@ input::placeholder {
 
 .eye_icon {
   margin-left: 90%;
-  margin-top: -8%;
+  margin-top: -7.5%;
 }
 
 .cancel {
   position: absolute;
   top: 40px;
   right: 20px;
+  z-index: 10;
 }
 
 @media only screen and (max-width: 600px) {

@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
+import AppLayout from "../components/Layouts/AppLayout";
 
 import styles from "../styles/Support.module.css";
 
-const support = () => {
+const Support = () => {
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
@@ -56,11 +57,13 @@ const support = () => {
     });
   }
   return (
-    <>
+    <AppLayout>
       <div className={styles.cnt}>
         <div className={styles.wrapper}>
           <h1>Get Support</h1>
-          <p>We are here for you, let's help you solve any technical issues</p>
+          <p>
+            We are here for you, let&apos;s help you solve any technical issues
+          </p>
         </div>
       </div>
       <div className={`container ${styles.support_form}`}>
@@ -121,8 +124,8 @@ const support = () => {
           </div>
         </form>
       </div>
-    </>
+    </AppLayout>
   );
 };
 
-export default support;
+export default Support;

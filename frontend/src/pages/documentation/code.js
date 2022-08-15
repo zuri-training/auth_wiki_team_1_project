@@ -1,88 +1,91 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import AppLayout from "../../components/Layouts/AppLayout";
 
 import styles from "../../styles/Code.module.css";
 
 const CodeImplementation = () => {
   const router = useRouter();
   return (
-    <main className={styles.main}>
-      <section>
-        <ul className="navigation">
-          <li>
-            <Link href="/documentation/getstarted">
-              <a className="active nav-list">Get Started</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentation/code">
-              <a
-                className={
-                  `${router.route === "/documentation/code"}`
-                    ? `${styles.active} ${styles.nav_list}`
-                    : `${styles.nav_list}`
-                }
-              >
-                Codes Implementation
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentation/community">
-              <a className="nav-list">Community</a>
-            </Link>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <div>
-          <Image
-            src="/assets/rafiki.svg"
-            alt="group discussion"
-            width={800}
-            height={900}
-          />
-        </div>
-        <div>
-          <p>
-            AuthWiki is an online platform for developers to access
-            authentication codes, share ideas and establish valuable
-            connections.
-          </p>
-          <p>
-            We aim to promote a positive and supportive space for developers to
-            interact. To help everyone have the best possible experience, please
-            take a look at our community guidelines:
-          </p>
-          <ul>
+    <AppLayout>
+      <main className={styles.main}>
+        <section className={styles.code_bd}>
+          <ul className="navigation">
             <li>
-              - Feel free to post questions and start discussions on any topic
-              relating to displayed code samples.
+              <Link href="/documentation/getstarted">
+                <a className="active nav-list">Get Started</a>
+              </Link>
             </li>
-            <li>- Be polite and communicate with respect</li>
-            <li>- Respect the privacy of other community members</li>
             <li>
-              - Contact community managers directly for support{" "}
-              <span className={styles.getStarted_link}>
-                <Link href="/support">
-                  <a>here</a>
-                </Link>{" "}
-              </span>
+              <Link href="/documentation/code">
+                <a
+                  className={
+                    `${router.route === "/documentation/code"}`
+                      ? `${styles.active} ${styles.nav_list}`
+                      : `${styles.nav_list}`
+                  }
+                >
+                  Codes Implementation
+                </a>
+              </Link>
             </li>
-            <li>- Do not share personal or private information</li>
-            <li>- Do not post promotional content</li>
-            <li>- Do not post explicit, rude or aggressive comments</li>
+            <li>
+              <Link href="/documentation/community">
+                <a className="nav-list">Community</a>
+              </Link>
+            </li>
           </ul>
-          <p>
-            In the event of a violation, we will take action to protect other
-            members of the community. This action might include a warning. In
-            the event of repeated violation, the defaulting member will be
-            banned from the community.
-          </p>
-        </div>
-      </section>
-    </main>
+        </section>
+        <section>
+          <div>
+            <Image
+              src="/assets/pana.svg"
+              alt="group discussion"
+              width={800}
+              height={900}
+            />
+          </div>
+          <div>
+            <p>
+              AuthWiki is an online platform for developers to access
+              authentication codes, share ideas and establish valuable
+              connections.
+            </p>
+            <p>
+              We aim to promote a positive and supportive space for developers
+              to interact. To help everyone have the best possible experience,
+              please take a look at our community guidelines:
+            </p>
+            <ul>
+              <li>
+                - Feel free to post questions and start discussions on any topic
+                relating to displayed code samples.
+              </li>
+              <li>- Be polite and communicate with respect</li>
+              <li>- Respect the privacy of other community members</li>
+              <li>
+                - Contact community managers directly for support{" "}
+                <span className={styles.getStarted_link}>
+                  <Link href="/support">
+                    <a>here</a>
+                  </Link>{" "}
+                </span>
+              </li>
+              <li>- Do not share personal or private information</li>
+              <li>- Do not post promotional content</li>
+              <li>- Do not post explicit, rude or aggressive comments</li>
+            </ul>
+            <p>
+              In the event of a violation, we will take action to protect other
+              members of the community. This action might include a warning. In
+              the event of repeated violation, the defaulting member will be
+              banned from the community.
+            </p>
+          </div>
+        </section>
+      </main>
+    </AppLayout>
   );
 };
 

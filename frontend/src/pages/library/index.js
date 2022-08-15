@@ -3,22 +3,23 @@ import { useSelector } from "react-redux";
 import { FaSearch } from "react-icons/fa";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import data from "../../../public/data.json";
 
 import styles from "../../styles/Library.module.css";
 import SampleDisplay from "../../components/SampleDisplay";
 import AppLayout from "../../components/Layouts/AppLayout";
 
-const Library = ({ samples }) => {
+const Library = () => {
   const [searchInput, setSearchInput] = useState("");
   const router = useRouter();
-
+  const samples = data.samples;
   // const isLoggedIn = useSelector((state) => state.account.isLoggedIn);
 
   let isLoggedIn = true;
 
   useEffect(() => {
     if (!isLoggedIn) {
-      router.push("/account/login");
+      router.push("/account/auth");
     }
   }, [isLoggedIn, router]);
 
@@ -56,7 +57,7 @@ const Library = ({ samples }) => {
         <div className={styles.library_samples_wrapper}>
           <div className={styles.library_samples}>
             {samples &&
-              samples.samples.map((sample) => (
+              samples.map((sample) => (
                 <div key={sample.id}>
                   <SampleDisplay sample={sample} />
                 </div>
@@ -70,14 +71,15 @@ const Library = ({ samples }) => {
 
 export default Library;
 
-// fetch library sample code data
-export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/data.json");
-  const data = await res.json();
+// // fetch library sample code data
+// export async function getStaticProps() {
+//   const res = await fetch("http://localhost:3000/data.json");
+//   const data = await res.json();
 
-  return {
-    props: {
-      samples: data,
-    },
-  };
-}
+//   return {
+//     props: {
+//       samples: data,
+//     },
+
+//   };
+// }
