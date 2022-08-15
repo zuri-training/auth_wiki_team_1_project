@@ -12,7 +12,7 @@ gunicorn==20.1.0
 mypy-extensions==0.4.3
 pathspec==0.9.0
 platformdirs==2.5.2
-psycopg2==2.9.3
+psycopg2-binary==2.9.3
 pycparser==2.21
 PyJWT==2.4.0
 python-dotenv==0.20.0
