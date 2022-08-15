@@ -10,7 +10,7 @@ const CodeImplementation = () => {
   return (
     <AppLayout>
       <main className={styles.main}>
-        <section>
+        <section className={styles.code_bd}>
           <ul className="navigation">
             <li>
               <Link href="/documentation/getstarted">

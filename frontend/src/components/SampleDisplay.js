@@ -9,7 +9,8 @@ import Modal from "./Modal";
 
 const SampleDisplay = ({ sample }) => {
   const { title, date, description, downloads, likes, comments, id } = sample;
-  const user = useSelector((state) => state.account.user);
+  // const user = useSelector((state) => state.account.user);
+  const user = true;
 
   const [modalShow, setModalShow] = useState(false);
 
@@ -19,7 +20,7 @@ const SampleDisplay = ({ sample }) => {
     if (!user) {
       setModalShow(true);
     } else {
-      router.push(`/library/:${id}`);
+      router.push(`/library/${id}`);
     }
   }
 
