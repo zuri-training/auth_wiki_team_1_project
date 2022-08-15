@@ -1,7 +1,6 @@
 import styles from "../styles/Aboutus.module.css";
-import Link from "next/link";
+import Image from "next/image";
 import AppLayout from "../components/Layouts/AppLayout";
-
 const AboutUs = () => {
   const TEAM_MEMBERS = [
     {
@@ -105,7 +104,12 @@ const AboutUs = () => {
                 <div key={index} className={styles.grid_card}>
                   <div>
                     <div className={styles.frame1}>
-                      <img src={member.profilePicture} alt="profile picture" />
+                      <Image
+                        src={member.profilePicture}
+                        alt="profile picture"
+                        width={624}
+                        height={340}
+                      />
                     </div>
                     <div className={styles.grid_title}>
                       <p className={styles.a1}>{member.name}</p>
