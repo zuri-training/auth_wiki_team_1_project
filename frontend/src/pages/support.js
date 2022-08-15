@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
+import AppLayout from "../components/Layouts/AppLayout";
 
 import styles from "../styles/Support.module.css";
 
@@ -56,72 +57,76 @@ const support = () => {
     });
   }
   return (
-    <>
-      <div className={styles.cnt}>
-        <div className={styles.wrapper}>
-          <h1>Get Support</h1>
-          <p>We are here for you, let's help you solve any technical issues</p>
+    <AppLayout>
+      <>
+        <div className={styles.cnt}>
+          <div className={styles.wrapper}>
+            <h1>Get Support</h1>
+            <p>
+              We are here for you, let's help you solve any technical issues
+            </p>
+          </div>
         </div>
-      </div>
-      <div className={`container ${styles.support_form}`}>
-        <form onSubmit={onSubmit}>
-          <div className={styles.frame1}>
-            <div className={styles.fname}>
-              <label>First Name</label>
-              <input
-                type="text"
-                placeholder="Please enter your 
-              name"
-                name="firstname"
-                value={firstname}
-                onChange={onChange}
-              />
+        <div className={`container ${styles.support_form}`}>
+          <form onSubmit={onSubmit}>
+            <div className={styles.frame1}>
+              <div className={styles.fname}>
+                <label>First Name</label>
+                <input
+                  type="text"
+                  placeholder="Please enter your 
+                name"
+                  name="firstname"
+                  value={firstname}
+                  onChange={onChange}
+                />
+              </div>
+              <div className={styles.lname}>
+                <label>Last Name</label>
+                <input
+                  type="text"
+                  placeholder="Please enter your last name"
+                  name="lastname"
+                  value={lastname}
+                  onChange={onChange}
+                />
+              </div>
             </div>
-            <div className={styles.lname}>
-              <label>Last Name</label>
-              <input
-                type="text"
-                placeholder="Please enter your last name"
-                name="lastname"
-                value={lastname}
-                onChange={onChange}
-              />
+            <div className={styles.frame2}>
+              <div className={styles.em}>
+                <label>Email</label>
+                <input
+                  type="email"
+                  placeholder="Please enter your email"
+                  name="email"
+                  value={email}
+                  onChange={onChange}
+                />
+              </div>
+              <div className={styles.phnum}>
+                <label>Phone Number</label>
+                <input
+                  type="number"
+                  placeholder="Please enter your number"
+                  name="phone"
+                  value={phone}
+                  onChange={onChange}
+                />
+              </div>
             </div>
-          </div>
-          <div className={styles.frame2}>
-            <div className={styles.em}>
-              <label>Email</label>
-              <input
-                type="email"
-                placeholder="Please enter your email"
-                name="email"
-                value={email}
-                onChange={onChange}
-              />
+            <div className={styles.iptfield}>
+              <p>How can we help you?</p>
+              <textarea name="message" value={message} onChange={onChange} />
             </div>
-            <div className={styles.phnum}>
-              <label>Phone Number</label>
-              <input
-                type="number"
-                placeholder="Please enter your number"
-                name="phone"
-                value={phone}
-                onChange={onChange}
-              />
+            <div className={styles.btncontainer}>
+              <button className={styles.btn} type="submit">
+                Submit
+              </button>
             </div>
-          </div>
-          <div className={styles.iptfield}>
-            <p>How can we help you?</p>
-            <textarea name="message" value={message} onChange={onChange} />
-          </div>
-          <div className={styles.btncontainer}>
-            <button className={styles.btn} type="submit">
-              Submit
-            </button>
-          </div>
-        </form>
-      </div>
-    </>
+          </form>
+        </div>
+      </>
+    </AppLayout>
   );
 };
 

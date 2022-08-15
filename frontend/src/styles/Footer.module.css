@@ -67,8 +67,18 @@
 /* 
   STYLING FOR MOBILE VIEW
 */
+@media (max-width: 1000px) {
+  .footer_wrapper {
+    padding: 80px 0;
+    margin-bottom: 0;
+  }
+  .footer {
+    /* flex-direction: column; */
+    gap: 20px;
+  }
+}
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .footer_wrapper {
     padding: 80px 0;
   }

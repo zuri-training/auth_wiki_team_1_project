@@ -35,14 +35,14 @@ const Navbar = () => {
     <>
       <li>
         <SecondaryButton>
-          <Link href="/account/login">
+          <Link href="/account/auth">
             <a onClick={() => setShowMenu(false)}>Log In</a>
           </Link>
         </SecondaryButton>
       </li>
       <li>
         <PrimaryButton>
-          <Link href="/account/register">
+          <Link href="/account/auth">
             <a onClick={() => setShowMenu(false)}>Sign Up</a>
           </Link>
         </PrimaryButton>
