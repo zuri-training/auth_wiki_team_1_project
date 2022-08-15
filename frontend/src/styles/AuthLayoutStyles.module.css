@@ -1,0 +1,110 @@
+.authWrapper {
+  padding: 60px 50px;
+  min-height: 100vh;
+  display: grid;
+}
+
+@media only screen and (max-width: 700px) {
+  .authWrapper {
+    padding: 0px 0px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .authWrapper {
+    padding: 120px 100px;
+  }
+}
+
+.authCard {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  box-shadow: 0px 4px 20px rgba(120, 51, 232, 0.3);
+  height: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  .authCard {
+    grid-template-columns: 100%;
+    grid-template-rows: 375px auto;
+  }
+}
+
+.left_panel {
+  height: 100%;
+  background-color: #5600e2;
+  display: grid;
+  place-items: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.left_panel_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.left_panel_content_text_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-direction: column;
+}
+
+.left_panel_content_text_wrapper h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+.left_panel_content_text_wrapper p {
+  font-size: 16px;
+  max-width: 300px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .left_panel_content_text_wrapper h2 {
+    font-weight: bold;
+    font-size: 36px;
+  }
+  .left_panel_content_text_wrapper p {
+    font-size: 24px;
+  }
+}
+
+.ellipsesWrapper {
+  pointer-events: none;
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+}
+
+.ellipsesWrapper svg {
+  position: absolute;
+  transform-origin: center;
+}
+
+.ellipsesWrapper svg:first-child {
+  top: 0;
+  right: 0;
+  transform: translate(70%, -70%);
+}
+.ellipsesWrapper svg:last-child {
+  bottom: 0;
+  left: 0;
+  transform: translate(-70%, 70%);
+}
+
+@media only screen and (max-width: 700px) {
+  .ellipsesWrapper svg:first-child {
+    transform: translate(65%, -65%) scale(0.7);
+  }
+  .ellipsesWrapper svg:last-child {
+    transform: translate(-65%, 65%) scale(0.7);
+  }
+}

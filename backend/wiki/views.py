@@ -14,8 +14,6 @@ class PostViewSet(viewsets.ModelViewSet):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
     permission_classes = [IsAuthenticatedOrReadOnly]
-    filter_backends = (SearchFilter, OrderingFilter)
-    search_fields = ('title', 'description', 'user')
 
 
 class CommentViewSet(viewsets.ModelViewSet):

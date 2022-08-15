@@ -1,0 +1,32 @@
+.image {
+  width: 900px;
+  height: 767px;
+  margin: auto;
+  margin-bottom: 80px;
+  margin-top: 36px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .image {
+    width: 600px;
+    height: 467px;
+    margin: auto;
+    margin-top: 36px;
+    margin-bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .image {
+    width: 500px;
+    height: 367px;
+    margin: auto;
+    margin-top: 36px;
+    margin-bottom: 80px;
+  }
+}

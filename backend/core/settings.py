@@ -188,3 +188,14 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000"
 ]
+
+#email settings
+
+EMAIL_BACKEND= "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST= "smtp.gmail.com"
+EMAIL_HOST_USER= "authwikiteam1@gmail.com"
+EMAIL_HOST_PASSWORD= "pqhsurtfuidyzgpb"
+EMAIL_PORT= 587
+EMAIL_USE_TLS= True
+# EMAIL_USE_SSL = True
+# DEFAULT_FROM_EMAIL= "authwikiteam1@gmail.com"
