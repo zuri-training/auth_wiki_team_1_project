@@ -28,7 +28,7 @@ const SampleDisplay = ({ sample }) => {
   }
 
   function sendToSignIn() {
-    router.push("/account/login");
+    router.push("/account/auth");
   }
   return (
     <div className={styles.sampleDisplay_wrapper}>

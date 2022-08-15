@@ -13,7 +13,6 @@ import stylesSignup from "../../styles/Signup.module.css";
 import { PrimaryButton } from "../../components/utils/Buttons";
 import Styles from "../../styles/AuthPage.module.css";
 import { AuthPageContext } from "../../contexts/AuthPagesContext";
-import { loadGetInitialProps } from "next/dist/shared/lib/utils";
 
 function auth() {
   return (

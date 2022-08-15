@@ -55,8 +55,8 @@
   width: 100%;
   display: flex;
   align-items: center;
+  position: relative;
   /* margin-top: 450px; */
-  /* this guy sef dey run this thing */
 }
 
 .forgotpwd_form form {
@@ -69,6 +69,7 @@
   align-items: flex-start;
   flex-direction: column;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .forgotpwd_form_input input {
@@ -93,7 +94,12 @@
   font-family: "Sora", sans-serif;
   font-size: var(--para-16);
   width: 100%;
-  /* omoo 586px wont work on mobile screens, why not 100%? */
+}
+
+.eye_icon {
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
 }
 
 /* 

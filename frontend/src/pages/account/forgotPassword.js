@@ -21,39 +21,47 @@ function Main() {
   const [emailInput, setEmailInput] = useState("");
   const [requestStatus, setRequestStatus] = useState("idle");
   const { setLeftPanelContent } = useContext(AuthPageContext);
-  const handleRequest = useCallback(() => {
+  const handleRequest = useCallback(async () => {
     setRequestStatus("loading");
-
-    // try
-    // const res = await fetch("/api/getInTouch", {
-    //   method: "POST",
-    //   headers: {
-    //     Accept: "application/json",
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(formData),
-    // });
-
     //   make api request to backend
-
-    setTimeout(() => {
-      setRequestStatus("success");
-      setLeftPanelContent({
-        title: "Email Sent!",
-        content: "Password reset link sent",
+    try {
+      const res = await fetch("/api/auth/request-reset-email/", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email: emailInput }),
       });
+      if (res.ok) {
+        setLeftPanelContent({
+          title: "Email Sent!",
+          content: "Password reset link sent",
+        });
 
-      toast.success("Email sent succesfully!", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        draggable: true,
-      });
+        toast.success("Email sent succesfully!", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          draggable: true,
+        });
+        const data = await res.json();
+        setRequestStatus("success");
+        setTimeout(() => {
+          setRequestStatus("idle");
+        }, 2000);
+      } else throw "error";
+    } catch (error) {
+      setRequestStatus("idle");
+    }
 
-      setTimeout(() => {
-        setRequestStatus("idle");
-      }, 3000);
-    }, 3000);
+    //   setTimeout(() => {
+    //     setRequestStatus("success");
+
+    //     setTimeout(() => {
+    //       setRequestStatus("idle");
+    //     }, 3000);
+    //   }, 3000);
   }, [emailInput]);
 
   return (

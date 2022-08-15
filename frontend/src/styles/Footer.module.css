@@ -13,6 +13,7 @@
   position: absolute;
   left: -300px;
   bottom: -10px;
+  pointer-events: none;
 }
 
 .footer {

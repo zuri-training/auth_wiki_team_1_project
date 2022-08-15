@@ -37,7 +37,7 @@ const Documentation = () => {
           {/* code implementation */}
           <div
             className={styles.documentation_item}
-            nClick={() => router.push("/documentation/getstarted")}
+            onClick={() => router.push("/documentation/code")}
           >
             <Image
               src="/assets/code.svg"
@@ -54,7 +54,7 @@ const Documentation = () => {
           {/* community */}
           <div
             className={styles.documentation_item}
-            nClick={() => router.push("/documentation/getstarted")}
+            onClick={() => router.push("/documentation/community")}
           >
             <Image
               src="/assets/community.svg"

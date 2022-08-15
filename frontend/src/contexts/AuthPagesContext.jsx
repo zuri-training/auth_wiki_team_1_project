@@ -19,6 +19,10 @@ function AuthPageContextProvider({ children }) {
       content:
         "SIgn In to get access to all pages, download codes and contribute.",
     },
+    resetpassword: {
+      title: "Reset Password",
+      content: "Enter new password and confirm it to reset your password.",
+    },
   };
   const [LeftPanelContent, setLeftPanelContent] = useState(
     CONTENT_PER_PAGE[currentPage] || {
