@@ -45,3 +45,19 @@
   margin-top: 2rem;
   border-radius: 8px;
 }
+
+@media screen and (max-width: 600px) {
+  .singlesample_wrapper {
+    flex-direction: column;
+  }
+
+  .singlesample_top {
+    height: 40%;
+  }
+  .singlesample_top_img {
+    display: none;
+  }
+  .sample_line {
+    display: none;
+  }
+}

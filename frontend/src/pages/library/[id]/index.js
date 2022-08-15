@@ -22,9 +22,7 @@ const SingleSample = () => {
     } else {
       setSample(filterSample[0]);
     }
-  }, [router.query.id]);
-
-  console.log(sample);
+  }, [router.query.id, oldSamples]);
 
   return (
     <AppLayout>

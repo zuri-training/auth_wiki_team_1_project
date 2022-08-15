@@ -1,5 +1,7 @@
 const nodemailer = require("nodemailer");
-require("dotenv").config();
+if (process.env.NODE_ENV === "development") {
+  require("dotenv").config();
+}
 
 const mailer = async (email, subject, text) => {
   try {
@@ -16,7 +18,11 @@ const mailer = async (email, subject, text) => {
 
     await transport.sendMail({
       from: email,
-      to: "onyedikaufelle@gmail.com",
+      to: [
+        "onyedikaufelle@gmail.com",
+        "latunde.nifemi2016@gmail.com",
+        "themfontuk@gmail.com",
+      ],
       subject: subject,
       text: text,
     });

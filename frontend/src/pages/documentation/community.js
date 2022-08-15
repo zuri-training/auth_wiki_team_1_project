@@ -7,7 +7,7 @@ import AppLayout from "../../components/Layouts/AppLayout";
 const Community = () => {
   const router = useRouter();
   return (
-    <div>
+    <AppLayout>
       <nav></nav>
       <main className={styles.main}>
         <section>
@@ -85,7 +85,7 @@ const Community = () => {
           </div>
         </section>
       </main>
-    </div>
+    </AppLayout>
   );
 };
 
