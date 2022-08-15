@@ -90,14 +90,14 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'pg': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'auth_wiki', 
-        'USER': 'postgres', 
-        'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'HOST': '127.0.0.1', 
-        'PORT': '5432',
-    },
+    # 'pg': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'auth_wiki', 
+    #     'USER': 'postgres', 
+    #     'PASSWORD': os.environ.get('DB_PASSWORD'),
+    #     'HOST': '127.0.0.1', 
+    #     'PORT': '5432',
+    # },
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
