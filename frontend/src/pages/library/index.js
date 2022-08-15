@@ -18,7 +18,7 @@ const Library = ({ samples }) => {
 
   useEffect(() => {
     if (!isLoggedIn) {
-      router.push("/account/login");
+      router.push("/account/auth");
     }
   }, [isLoggedIn, router]);
 

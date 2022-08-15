@@ -73,6 +73,22 @@
   position: relative;
 }
 
+.about_header {
+  position: relative;
+  width: max-content;
+  margin-bottom: 45px;
+  margin-left: 30px;
+}
+
+.about_circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -60%);
+  width: 150%;
+}
+
 .about_text p {
   font-weight: 400;
   font-size: var(--para-one);
@@ -83,9 +99,9 @@
 .about_text h2 {
   font-weight: 700;
   font-size: 36px;
-  position: absolute;
+  /* position: absolute;
   top: 10px;
-  left: 50px;
+  left: 50px; */
   color: #1d1e20;
 }
 
@@ -104,6 +120,7 @@
   line-height: 25px;
   color: #5600e2;
   text-align: center;
+  margin-bottom: 36px;
 }
 
 .features_subtitle {
@@ -280,8 +297,6 @@
   .header_text {
     margin-top: 20px;
     order: 1;
-    /* align-items: center;
-    justify-content: center; */
     text-align: center;
   }
 
@@ -293,6 +308,10 @@
   .signup {
     margin-top: 32px;
     box-shadow: 0px 1.28789px 6.43943px rgba(86, 0, 226, 0.25);
+  }
+
+  .about_circle {
+    width: 130%;
   }
 
   /* about section */

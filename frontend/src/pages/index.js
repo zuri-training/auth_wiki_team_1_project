@@ -109,13 +109,17 @@ const Home = () => {
               />
             </div>
             <div className={styles.about_text}>
-              <Image
-                src="/assets/aboutCircle.svg"
-                alt="about circle"
-                width={209}
-                height={107}
-              />
-              <h2>ABOUT US</h2>
+              <div className={styles.about_header}>
+                <span className={styles.about_circle}>
+                  <Image
+                    src="/assets/aboutCircle.svg"
+                    alt="about circle"
+                    width={209}
+                    height={107}
+                  />
+                </span>
+                <h2>ABOUT US</h2>
+              </div>
 
               <p>
                 Auth-Wiki is an authentication platform that aims <br /> to

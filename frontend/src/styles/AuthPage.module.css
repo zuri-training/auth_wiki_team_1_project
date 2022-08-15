@@ -1,0 +1,72 @@
+.authWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px;
+  height: 100%;
+  margin: 0;
+  max-width: none;
+  position: relative;
+  box-shadow: 0px 2px 25px rgba(120, 51, 232, 0.1);
+}
+
+.authContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 44px;
+}
+
+.authViewControl {
+  width: 100%;
+  padding: 0 24px;
+  display: flex;
+  gap: 4rem;
+}
+
+.authViewControl h3 {
+  font-weight: bold;
+  font-size: 28px;
+  padding: 16px 44px;
+  position: relative;
+  color: #cbcbcb;
+  cursor: pointer;
+}
+
+.authContainer h3::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #cbcbcb;
+}
+
+.active h3 {
+  color: #5600e2;
+}
+.active h3::after {
+  background-color: #5600e2;
+}
+
+@media only screen and (min-width: 1440px) {
+  .authWrapper {
+    padding: 52px;
+  }
+
+  .authViewControl {
+    padding: 0px 32px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .authViewControl {
+    padding: 0;
+    gap: 2rem;
+  }
+  .authViewControl h3 {
+    font-size: 20px;
+    padding: 12px 32px;
+  }
+}
