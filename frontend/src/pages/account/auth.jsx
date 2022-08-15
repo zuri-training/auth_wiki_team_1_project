@@ -7,6 +7,7 @@ import { toast } from "react-toastify";
 import { ThreeDots } from "react-loader-spinner";
 import { login, reset_register_success } from "../../actions/account";
 import { useRouter } from "next/router";
+import { register } from "../../actions/account";
 import { useSelector, useDispatch } from "react-redux";
 import stylesSignin from "../../styles/Signin.module.css";
 import stylesSignup from "../../styles/Signup.module.css";

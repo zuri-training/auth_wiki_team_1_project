@@ -7,7 +7,7 @@ function AuthPageContextProvider({ children }) {
   const router = useRouter();
   const { pathname } = router;
   const currentPage = pathname.split("/")[2];
-  console.log(pathname);
+  // console.log(pathname);
 
   const CONTENT_PER_PAGE = {
     forgotPassword: {
