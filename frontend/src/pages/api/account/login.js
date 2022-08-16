@@ -1,10 +1,8 @@
 import cookie from "cookie";
 import { API_URL } from "../../../config";
-
 export default async (request, response) => {
   if (request.method === "POST") {
     const { username, password } = request.body;
-
     try {
       console.log(request.body);
       const apiResponse = await fetch(`${API_URL}/api/auth/login/`, {
@@ -48,6 +46,7 @@ export default async (request, response) => {
         });
       }
     } catch (error) {
+      console.log(error);
       return response.status(500).json(error);
     }
   } else {
