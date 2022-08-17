@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "../styles/About.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -51,12 +50,7 @@ const About = () => {
                 their own application
               </p>
               <div className={styles.hero_image1}>
-                <Image
-                  src="/assets/aboutUs.svg"
-                  alt="about Image"
-                  width={624}
-                  height={340}
-                />
+                <img src="/assets/aboutUs.svg" alt="about Image" />
               </div>
               <p className={styles.marge}>
                 At AuthWiki, guest users can view documentations, interact and
@@ -67,12 +61,7 @@ const About = () => {
               </p>
             </div>
             <div className={styles.hero_image}>
-              <Image
-                src="/assets/aboutUs.svg"
-                alt="about Image"
-                width={624}
-                height={340}
-              />
+              <img src="/assets/aboutUs.svg" alt="about Image" />
             </div>
           </section>
         </div>
@@ -95,12 +84,7 @@ const About = () => {
                 <div key={index} className={styles.grid_card}>
                   <div>
                     <div className={styles.frame1}>
-                      <Image
-                        src={member.profilePicture}
-                        alt="profile picture"
-                        width={624}
-                        height={340}
-                      />
+                      <img src={member.profilePicture} alt="profile picture" />
                     </div>
                     <div className={styles.grid_title}>
                       <p className={styles.a1}>{member.name}</p>
@@ -115,22 +99,15 @@ const About = () => {
                   <Link href="/aboutus">
                     <div className={styles.frame6a}>
                       <div className={styles.subframe}>
-                        <Image
-                          src="/assets/Group 658.svg"
-                          alt="see more"
-                          width={624}
-                          height={340}
-                        />
+                        <img src="/assets/Group 658.svg" alt="see more" />
                         <p>Discover the rest of the team</p>
                       </div>
                     </div>
                   </Link>
-                  <Image
+                  <img
                     className={styles.see_more}
                     src="/assets/Image (6).svg"
                     alt="profile picture"
-                    width={624}
-                    height={340}
                   />
                 </div>
               </div>

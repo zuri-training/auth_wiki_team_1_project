@@ -2,6 +2,7 @@ import AuthLayout from "../components/Layouts/AuthLayout";
 import styles from "../styles/Terms.module.css";
 
 import { MdCancel } from "react-icons/md";
+import { useRouter } from "next/router";
 const Privacy = () => {
   const router = useRouter();
   const { back } = router;

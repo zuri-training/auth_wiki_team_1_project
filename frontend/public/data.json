@@ -7,43 +7,275 @@
       "date": "July 12, 2022",
       "downloads": 1234,
       "likes": 2,
-      "comments": 5
+      "comments": 5,
+      "code": ["exports.loginUser = async(req, res) => {",
+
+                "   // Error check",
+             
+                "   const errors = validationResult(req);",
+              
+                "   if(!errors.isEmpty()){",
+             
+                "     return res.status(400).json({errors: errors.array()})",
+             
+                "   }",
+                "                                ",
+                "   const {email, password} = req.body;",
+                "                                ",
+                "   try{",
+                "     let user = await User.findOne({email});",
+                "                                ",
+                "     if(!user) return res.status(400).json({",
+                "       statusCode: 400,",
+                "       message: 'Invalid Credentials'",
+                "     });",
+                "                                ",
+                "   // check pass",
+                "   const isMatch = await bcrypt.compare(password, user.password);",
+                "   if (!isMatch){",
+                "     return res.status(400)",
+                "     .json({",
+                "       statusCode: 400,",
+                "       message: 'Invalid credentials'",
+                "     });",
+                "                                ",
+                "   }",
+                "                                ",
+                "   const payload = {",
+                "     user:{",
+                "       id: user.id,",
+                "       role: user.userRole",
+                "     }",
+                "   };",
+                "                                ",
+                "   jwt.sign{",
+                "     payload,",
+                "     SECRET",
+                "     {",
+                "       expiresIn: 360000",
+                "     },",
+                "     (err, token)=>{",
+                "       if(err) throw err",
+                "                                ",
+                "       res.json({",
+                "         statusCode: 200,",
+                "         message: 'Logged in successfully',",
+                "         user: {",
+                "           firstName: user.firstName,",
+                "           lastName: user.lastName,",
+                "           email: user.email,",
+                "           userRole: user.userRole,",
+                "           isTutor: user.isTutor,",
+                "           isAdmin: user.isAdmin",
+                "         },",
+                "         token",
+                "       })",
+                "     }",
+                "   )",
+                " } catch(err){",
+                "   console.error(err.message)",
+                "   res.status(500).send('Server Error')",
+                " }",
+                "}"
+
+
+        
+      ]
     },
     {
       "id": 2,
-      "title": "EXPRESSJS LOGIN",
-      "description": "Use this Authentication code to log your users in. It accepts two parameters, a request (req) and a response (res). The request parameter (req) helps you get the email and password of your user, checks if it is empty and then compares it to the record in your database. If the login details of the user are correct, it generates a json web token for your user. ",
+      "title": "EXPRESSJS REGISTER",
+      "description": "Use this authentication code to register users for your web application. It accepts two parameters, a request (req) and a response (res). After ensuring the fields are not empty, the password is hashed and saved in the database. ",
       "date": "July 12, 2022",
       "downloads": "1234",
       "likes": 2,
-      "comments": 5
+      "comments": 5,
+      "code": ["exports.registerUser = async(req, res) => {",
+               "  // Error check",
+               "  const errors = validationResult(req);",
+               "  if(!errors.isEmpty()){",
+               "    return res.status(400).json({errors: errors.array()})",
+               "  }",
+               "                                ",
+               "  const {email, password, firstName, lastName, userRole," ,
+               "  isTutor, isAdmin} = req.body;",
+               "                                ",
+               "  // generate salt to hash password",
+               "   const salt = await bcrypt.genSalt(10);",
+               "  // create hashed password",
+               "  const hashedPass = await bcrypt.hash(password, salt);",
+               "                                ",
+               "  try{",
+               "    let user = new User({firstName, lastName, email, ", 
+               "    password: hashedPass, userRole, isTutor, isAdmin});",
+               "                                ",
+               "    // run save",
+               "    user.save()",
+               "    .then(() => {",
+               "      console.log('Saved User')",
+               "      res.status(201).json({message: 'Successfully registered ",
+               "      user'})",
+               "    })",
+               "    .catch((err) => console.log(err))",
+               "  } catch(err){",
+               "    console.error(err.message)",
+               "    res.status(500).send('Server Error')",
+               "  }",
+               "}"]
     },
     {
       "id": 3,
-      "title": "EXPRESSJS LOGIN",
-      "description": "Use this Authentication code to log your users in. It accepts two parameters, a request (req) and a response (res). The request parameter (req) helps you get the email and password of your user, checks if it is empty and then compares it to the record in your database. If the login details of the user are correct, it generates a json web token for your user. ",
+      "title": "EXPRESS GET LOGGED IN USER",
+      "description": "Use this authentication code to get the information of a logged in user. It accepts two parameters, a request (req) and a response (res). It then fetches the info for a logged in user and sends back as a response.",
       "date": "July 12, 2022",
-      "downloads": "1234",
-      "likes": 2,
-      "comments": 5
+      "downloads": "1235",
+      "likes": 6,
+      "comments": 5,
+      "code":["exports.getLoggedInUser = async (req, res)=>{",
+              " try{",
+              "   const user = await User.findById(req.user.id).select('-password');",
+              "                                ",
+              "   res.json({",
+              "     statusCode: 200,",
+              "     message: 'User gotten',",
+              "     user",
+              "   });",
+              "  } catch {",
+              "   console.error(err.message)",
+              "   res.status(500).send('Server Error')",
+              " }",
+              "}"]
     },
     {
       "id": 4,
-      "title": "EXPRESSJS LOGIN",
-      "description": "Use this Authentication code to log your users in. It accepts two parameters, a request (req) and a response (res). The request parameter (req) helps you get the email and password of your user, checks if it is empty and then compares it to the record in your database. If the login details of the user are correct, it generates a json web token for your user. ",
+      "title": "EXPRESS RECOVER PASSWORD",
+      "description": "This authentication code is useful for when your user needs to recover his password. It accepts two parameters, a request (req) and a response (res). It ensures the email is present and sends an email using the nodemailer package. ",
       "date": "July 12, 2022",
       "downloads": "1234",
       "likes": 2,
-      "comments": 5
+      "comments": 3,
+      "code":["exports.recoverPassword = async (req, res)=>{",
+              "  const {email} = req.body",
+
+              "  const user = await User.findOne({ email });",
+          
+              "  const generatedLink = `${process.env.BASE_URL}/api/auth/reset/${user._id}`;",
+              "                                ",
+              "  User.countDocuments({email : email}, function (err, count) {",
+
+              "  if(!count > 0){",
+        
+              "      res.status(401).json({message: 'email or user does not exist'});",
+        
+              "  }else{",
+        
+              "      // Transporter",
+        
+              "      let transporter = nodemailer.createTransport({",
+        
+              "          service: 'gmail',",
+        
+              "          auth: {",
+        
+              "              user: process.env.EMAIL,",
+        
+              "              pass: process.env.PASSWORD",
+        
+              "          }",
+        
+              "      })",
+              "                                ",
+              "      let mailOptions = {",
+
+              "         from: 'gisthive@gmail.com',",
+
+              "         to: email,",
+
+              "         subject: 'Password Recovery',",
+
+              "         text: generatedLink",
+
+              "      }",
+              "                                ",
+              "      // Response",
+
+              "      transporter.sendMail(mailOptions)",
+  
+              "         .then(function(response){",
+  
+              "         console.log('Email Sent')",
+  
+              "         res.status(200).json({ message: 'Password reset link has been sent successfully' });",
+  
+              "       })",
+  
+              "       .catch(function(error){",
+  
+              "           res.status(401).json({ success: 'An Error has occured' });",
+  
+              "           console.log('Error: ', error)",
+  
+              "      });",
+              "                                ",
+              "    }",
+
+              "  });",
+          
+              "}"
+          
+          ]
     },
     {
       "id": 5,
-      "title": "EXPRESSJS LOGIN",
-      "description": "Use this Authentication code to log your users in. It accepts two parameters, a request (req) and a response (res). The request parameter (req) helps you get the email and password of your user, checks if it is empty and then compares it to the record in your database. If the login details of the user are correct, it generates a json web token for your user. ",
+      "title": "EXPRESS RESET PASSWORD",
+      "description": "After a user receives the reset password email and clicks on the link, he is able to set a new password with this authentication code. ",
       "date": "July 12, 2022",
       "downloads": "1234",
       "likes": 2,
-      "comments": 5
+      "comments": 5,
+      "code":["exports.resetPassword = async (req, res) => {",
+
+              "   try {",
+    
+              "       const { password, password2 } = req.body;",
+    
+              "       const { id } = req.params;",
+              "                                ",
+              "       // confirm similarity",
+
+              "       if (password !== password2) {",
+      
+              "           res.status(400).json({message: 'Sorry passwords should match'});",
+      
+              "        }",
+              "                                ",
+              "       // grab user",
+
+              "       const user = await User.findById({_id: id});",
+              "                                ",
+              "       // hash generate genSalt",
+
+              "       const salt = await bcrypt.genSalt(10);",
+      
+              "       // create hashedpwd",
+      
+              "       const hashedPwd = await bcrypt.hash(password, salt);",
+              "                                ",
+              "       // update user password with new password",
+
+              "       user.password = hashedPwd;",
+              "                                ",
+              "       await user.save();",
+              "                                ",
+              "       res.status(200).json({ message: 'Your new password has been set successfully' });",
+
+              "     } catch (error) {",
+        
+              "       res.status(400).json({message:'Sorry, failed to reset user password'});",
+        
+              "     }",
+        
+              "}"]
     }
   ]
 }
