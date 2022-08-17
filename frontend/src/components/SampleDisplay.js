@@ -31,6 +31,10 @@ const SampleDisplay = ({ sample }) => {
   function sendToSignIn() {
     router.push("/account/auth");
   }
+
+  function handleCommentClick() {
+    router.push(`/library/${id}/comments`);
+  }
   return (
     <div className={styles.sampleDisplay_wrapper}>
       <div className={styles.sampleDisplay_top}>
@@ -51,7 +55,10 @@ const SampleDisplay = ({ sample }) => {
             />
             <span>{downloads}</span>
           </div>
-          <div className={styles.sampleDisplay_reaction}>
+          <div
+            className={styles.sampleDisplay_reaction}
+            onClick={handleCommentClick}
+          >
             <Image
               src="/assets/comments.svg"
               alt="authwiki comments"

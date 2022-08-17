@@ -77,3 +77,19 @@
   padding-left: 60px;
   border-left: 1px solid #cbb0f6;
 }
+
+@media screen and (max-width: 600px) {
+  .singlesample_wrapper {
+    flex-direction: column;
+  }
+
+  .singlesample_top {
+    height: 40%;
+  }
+  .singlesample_top_img {
+    display: none;
+  }
+  .sample_line {
+    display: none;
+  }
+}

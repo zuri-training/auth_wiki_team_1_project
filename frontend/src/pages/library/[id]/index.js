@@ -22,9 +22,7 @@ const SingleSample = () => {
     } else {
       setSample(filterSample[0]);
     }
-  }, [router.query.id]);
-
-  console.log(sample);
+  }, [router.query.id, oldSamples]);
 
   // navigator.clipboard.write('Text that should be copied, or in this case, the code').then(()=>{
   //   console.log('copied to clipboard, or you can run your toaster heare')

@@ -1,4 +1,5 @@
 import AuthLayout from "../components/Layouts/AuthLayout";
+import { useRouter } from "next/router";
 import styles from "../styles/Terms.module.css";
 
 import { MdCancel } from "react-icons/md";
@@ -91,6 +92,7 @@ const Privacy = () => {
           <button
             type="submit"
             className={[styles.button, styles.accept].join(" ")}
+            onClick={() => router.push("/library")}
           >
             ACCEPT
           </button>
@@ -98,6 +100,7 @@ const Privacy = () => {
           <button
             type="submit"
             className={[styles.button, styles.decline].join(" ")}
+            onClick={() => router.push("/")}
           >
             DECLINE
           </button>

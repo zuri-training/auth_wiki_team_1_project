@@ -91,6 +91,7 @@ const Terms = () => {
           <button
             type="submit"
             className={[styles.button, styles.accept].join(" ")}
+            onClick={() => router.push("/library")}
           >
             ACCEPT
           </button>
@@ -98,6 +99,7 @@ const Terms = () => {
           <button
             type="submit"
             className={[styles.button, styles.decline].join(" ")}
+            onClick={() => router.push("/")}
           >
             DECLINE
           </button>
