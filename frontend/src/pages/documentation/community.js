@@ -8,6 +8,7 @@ const Community = () => {
   const router = useRouter();
   return (
     <AppLayout>
+
       <nav></nav>
       <main className={styles.main}>
         <section>
@@ -58,24 +59,34 @@ const Community = () => {
               please take a look at our community guidelines:
             </p>
             <ul>
+
+
+
               <li>
-                - Feel free to post questions and start discussions on any topic
-                relating to displayed code samples.
+                <Link href="/documentation/getstarted">
+                  <a className="active nav-list">Get Started</a>
+                </Link>
               </li>
-              <li>- Be polite and communicate with respect</li>
-              <li>- Respect the privacy of other community members</li>
               <li>
-                - Contact community managers directly for support{" "}
-                <span className={styles.getStarted_link}>
-                  <Link href="/support">
-                    <a>here</a>
-                  </Link>{" "}
-                </span>
+                <Link href="/documentation/code">
+                  <a className="nav-list">Codes Implementation</a>
+                </Link>
               </li>
-              <li>- Do not share personal or private information</li>
-              <li>- Do not post promotional content</li>
-              <li>- Do not post explicit, rude or aggressive comments</li>
+              <li>
+                <Link href="/documentation/community">
+                  <a
+                    className={
+                      `${router.route === "/documentation/community"}`
+                        ? `${styles.active} ${styles.nav_list}`
+                        : `${styles.nav_list}`
+                    }
+                  >
+                    Community
+                  </a>
+                </Link>
+              </li>
             </ul>
+
             <p>
               In the event of a violation, we will take action to protect other
               members of the community. This action might include a warning. In
@@ -85,6 +96,8 @@ const Community = () => {
           </div>
         </section>
       </main>
+
+
     </AppLayout>
   );
 };

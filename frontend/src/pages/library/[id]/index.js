@@ -24,6 +24,10 @@ const SingleSample = () => {
     }
   }, [router.query.id, oldSamples]);
 
+  // navigator.clipboard.write('Text that should be copied, or in this case, the code').then(()=>{
+  //   console.log('copied to clipboard, or you can run your toaster heare')
+  // })
+
   return (
     <AppLayout>
       <div className="container">
@@ -41,10 +45,31 @@ const SingleSample = () => {
           </div>
           <div className={styles.sample_line}></div>
           <div>
-            <p>{sample && sample.description}</p>
-            <p>{sample && sample.code}</p>
+            <div className={styles.codeWrapper}>
+              <div className={styles.description}>
+                <p>{sample && sample.description}</p>
+              </div>
+              <div className={styles.code_box}>
+                <span
+                  onClick={() => {
+                    navigator.clipboard.writeText(sample.code).then(() => {
+                      toast.success("Text copied to clipboard");
+                    });
+                  }}
+                  className={styles.copy}
+                >
+                  <Image
+                    src="/assets/copy.svg"
+                    alt="copy icon"
+                    width={24}
+                    height={24}
+                  />
+                </span>
+                <pre>{sample && sample.code?.join("\n")}</pre>
+              </div>
+            </div>
             <button className={styles.singlesample_bottom_btn}>Download</button>
-          </div>
+          </div>{" "}
         </div>
       </div>
     </AppLayout>

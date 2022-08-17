@@ -84,7 +84,7 @@ const Home = () => {
               authentication code and download code samples.
             </p>
             <button className={styles.signup}>
-              <Link href="/account/register">Sign up for Full Access</Link>
+              <Link href="/account/auth">Sign up for Full Access</Link>
             </button>
           </div>
           <div className={styles.home_image}>

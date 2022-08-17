@@ -72,14 +72,22 @@ const Library = () => {
 export default Library;
 
 // // fetch library sample code data
-// export async function getStaticProps() {
-//   const res = await fetch("http://localhost:3000/data.json");
-//   const data = await res.json();
-
-//   return {
-//     props: {
-//       samples: data,
-//     },
-
-//   };
-// }
+export async function getStaticProps() {
+  try {
+    const BASE_URL =
+      process.env.NODE_ENV === "production"
+        ? "https://auth-wiki-team-1-project-iota.vercel.app"
+        : "http://localhost:3000";
+    const res = await fetch(`${BASE_URL}/data.json`);
+    const data = await res.json();
+    return {
+      props: {
+        samples: data,
+      },
+    };
+  } catch (error) {
+    return {
+      props: {},
+    };
+  }
+}
