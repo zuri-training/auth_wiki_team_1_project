@@ -1,0 +1,258 @@
+/* STYLING FOR DESKTOP */
+
+.cnt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 36px;
+  padding: 40px 0;
+  width: 100%;
+  background: rgba(86, 0, 226, 0.02);
+}
+
+.wrapper h1 {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 57px;
+  color: #5600e2;
+  text-align: center;
+}
+.wrapper p {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #272727;
+}
+
+.support_form {
+  margin-top: 4rem;
+}
+
+.support_form input:focus,
+.support_form textarea:focus {
+  outline: 1px solid var(--primary-100);
+}
+
+.iptfield textarea {
+  text-indent: 5px;
+}
+.frame1,
+.frame2 {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  gap: 119px;
+}
+
+.frame1 {
+  margin-bottom: 56px;
+}
+.frame1 .fname {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.fname label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #575757;
+}
+.fname input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(29, 30, 32, 0.3);
+  border-radius: 8px;
+  width: 558px;
+  height: 72px;
+}
+.frame1 .lname {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.lname label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #575757;
+}
+.lname input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(29, 30, 32, 0.3);
+  border-radius: 8px;
+  width: 558px;
+  height: 72px;
+}
+
+.frame2 .em {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.em label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #575757;
+}
+.em input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(29, 30, 32, 0.3);
+  border-radius: 8px;
+  width: 558px;
+  height: 72px;
+}
+.frame2 .phnum {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.phnum label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #575757;
+}
+.phnum input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(29, 30, 32, 0.3);
+  border-radius: 8px;
+  width: 558px;
+  height: 72px;
+}
+.iptfield {
+  margin-top: 56px;
+  font-style: normal;
+}
+.iptfield p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #575757;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  text-align: left;
+}
+.iptfield textarea {
+  width: 1236px;
+  height: 406px;
+  margin-top: 16px;
+  background: #ffffff;
+  border: 1px solid rgba(29, 30, 32, 0.3);
+  border-radius: 8px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  resize: none;
+}
+.btncontainer {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  font-style: normal;
+}
+.btn {
+  padding: 20px 40px;
+  gap: 20px;
+  width: 608px;
+  height: 68px;
+  margin-top: 83px;
+  background: #5600e2;
+  border-radius: 8px;
+  border: #5600e2;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 600px) {
+  .cnt {
+    width: 100%;
+  }
+  .wrapper h1 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .wrapper p {
+    font-size: var(--para-two);
+  }
+  .frame1,
+  .frame2 {
+    flex-direction: column;
+  }
+
+  .frame1 {
+    margin-bottom: 20px;
+  }
+  .iptfield {
+    margin-top: 20px;
+  }
+
+  .frame1,
+  .frame2 {
+    row-gap: 20px;
+  }
+
+  .fname input {
+    width: 327px;
+  }
+
+  .lname input {
+    width: 327px;
+  }
+
+  .em input {
+    width: 327px;
+  }
+
+  .phnum input {
+    width: 327px;
+  }
+  .iptfield textarea {
+    width: 325px;
+    height: 195px;
+  }
+
+  .btn {
+    width: 300px;
+  }
+}

@@ -7,13 +7,13 @@ import { toast } from "react-toastify";
 import { ThreeDots } from "react-loader-spinner";
 import { login, reset_register_success } from "../../actions/account";
 import { useRouter } from "next/router";
+import { register } from "../../actions/account";
 import { useSelector, useDispatch } from "react-redux";
 import stylesSignin from "../../styles/Signin.module.css";
 import stylesSignup from "../../styles/Signup.module.css";
 import { PrimaryButton } from "../../components/utils/Buttons";
 import Styles from "../../styles/AuthPage.module.css";
 import { AuthPageContext } from "../../contexts/AuthPagesContext";
-import { register } from "../../actions/account";
 
 function auth() {
   return (
@@ -28,6 +28,19 @@ export default auth;
 function Main() {
   const [view, setView] = useState("signin");
   const { setLeftPanelContent } = useContext(AuthPageContext);
+  const router = useRouter();
+  const { isLoggedIn, register_success } = useSelector(
+    (state) => state.account
+  );
+
+  // redirect to home page if user is logged in
+  useEffect(() => {
+    if (isLoggedIn) {
+      router.push("/");
+    } else if (register_success) {
+      setView("signin");
+    }
+  }, [isLoggedIn, register_success]);
 
   return (
     <div className={Styles.authWrapper}>
@@ -76,8 +89,6 @@ function Main() {
 function Signin() {
   const dispatch = useDispatch();
   const loading = useSelector((state) => state.account.loading);
-  const isLoggedIn = useSelector((state) => state.account.isLoggedIn);
-  const router = useRouter();
 
   // create login form state
   const [formData, setFormData] = useState({
@@ -116,11 +127,6 @@ function Signin() {
       });
     }
   };
-
-  // redirect to home page if user is logged in
-  if (isLoggedIn) {
-    router.push("/");
-  }
 
   // password toggle visibility
   const [passwordShown, setPasswordShown] = useState(false);
@@ -206,11 +212,6 @@ function SignUp() {
   // load states from redux
   const dispatch = useDispatch();
   const loading = useSelector((state) => state.account.loading);
-  const register_success = useSelector(
-    (state) => state.account.register_success
-  );
-  const isLoggedIn = useSelector((state) => state.account.isLoggedIn);
-  const router = useRouter();
 
   // destructure register data from state
   const { username, password1, password2, email, first_name, last_name } =
@@ -246,16 +247,6 @@ function SignUp() {
 
     dispatch(register(formData));
   };
-
-  // redirect to home page if user is logged in
-  if (isLoggedIn) {
-    router.push("/");
-  }
-
-  // if register success, redirect to login page
-  if (register_success) {
-    router.push("/account/auth");
-  }
 
   // password toggle visibility
   const [passwordShown, setPasswordShown] = useState(false);

@@ -1,0 +1,921 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sora, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: #ffffff;
+  color: #fff;
+  margin: 10px 40px 0 40px;
+}
+
+.header-text img {
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 4px;
+}
+.container {
+  padding: 30px 5%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo {
+  position: relative;
+  width: 107.75px;
+  height: 28.36px;
+  left: 10px;
+  top: 10px;
+  gap: 11px;
+  cursor: pointer;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  top: 10px;
+  position: relative;
+  left: 50px;
+}
+nav ul li a {
+  width: 100px;
+  height: 23px;
+  color: #575757;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.container span {
+  color: #5600e2;
+  width: 56px;
+  height: 23px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+}
+.login {
+  position: relative;
+  background-color: #fff;
+  width: 55px;
+  height: 28px;
+  font-family: "poppins";
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #5600e2;
+  padding: 5px;
+  color: #5600e2;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.login img {
+  width: 14px;
+  height: 14px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: -2px;
+}
+.signup {
+  position: relative;
+  background-color: #5600e2;
+  width: 55px;
+  height: 28px;
+  font-family: "poppins";
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #5600e2;
+  padding: 5px;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  right: 30px;
+}
+
+/*--------support-------*/
+
+.support {
+  position: absolute;
+  width: 1340px;
+  height: 294px;
+  left: 0px;
+  top: 124px;
+  background: rgba(86, 0, 226, 0.02);
+}
+
+.supporttext h1 {
+  text-align: center;
+  position: absolute;
+  width: 286px;
+  height: 57px;
+  left: 576px;
+  top: 98px;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 57px;
+  text-align: center;
+
+  color: #5600e2;
+}
+
+.supporttext h5 {
+  position: absolute;
+  width: 720px;
+  height: 30px;
+  left: 360px;
+  top: 171px;
+
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #272727;
+}
+
+.theboxs img {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 850px;
+  height: 1000px;
+  left: 0px;
+  top: 550px;
+  color: #cbb0f6;
+}
+
+.name1 {
+  width: 89px;
+  height: 20px;
+
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #575757;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: relative;
+  top: 510px;
+  left: 100px;
+}
+.firstnamebox {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+
+  position: absolute;
+  left: 10%;
+  right: 0%;
+  top: 100%;
+  bottom: 7.64%;
+
+  background: #ffffff;
+  border: 1px solid rgba(29, 30, 32, 0.3);
+  border-radius: 8px;
+  width: 376px;
+  height: 20px;
+}
+
+.firstnamebox h5 {
+  width: 162px;
+  height: 21px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  letter-spacing: -0.02em;
+
+  color: rgba(29, 30, 32, 0.3);
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  top: -10px;
+  position: relative;
+}
+
+.name2 {
+  width: 87px;
+  height: 20px;
+
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #575757;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: relative;
+  top: 490px;
+  left: 799px;
+}
+
+.lastnamebox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+
+  position: absolute;
+  left: 62%;
+  right: 0%;
+  top: 100%;
+  bottom: 7.64%;
+
+  background: #ffffff;
+  border: 1px solid rgba(29, 30, 32, 0.3);
+  border-radius: 8px;
+  width: 376px;
+  height: 20px;
+}
+
+.lastnamebox h5 {
+  width: 190px;
+  height: 21px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  letter-spacing: -0.02em;
+
+  color: rgba(29, 30, 32, 0.3);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: relative;
+  top: -10px;
+}
+
+.email1 {
+  width: 45px;
+  height: 20px;
+
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #575757;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: relative;
+  top: 665px;
+  left: 100px;
+}
+
+.emailbox {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+
+  position: absolute;
+  left: 10%;
+  right: 0%;
+  top: 850px;
+  bottom: 7.64%;
+
+  background: #ffffff;
+  border: 1px solid rgba(29, 30, 32, 0.3);
+  border-radius: 8px;
+  width: 376px;
+  height: 20px;
+}
+
+.emailbox h5 {
+  width: 160px;
+  height: 21px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  letter-spacing: -0.02em;
+
+  color: rgba(29, 30, 32, 0.3);
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: relative;
+  top: -10px;
+}
+
+.phonenumber2 {
+  width: 124px;
+  height: 20px;
+
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #575757;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: relative;
+  top: 645px;
+  left: 799px;
+}
+
+.phonenumberbox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+
+  position: absolute;
+  left: 62%;
+  right: 0%;
+  top: 850px;
+  bottom: 7.64%;
+
+  background: #ffffff;
+  border: 1px solid rgba(29, 30, 32, 0.3);
+  border-radius: 8px;
+  width: 376px;
+  height: 20px;
+}
+
+.phonenumberbox h5 {
+  width: 179px;
+  height: 21px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  letter-spacing: -0.02em;
+
+  color: rgba(29, 30, 32, 0.3);
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: relative;
+  top: -10px;
+}
+
+.help2 {
+  width: 181px;
+  height: 20px;
+
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #575757;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: relative;
+  top: 830px;
+  left: 100px;
+}
+
+.helpbox {
+  box-sizing: border-box;
+
+  width: 1236px;
+  height: 406px;
+
+  /* White */
+
+  background: #ffffff;
+  border: 1px solid rgba(29, 30, 32, 0.3);
+  border-radius: 8px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  width: 1070px;
+  height: 300px;
+
+  position: absolute;
+  left: 10%;
+  right: 0%;
+  top: 1055px;
+  bottom: 7.64%;
+}
+
+.btnbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 40px;
+  gap: 20px;
+
+  position: absolute;
+  width: 608px;
+  height: 68px;
+  left: 390px;
+  top: 1400px;
+
+  background: #5600e2;
+  border-radius: 8px;
+}
+
+.btnbox h3 {
+  width: 68px;
+  height: 28px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #ffffff;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: relative;
+  left: 230px;
+}
+
+/*--------footer-------------*/
+
+.footer {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  left: -6px;
+  top: 1550px;
+  width: 1355px;
+  height: 310px;
+  background: #3d00a0;
+}
+
+.footerlogo img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 21px;
+  position: relative;
+  width: 194.5px;
+  height: 54.44px;
+  margin-top: 80px;
+  left: 90px;
+  top: -0px;
+}
+
+.container .tex-center {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 91px;
+  width: 890.5px;
+  height: 117px;
+}
+
+.col-md-a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 134px;
+  height: 117px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  font-size: 10px;
+  position: relative;
+  bottom: 70px;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  left: 400px;
+}
+
+.col-md-b {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 159px;
+  height: 117px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  font-size: 10px;
+
+  position: relative;
+  top: 1430px;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  left: 615px;
+}
+.col-md-b p {
+  color: #cbb0f6;
+}
+
+.col-md-c {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 89px;
+  height: 85px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  font-size: 10px;
+  position: relative;
+  top: 1310px;
+  left: 800px;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+.col-md-c p {
+  color: #cbb0f6;
+}
+
+.vl {
+  border: 1px solid #cbb0f6;
+  height: 90px;
+  width: 2px;
+  position: relative;
+  left: 930px;
+  top: 1230px;
+}
+
+.col-md-d {
+  width: 235.5px;
+  height: 66px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  font-size: 10px;
+  position: relative;
+  top: 1120px;
+  left: 1000px;
+  color: #cbb0f6;
+}
+
+.symbol {
+  width: 100px;
+  color: #cbb0f6;
+  position: relative;
+  right: 10px;
+  top: 13px;
+  text-decoration: none;
+}
+
+.circle {
+  position: absolute;
+  right: 88.77%;
+  top: -72.36%;
+  bottom: -115.85%;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  width: 14%;
+  left: -5px;
+  bottom: 80px;
+}
+
+/*-----------mobile------------------view-------*/
+
+nav .fas {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .login {
+    display: none;
+  }
+
+  .signup {
+    display: none;
+  }
+
+  nav ul li a {
+    display: none;
+  }
+  nav .fas {
+    display: block;
+    color: #272727;
+  }
+
+  .logo {
+    position: absolute;
+    left: 20px;
+    top: 55px;
+  }
+
+  /*-------support-----*/
+
+  .support {
+    position: absolute;
+    width: 400px;
+    height: 132px;
+    left: 0px;
+    top: 110px;
+
+    background: rgba(86, 0, 226, 0.02);
+  }
+
+  .supporttext h1 {
+    width: 127px;
+    height: 25px;
+
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+
+    color: #5600e2;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    position: absolute;
+    left: 33%;
+    top: 15%;
+  }
+
+  .supporttext h5 {
+    width: 235px;
+    height: 40px;
+
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+
+    text-align: center;
+
+    color: #272727;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    position: absolute;
+    left: 20%;
+    top: 75px;
+  }
+
+  .name1 {
+    width: 89px;
+    height: 20px;
+
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #575757;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    position: absolute;
+    left: 5%;
+    margin-top: -245px;
+  }
+
+  .firstnamebox {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+
+    position: absolute;
+    left: 5%;
+    right: 0%;
+    top: 100%;
+    bottom: 7.64%;
+
+    background: #ffffff;
+    border: 1px solid rgba(29, 30, 32, 0.3);
+    border-radius: 8px;
+    width: 360px;
+    height: 20px;
+    margin-top: -275px;
+  }
+
+  .name2 {
+    width: 87px;
+    height: 20px;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #575757;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    position: absolute;
+    left: 5%;
+    margin-top: -110px;
+  }
+
+  .lastnamebox {
+    position: absolute;
+    left: 5%;
+    margin-top: -160px;
+    width: 360px;
+  }
+
+  .email1 {
+    width: 117px;
+    height: 20px;
+
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #575757;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    position: absolute;
+    left: 5%;
+    margin-top: -165px;
+  }
+  .emailbox {
+    position: absolute;
+    left: 5%;
+    margin-top: -320px;
+    width: 360px;
+  }
+
+  .phonenumber2 {
+    width: 124px;
+    height: 20px;
+
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #575757;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    position: absolute;
+    left: 5%;
+    margin-top: -20px;
+  }
+  .phonenumberbox {
+    position: absolute;
+    left: 5%;
+    margin-top: -195px;
+    width: 360px;
+  }
+
+  .help2 {
+    width: 181px;
+    height: 20px;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #575757;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    position: absolute;
+    left: 5%;
+    margin-top: -90px;
+  }
+
+  .helpbox {
+    position: absolute;
+    left: 5%;
+    margin-top: -280px;
+    width: 360px;
+  }
+
+  .btnbox {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 130px;
+    gap: 10px;
+
+    position: absolute;
+    width: 360px;
+    height: 60px;
+    left: 5%;
+    margin-top: -280px;
+
+    background: #5600e2;
+    border-radius: 8px;
+  }
+  .btnbox h3 {
+    width: 68px;
+    height: 28px;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    position: absolute;
+    left: 40%;
+  }
+
+  /*-------footer-------------*/
+
+  .footer {
+    display: none;
+    /*position: absolute;
+    left: 0%;
+    right: 0%;
+    margin-top: -150px;
+    bottom: 0%;
+    
+    background: #3D00A0;*/
+  }
+}

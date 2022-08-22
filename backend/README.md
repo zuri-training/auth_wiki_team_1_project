@@ -1,40 +1,32 @@
+# Auth Wiki Team 1 Backend Project
 
-
-#  Auth Wiki Team 1 Backend Project
-
-  
-
-##  How to install
-
-  
+## How to install
 
 1.  Download and install `virtualenv`
 
-	`pip install virtualenv`
+    `pip install virtualenv`
 
 2.  Inside the project folder, run
 
-	`virtualvenv venv && source venv/bin/activate`
+    `virtualvenv venv && source venv/bin/activate` or on Windows `\venv\Scripts\activate`
 
 3.  Inside the repository folder run
 
-	`python3 -m pip install -r requirements.txt`
+    `python3 -m pip install -r requirements.txt`
 
 4.  Create ENV file
 
-	`cp .env.example .env`
+    `cp .env.example .env` On windows, this command is best run on `git bash` command line
 
 5.  Generate a new secret key [from here](https://djecrety.ir) and put in the env file
 
 6.  Run migration
 
-	`python3 manage.py migrate`
+    `python3 manage.py migrate`
 
 7.  Run the server
 
-	`python3 manage.py runserver`
-
-
+    `python3 manage.py runserver`
 
 # Contributors Guide
 

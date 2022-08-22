@@ -1,0 +1,95 @@
+.singlesample_wrapper {
+  display: flex;
+  gap: 119px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+/* This is the style here  */
+.sample_line {
+  height: max-content;
+  width: 2px;
+  background-color: var(--primary-100);
+}
+/* I no see any error oo, where you go, i no see error oo */
+.singlesample_top {
+  height: 100vh;
+  position: relative;
+  margin-right: 40px;
+  width: 100%;
+}
+
+.singlesample_top h2 {
+  color: var(--primary-100);
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.singlesample_top_img {
+  position: absolute;
+  top: 300px;
+  left: -50px;
+}
+
+.singlesample_bottom_btn {
+  background-color: var(--primary-100);
+  display: flex;
+  font-family: "Sora", sans-serif;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-top: 2rem;
+  border-radius: 8px;
+  float: right;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #575757;
+}
+
+.code_box {
+  border: 2px dashed #7833e8;
+  border-radius: 16px;
+  height: fit-content;
+  width: max-content;
+  padding: 24px;
+  margin-top: 77px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+
+  color: #272727;
+}
+
+.copy {
+  float: right;
+  cursor: pointer;
+}
+
+.codeWrapper {
+  padding-left: 60px;
+  border-left: 1px solid #cbb0f6;
+}
+
+@media screen and (max-width: 600px) {
+  .singlesample_wrapper {
+    flex-direction: column;
+  }
+
+  .singlesample_top {
+    height: 40%;
+  }
+  .singlesample_top_img {
+    display: none;
+  }
+  .sample_line {
+    display: none;
+  }
+}

@@ -1,0 +1,383 @@
+/* universal styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+/* body */
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+/* container holding both sides(A & B) */
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 850px;
+}
+
+/* side A */
+.A {
+    text-align: center;
+    padding: 180px;
+    padding-top: 260px;
+    width: 50%;
+    height: 100%;
+    background: #5600E2;
+    color: #fff;
+}
+/* top curved line */
+.top {
+    position: absolute;
+    top: -5px;
+    left: 350px;
+}
+/* logo in logo-text container */
+.A>.logo-text>img {
+    margin-bottom: 25px;
+}
+/* welcome back text */
+.A>.logo-text>h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45.36px;
+}
+/* paragraph text */
+.A>.logo-text>p {
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 16px;
+}
+/* bottom curve line */
+.bottom {
+    position: absolute;
+    bottom: -200px;
+    left: 2px;
+}
+/* end of side A */
+
+
+/* side B */
+.B {
+    width: 50%;
+    height: 100%;
+    padding: 0 50px;
+    padding-top: 110px;
+}
+/* container for signup & signin page links */
+.B>.links {
+    display: flex;
+    padding: 0 40px;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 28px;
+}
+/* links heading */
+.B>.links>.sign-link>h3 {
+    text-align: center;
+}
+/* heading link styling */
+.B>.links>.sign-link>h3>a {
+    text-decoration: none;
+    color: #5600E2;
+}
+.B>.links>.sign-link>h3>a:hover {
+    color: #8E54EC;
+}
+.B>.links>.sign-link>h3>a:active {
+    color: #3D00A0;
+}
+/* underline under link */
+.links>.sign-link>.underline {
+    margin-top: 10px;
+    background-color: #5600E2;
+    border-radius: 4px;
+    width: 200px;
+    height: 4px;
+}
+/* signup heading fade */
+.B>.links>.signup>h3>a {
+    color: #CBCBCB;
+}
+/* underline under link fade */
+.B>.links>.signup>.underline {
+    background-color: #CBCBCB;
+}
+
+/* form */
+.form {
+    margin-top: 50px;
+}
+/* container for each label and input */
+.form>.form-control {
+    margin-bottom: 20px;
+}
+/* labels in form */
+.form>.form-control>label {
+    font-weight: 600;
+    font-size: 16px;
+    color: #575757;
+    line-height: 20.16px;
+}
+/* label text */
+.form>.form-control>label>p {
+    margin-bottom: 10px;
+}
+/* input in form */
+.form>.form-control>input,
+.form>.form-control>.input-icon>input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgba(29, 30, 32, 0.3);
+    border-radius: 8px;
+}
+
+/* container for password input and icon */
+.form>.form-control>.input-icon {
+    display: flex;
+}
+
+/* eye icon */
+.form>.form-control>.input-icon>i {
+    margin-top: 12px;
+    margin-left: -30px;
+    color: #CBCBCB;
+    cursor: pointer;
+}
+/* error message */
+.form>.form-control>.error {
+    color: red;
+    visibility: hidden;
+}
+/* checkbox & forgot password link container */
+.checkbox-link {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+/* remember-me checkbox */
+.checkbox-link>.checkbox {
+    display: flex;
+}
+/* remember-me checkbox text */
+.checkbox-link>.checkbox>label>p {
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #575757;
+}
+/* forgot password link */
+.forgot-link>p>a {
+    text-decoration: none;
+    color: #5600E2;
+    font-weight: 400;
+    font-size: 14px;
+}
+.forgot-link>p>a:hover{
+    color: #8E54EC;
+}
+.forgot-link>p>a:active{
+    color: #3D00A0;
+}
+/* signin button */
+#signin-btn {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #5600E2;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#signin-btn:hover{
+    background: #8E54EC;
+}
+#signin-btn:active{
+    background: #3D00A0;
+}
+/* signup button text */
+#signin-btn>h6 {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+}
+/* end of sidde B */
+
+/* responsiveness */
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .A {
+        height: 191px;
+        padding: 60px;
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .top {
+        top: 4px;
+        left: 71%;
+    }
+
+    .top>img {
+        height: 130px;
+    }
+
+    .A>.logo-text>img {
+        width: 20px;
+        margin-bottom: 16px;
+    }
+
+    .A>.logo-text>h2 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .A>.logo-text>p {
+        line-height: 18px;
+        font-size: 12px;
+        margin-bottom: 26px;
+    }
+
+    .bottom {
+        bottom: 66%;
+    }
+
+    .bottom>img {
+        height: 130px;
+    }
+
+    .B {
+        margin-top: 44px;
+        padding: 0 24px;
+        width: 100%;
+    }
+
+    .B>.links {
+        padding: 0;
+        font-size: 20px;
+        line-height: 25.2px;
+        width: 100%;
+    }
+
+    .links>.sign-link>.underline {
+        width: 120px;
+    }
+
+    .form>.form-control>input,
+    .form>.form-control>.input-icon>input {
+        padding: 12px;
+    }
+
+    .form>.form-control>.input-icon>i {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .A {
+        padding: 150px;
+        padding-top: 50px;
+        width: 100%;
+        height: 300px;
+    }
+
+    .top {
+        left: 78%;
+    }
+
+    .top>img {
+        height: 210px;
+    }
+
+    .A>.logo-text>img {
+        width: 30px;
+        margin-bottom: 18px;
+    }
+
+    .A>.logo-text>h2 {
+        font-size: 30px;
+        line-height: 29px;
+    }
+
+    .A>.logo-text>p {
+        line-height: 30px;
+        font-size: 19px;
+    }
+
+    .bottom {
+        bottom: 50%;
+    }
+
+    .bottom>img {
+        height: 210px;
+    }
+
+    .B {
+        margin-top: 50px;
+        padding: 0 30px;
+        width: 100%;
+    }
+
+    .B>.links {
+        padding: 0 50px;
+        font-size: 25px;
+        line-height: 28px;
+        width: 100%;
+    }
+
+    .links>.sign-link>.underline {
+        width: 230px;
+    }
+
+    .form>.form-control>input,
+    .form>.form-control>.input-icon>input {
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .container{
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+    .A, .B{
+        height: 100%;
+        width: 50%;
+    }
+    .A{
+        padding: 90px;
+        padding-top: 210px;
+    }
+    .top {
+        left: 30%;
+    }    
+    .top>img {
+        height: 270px;
+    }
+    .bottom{
+        bottom: -50px;
+    }
+    .bottom>img{
+        height: 270px;
+    }
+    .B{
+        padding-top: 90px;
+    }
+    .links>.sign-link>.underline{
+        width: 100%;
+    }
+}

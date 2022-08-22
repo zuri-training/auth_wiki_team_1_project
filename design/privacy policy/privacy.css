@@ -1,0 +1,201 @@
+/* universal styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+/* body */
+body{
+    background: #fff;
+}
+/* header */
+header{
+    margin: 40px 62px 0 62px;
+    display: flex;
+    justify-content: space-between;
+}
+/* heading in header */
+header>h4{
+    font-weight: 600;
+    font-size: 22px;
+    color: #4E00CE;
+}
+/* close icon */
+header>i{
+    color: #4E00CE;
+}
+/* date */
+.date>p{
+    margin: 16px 62px 0 62px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #4E4E4E;
+}
+
+/* main/privacy */
+.privacy{
+    margin: 40px 62px 0 62px;
+    padding-right: 114px;
+    height: 900px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+/* all sections */
+section{
+    margin-bottom: 40px;
+}
+/* sections with h3 */
+section>h3{
+    font-weight: 400;
+    font-size: 28px;
+    color: #000;
+}
+/* sections with p tag */
+section>p{
+    font-weight: 400;
+    font-size: 22px;
+    color: #575757;
+}
+/* list */
+li{
+    font-weight: 400;
+    font-size: 22px;
+    color: #575757;
+}
+/* section one paragraph styling */
+.one>p{
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #575757;
+}
+
+/* scrollbar */
+main::-webkit-scrollbar{
+    width: 11px;
+}
+main::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 11px #CBB0F6;
+    border-radius: 16px;
+}
+main::-webkit-scrollbar-thumb{
+    height: 20px;
+    background: #4E00CE;
+    border-radius: 16px;
+}
+main::-webkit-scrollbar-thumb:hover{
+    background: #5600E2;
+}
+
+/* button container */
+.buttons{
+    background: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 145px;
+    border: 1px solid #5600E2;
+    border-radius: 16px 16px 0px 0px;
+}
+/* accept and decline buttons */
+.accept, .decline{
+    margin-top: 48px;
+    padding: 16px 80px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 25px rgba(86, 0, 226, 0.15);
+    cursor: pointer;
+}
+/* accept and decline button text */
+.accept>h5,
+.decline>h5 {
+    font-weight: 600;
+    font-size: 20px;
+}
+/* accept buton styling */
+.accept{
+    margin-right: 20px;
+    background: #4E00CE;
+    border: 1px solid #4E00CE;
+}
+/* accept button text */
+.accept>h5 {
+    color: #fff;
+}
+.accept:hover{
+    background: #9747FF;
+}
+.accept:active{
+    background: #3D00A0;
+}
+/* end of accept button */
+
+/* decline button styling */
+.decline{
+    margin-left: 20px;
+    background: #fff;
+    border: 1px solid #D81717;
+}
+/* becline button text */
+.decline>h5 {
+    color: #D81717;
+}
+.decline:hover{
+    background: #C21515;
+}
+.decline:hover>h5{
+    color: #fff;
+}
+.decline:active{
+    background: #AD1212;
+}
+.decline:active>h5{
+    color: #fff;
+}
+/* end of decline button */
+
+/* responsiveness */
+@media screen and (min-width:300px) and (max-width: 767px) {
+    header {
+        margin: 20px 32px 0 32px;
+    }
+    header>h4{
+        font-size: 14px;
+    }
+    .date>p{
+        margin: 6px 32px 0 32px;
+        font-size: 10px;
+    }
+    .privacy{
+        margin: 20px 32px 0 32px;
+        padding-right: 53px;
+    }
+    .one>p, section>p, li{
+        font-size: 12px;
+    }
+    section>h3{
+        font-weight: bold;
+        font-size: 12px;
+    }
+    main::-webkit-scrollbar{
+        width: 3px;
+    }
+    .buttons{
+        height: 100px;
+    }
+    .accept, .decline{
+        margin-top: 28px;
+        padding-left: 50px;
+        width: 60px;
+    }
+    .accept{
+        margin-right: 3px;
+    }
+    .decline{
+        margin-left: 3px;
+    }
+    .accept>h5,
+    .decline>h5{
+        font-size: 8px;
+    }
+}
